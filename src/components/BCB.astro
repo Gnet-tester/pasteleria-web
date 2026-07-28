@@ -1,0 +1,82 @@
+---
+interface Tier {
+	name: string;
+	description: string;
+	price: number;
+	link: string | undefined;
+}
+
+const tiers: Tier[] = [
+	{
+		name: 'Sencillo',
+		description: 'Café de especialidad + tosta clásica.',
+		price: 6.5,
+		link: import.meta.env.PUBLIC_STRIPE_BCB_LINK_SENCILLO
+	},
+	{
+		name: 'Completo',
+		description: 'Bowl o tosta especial + bebida + dulce artesano.',
+		price: 11.9,
+		link: import.meta.env.PUBLIC_STRIPE_BCB_LINK_COMPLETO
+	},
+	{
+		name: 'Premium',
+		description: 'Selección premium + café de especialidad + dulce artesano.',
+		price: 16.9,
+		link: import.meta.env.PUBLIC_STRIPE_BCB_LINK_PREMIUM
+	}
+];
+
+const formatPrice = (price: number) =>
+	price.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
+---
+
+<section id="bcb" class="bg-sage-800 py-16 text-cream-100 md:py-24">
+	<div class="mx-auto max-w-6xl px-4 md:px-6">
+		<div class="mx-auto max-w-2xl text-center">
+			<span
+				class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-cream-100"
+			>
+				Para peregrinos del Camino de Santiago
+			</span>
+			<h2 class="mt-4 font-display text-3xl md:text-4xl">BCB · Buen Camino Breakfast</h2>
+			<p class="mt-4 text-sage-200">
+				Regala un desayuno a un peregrino: a un amigo, a un familiar o a quien esté haciendo el
+				Camino. Compra online y la persona solo tiene que pasarse por Gisela Pastelería Natural y
+				darnos su nombre para disfrutarlo.
+			</p>
+		</div>
+
+		<div class="mt-12 grid gap-6 md:grid-cols-3">
+			{
+				tiers.map((tier) => (
+					<div class="flex flex-col gap-4 rounded-2xl border border-white/15 bg-white/5 p-6">
+						<div>
+							<h3 class="font-display text-xl">{tier.name}</h3>
+							<p class="mt-2 text-sm text-sage-200">{tier.description}</p>
+						</div>
+						<p class="font-display text-3xl">{formatPrice(tier.price)}</p>
+						{tier.link ? (
+							<a
+								href={tier.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="mt-auto rounded-full bg-terracotta-400 px-6 py-2.5 text-center font-medium text-white transition-colors hover:bg-terracotta-500"
+							>
+								Regalar
+							</a>
+						) : (
+							<span class="mt-auto rounded-full bg-white/10 px-6 py-2.5 text-center font-medium text-sage-300">
+								Próximamente
+							</span>
+						)}
+					</div>
+				))
+			}
+		</div>
+
+		<p class="mt-8 text-center text-xs text-sage-300">
+			Precios orientativos, sujetos a ajuste. El desayuno se recoge en nuestro local en Ponferrada.
+		</p>
+	</div>
+</section>

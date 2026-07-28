@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/Logotipo.svg';
+
+const year = new Date().getFullYear();
+---
+
+<footer id="contacto" class="border-t border-sage-100 bg-sage-900 text-cream-100">
+	<div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-3 md:px-6">
+		<div class="flex flex-col gap-4">
+			<Image src={logo} alt="Gisela Pastelería Natural" width={200} height={89} class="h-10 w-auto brightness-0 invert" />
+			<p class="max-w-xs text-sm text-sage-200">
+				Pastelería natural y artesanal, elaborada cada día en Ponferrada con ingredientes de
+				calidad.
+			</p>
+			<a
+				href="https://www.instagram.com/gisela.pastelerianatural"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="inline-flex items-center gap-2 text-sm font-medium text-cream-100 transition-colors hover:text-terracotta-300"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+					<path
+						d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.02-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92 1.27-.06 1.65-.07 4.85-.07Zm0 5.84a3.99 3.99 0 1 0 0 7.98 3.99 3.99 0 0 0 0-7.98Zm0 6.58a2.59 2.59 0 1 1 0-5.18 2.59 2.59 0 0 1 0 5.18Zm4.15-6.74a.93.93 0 1 1 0-1.86.93.93 0 0 1 0 1.86Z"
+					></path>
+				</svg>
+				@gisela.pastelerianatural
+			</a>
+		</div>
+
+		<div class="flex flex-col gap-2 text-sm text-sage-200">
+			<h2 class="mb-1 font-display text-lg text-cream-100">Visítanos</h2>
+			<p>Avenida del Castillo, 131</p>
+			<p>Ponferrada, León · 24401</p>
+			<a href="tel:+34987009022" class="transition-colors hover:text-terracotta-300">
+				+34 987 00 90 22
+			</a>
+			<a href="mailto:administracion@miskukis.com" class="transition-colors hover:text-terracotta-300">
+				administracion@miskukis.com
+			</a>
+		</div>
+
+		<div class="flex flex-col gap-2 text-sm text-sage-200">
+			<h2 class="mb-1 font-display text-lg text-cream-100">Horario</h2>
+			<p>Lunes a domingo</p>
+			<p>7:00 – 14:30</p>
+		</div>
+	</div>
+
+	<div class="border-t border-sage-800 px-4 py-5 text-center text-xs text-sage-300 md:px-6">
+		© {year} Gisela Pastelería Natural. Todos los derechos reservados.
+	</div>
+</footer>

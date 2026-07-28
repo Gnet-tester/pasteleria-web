@@ -1,0 +1,73 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/Logotipo.svg';
+
+const navLinks = [
+	{ href: '/', label: 'Inicio' },
+	{ href: '/carta', label: 'Carta' },
+	{ href: '/#bcb', label: 'BCB' },
+	{ href: '/#opiniones', label: 'Opiniones' },
+	{ href: '#contacto', label: 'Contacto' }
+];
+---
+
+<header class="sticky top-0 z-50 bg-cream-50/90 backdrop-blur border-b border-sage-100">
+	<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
+		<a href="/" class="flex items-center gap-2">
+			<Image src={logo} alt="Gisela Pastelería Natural" width={220} height={98} class="h-10 w-auto md:h-12" />
+		</a>
+
+		<nav class="hidden md:block">
+			<ul class="flex items-center gap-8 font-medium text-sage-700">
+				{
+					navLinks.map((link) => (
+						<li>
+							<a href={link.href} class="transition-colors hover:text-sage-500">
+								{link.label}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</nav>
+
+		<a
+			href="#contacto"
+			class="hidden rounded-full bg-sage-400 px-5 py-2 font-medium text-white transition-colors hover:bg-sage-500 md:inline-block"
+		>
+			Pide tu tarta
+		</a>
+
+		<input type="checkbox" id="menu-toggle" class="peer hidden" />
+		<label
+			for="menu-toggle"
+			aria-label="Abrir menú"
+			class="grid h-10 w-10 cursor-pointer place-items-center rounded-full text-sage-700 hover:bg-sage-100 md:hidden"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-6 w-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+			</svg>
+		</label>
+
+		<nav
+			class="absolute inset-x-0 top-full hidden border-b border-sage-100 bg-cream-50 peer-checked:block md:hidden"
+		>
+			<ul class="flex flex-col gap-1 px-4 py-4 font-medium text-sage-700">
+				{
+					navLinks.map((link) => (
+						<li>
+							<a href={link.href} class="block rounded-lg px-3 py-2 hover:bg-sage-100">
+								{link.label}
+							</a>
+						</li>
+					))
+				}
+				<li>
+					<a href="#contacto" class="mt-2 block rounded-full bg-sage-400 px-3 py-2 text-center text-white hover:bg-sage-500">
+						Pide tu tarta
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
