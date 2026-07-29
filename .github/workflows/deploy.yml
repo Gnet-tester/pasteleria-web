@@ -32,13 +32,12 @@ jobs:
         run: npm run build
 
       - name: Desplegar por SFTP a IONOS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
           server: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          port: ${{ secrets.SFTP_PORT }}
-          protocol: sftp
-          local-dir: ./dist/
-          server-dir: ./
-          dangerous-clean-slate: false
+          local_path: ./dist/*
+          remote_path: ./
+          sftp_only: true
