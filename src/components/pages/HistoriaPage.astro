@@ -1,0 +1,117 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import verrines from '../../assets/Imágenes de ejemplo/foto 348.jpg';
+import { getGoogleReviews } from '../../lib/googlePlaces';
+import { useTranslations, getLocalizedPath, defaultLocale, type Locale } from '../../i18n/utils';
+
+interface Props {
+	lang?: Locale;
+}
+
+const { lang = defaultLocale } = Astro.props;
+const t = useTranslations(lang);
+const reviews = await getGoogleReviews();
+---
+
+<Layout lang={lang} title={t('meta.historia.title')} description={t('meta.historia.description')}>
+	<Header lang={lang} />
+
+	<main>
+		<!-- Hero -->
+		<section class="bg-gradient-to-b from-terracotta-50 via-cream-100 to-cream-50 py-20 text-center md:py-28">
+			<div data-reveal class="mx-auto max-w-3xl px-4 md:px-6">
+				<span class="text-xs font-semibold uppercase tracking-[0.2em] text-sage-500">
+					{t('historiaPage.location')}
+				</span>
+				<h1
+					class="mt-4 font-display text-4xl leading-tight text-sage-900 md:text-6xl [&_em]:text-terracotta-400 [&_em]:italic"
+					set:html={t('historiaPage.title')}
+				/>
+				<p class="mx-auto mt-6 max-w-xl text-lg text-sage-700">
+					{t('historiaPage.heroSubtitle')}
+				</p>
+			</div>
+		</section>
+
+		<!-- Story -->
+		<section class="bg-cream-50 py-16 md:py-24">
+			<div class="mx-auto grid max-w-6xl items-start gap-10 px-4 md:grid-cols-2 md:gap-16 md:px-6">
+				<div data-reveal class="flex flex-col gap-5">
+					<div>
+						<span class="text-sm font-medium uppercase tracking-widest text-terracotta-500">
+							{t('historia.eyebrow')}
+						</span>
+						<h2
+							class="mt-1 max-w-md border-b-2 border-terracotta-200 pb-5 font-display text-3xl leading-tight text-sage-900 md:text-4xl [&_em]:text-terracotta-400 [&_em]:italic"
+							set:html={t('historiaPage.title')}
+						/>
+					</div>
+
+					<p class="text-sage-700">{t('historiaPage.p1')}</p>
+					<p class="text-sage-700">{t('historiaPage.p2')}</p>
+
+					<blockquote class="border-l-2 border-terracotta-300 pl-5 font-display text-xl italic text-terracotta-600">
+						{t('historiaPage.quote')}
+					</blockquote>
+
+					<p class="text-sage-700">{t('historiaPage.p3')}</p>
+				</div>
+
+				<div data-reveal class="relative mx-auto w-full max-w-md md:sticky md:top-24">
+					<div class="overflow-hidden rounded-2xl border-4 border-white shadow-lg">
+						<Image
+							src={verrines}
+							alt={t('historiaPage.imageAlt')}
+							width={800}
+							widths={[480, 600, 800]}
+							sizes="(min-width: 768px) 40vw, 90vw"
+							quality={70}
+							class="h-full w-full object-cover"
+						/>
+					</div>
+
+					{
+						reviews && (
+							<div class="absolute -bottom-6 -right-6 flex flex-col items-center gap-0.5 rounded-2xl bg-terracotta-400 px-5 py-3 text-center text-white shadow-lg">
+								<span class="font-display text-2xl leading-none">
+									★ {reviews.rating.toFixed(1)}
+								</span>
+								<span class="text-[0.65rem] font-semibold uppercase tracking-wider">
+									{t('historiaPage.reviewsLabel')}
+								</span>
+							</div>
+						)
+					}
+				</div>
+			</div>
+		</section>
+
+		<!-- Coming soon -->
+		<section class="bg-cream-100 py-20 text-center md:py-28">
+			<div data-reveal class="mx-auto max-w-2xl px-4 md:px-6">
+				<span
+					class="inline-flex items-center gap-2 rounded-full border border-terracotta-200 bg-cream-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-terracotta-500"
+				>
+					{t('historiaPage.comingSoonBadge')}
+				</span>
+				<h2 class="mt-6 font-display text-3xl leading-tight text-sage-900 md:text-4xl">
+					{t('historiaPage.comingSoonTitle')}
+				</h2>
+				<p class="mx-auto mt-6 max-w-xl text-sage-700">
+					{t('historiaPage.comingSoonText')}
+				</p>
+				<a
+					href={getLocalizedPath('/', lang)}
+					class="ripple mt-8 inline-flex items-center gap-2 rounded-full bg-terracotta-400 px-8 py-3 font-medium text-white transition-colors hover:bg-terracotta-500"
+				>
+					← {t('historiaPage.backToSite')}
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<Footer lang={lang} />
+</Layout>

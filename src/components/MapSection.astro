@@ -1,0 +1,44 @@
+---
+import { useTranslations, defaultLocale, type Locale } from '../i18n/utils';
+
+interface Props {
+	lang?: Locale;
+}
+
+const { lang = defaultLocale } = Astro.props;
+const t = useTranslations(lang);
+
+const mapEmbedSrc =
+	'https://www.google.com/maps?q=Gisela+Pasteler%C3%ADa+Natural,Avenida+del+Castillo+131,Ponferrada&output=embed';
+const mapsUrl =
+	'https://www.google.com/maps/search/?api=1&query=Gisela+Pasteler%C3%ADa+Natural&query_place_id=ChIJv5M20fK6MA0RAhwG-SX19Qo';
+---
+
+<section class="bg-cream-100 py-16 md:py-24">
+	<div class="mx-auto max-w-6xl px-4 md:px-6">
+		<div data-reveal class="relative overflow-hidden rounded-2xl shadow-md">
+			<iframe
+				src={mapEmbedSrc}
+				class="pointer-events-none h-[400px] w-full md:h-[480px]"
+				style="border:0"
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+				title={t('map.ariaLabel')}
+			></iframe>
+
+			<a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="absolute inset-0" aria-label={t('map.ariaLabel')}>
+				<span
+					class="absolute bottom-6 left-6 right-6 max-w-xs rounded-2xl bg-white p-5 shadow-lg sm:right-auto"
+				>
+					<span class="block font-display text-xl text-sage-900">{t('map.visitanos')}</span>
+					<span class="mt-1 block text-sm text-sage-700">
+						Avenida del Castillo, 131 · Ponferrada, León
+					</span>
+					<span class="mt-2 inline-block text-sm font-medium text-terracotta-500">
+						{t('map.cta')}
+					</span>
+				</span>
+			</a>
+		</div>
+	</div>
+</section>

@@ -1,19 +1,25 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../assets/Logotipo.svg';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { useTranslations, getLocalizedPath, getPathWithoutLocale, defaultLocale, type Locale } from '../i18n/utils';
 
-const navLinks = [
-	{ href: '/', label: 'Inicio' },
-	{ href: '/carta', label: 'Carta' },
-	{ href: '/#bcb', label: 'BCB' },
-	{ href: '/#opiniones', label: 'Opiniones' },
-	{ href: '#contacto', label: 'Contacto' }
-];
+interface Props {
+	lang?: Locale;
+}
+
+const { lang = defaultLocale } = Astro.props;
+const t = useTranslations(lang);
+const canonicalPath = getPathWithoutLocale(Astro.url.pathname);
+
+const navLinks = [{ href: getLocalizedPath('/bcb', lang), label: t('nav.bcb') }];
+const homeHref = getLocalizedPath('/', lang);
+const cartaHref = getLocalizedPath('/carta', lang);
 ---
 
 <header class="sticky top-0 z-50 bg-cream-50/90 backdrop-blur border-b border-sage-100">
 	<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-		<a href="/" class="flex items-center gap-2">
+		<a href={homeHref} class="flex items-center gap-2">
 			<Image src={logo} alt="Gisela Pastelería Natural" width={220} height={98} class="h-10 w-auto md:h-12" />
 		</a>
 
@@ -31,17 +37,20 @@ const navLinks = [
 			</ul>
 		</nav>
 
-		<a
-			href="#contacto"
-			class="hidden rounded-full bg-sage-400 px-5 py-2 font-medium text-white transition-colors hover:bg-sage-500 md:inline-block"
-		>
-			Pide tu tarta
-		</a>
+		<div class="hidden items-center gap-3 md:flex">
+			<LanguageSwitcher lang={lang} path={canonicalPath} />
+			<a
+				href={cartaHref}
+				class="ripple rounded-full bg-sage-400 px-5 py-2 font-medium text-white transition-colors hover:bg-sage-500"
+			>
+				{t('nav.carta')}
+			</a>
+		</div>
 
 		<input type="checkbox" id="menu-toggle" class="peer hidden" />
 		<label
 			for="menu-toggle"
-			aria-label="Abrir menú"
+			aria-label={t('aria.openMenu')}
 			class="grid h-10 w-10 cursor-pointer place-items-center rounded-full text-sage-700 hover:bg-sage-100 md:hidden"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-6 w-6">
@@ -62,9 +71,12 @@ const navLinks = [
 						</li>
 					))
 				}
+				<li class="px-3 py-2">
+					<LanguageSwitcher lang={lang} path={canonicalPath} />
+				</li>
 				<li>
-					<a href="#contacto" class="mt-2 block rounded-full bg-sage-400 px-3 py-2 text-center text-white hover:bg-sage-500">
-						Pide tu tarta
+					<a href={cartaHref} class="ripple mt-2 block rounded-full bg-sage-400 px-3 py-2 text-center text-white hover:bg-sage-500">
+						{t('nav.carta')}
 					</a>
 				</li>
 			</ul>

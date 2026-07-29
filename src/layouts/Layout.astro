@@ -1,7 +1,11 @@
 ---
 import '../styles/global.css';
+import { Image } from 'astro:assets';
+import logo from '../assets/Logotipo.svg';
+import { locales, defaultLocale, getPathWithoutLocale, getLocalizedPath, useTranslations, type Locale } from '../i18n/utils';
 
 interface Props {
+	lang?: Locale;
 	title?: string;
 	description?: string;
 	image?: string;
@@ -9,6 +13,7 @@ interface Props {
 }
 
 const {
+	lang = defaultLocale,
 	title = 'Gisela Pastelería Natural | Pastelería artesanal en Ponferrada',
 	description = 'Pastelería natural y artesanal en Ponferrada, León. Tartas, dulces y repostería casera elaborados cada día con ingredientes naturales.',
 	image = '/og-image.png',
@@ -17,6 +22,22 @@ const {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImageURL = new URL(image, Astro.site);
+
+const ogLocales: Record<Locale, string> = {
+	es: 'es_ES',
+	en: 'en_US',
+	de: 'de_DE',
+	fr: 'fr_FR',
+	ko: 'ko_KR',
+	zh: 'zh_CN'
+};
+
+const t = useTranslations(lang);
+const canonicalPath = getPathWithoutLocale(Astro.url.pathname);
+const alternateLinks = locales.map((locale) => ({
+	locale,
+	href: new URL(getLocalizedPath(canonicalPath, locale), Astro.site).toString()
+}));
 
 const businessSchema = {
 	'@context': 'https://schema.org',
@@ -54,7 +75,7 @@ const businessSchema = {
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -72,10 +93,22 @@ const businessSchema = {
 		<link rel="canonical" href={canonicalURL} />
 		{noindex && <meta name="robots" content="noindex, nofollow" />}
 
+		<!-- hreflang alternates -->
+		{
+			alternateLinks.map(({ locale, href }) => (
+				<link rel="alternate" hreflang={locale} href={href} />
+			))
+		}
+		<link
+			rel="alternate"
+			hreflang="x-default"
+			href={new URL(getLocalizedPath(canonicalPath, defaultLocale), Astro.site).toString()}
+		/>
+
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Gisela Pastelería Natural" />
-		<meta property="og:locale" content="es_ES" />
+		<meta property="og:locale" content={ogLocales[lang]} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonicalURL} />
@@ -99,7 +132,65 @@ const businessSchema = {
 		<script type="application/ld+json" set:html={JSON.stringify(businessSchema)} is:inline />
 	</head>
 	<body>
+		<div id="preloader">
+			<Image
+				src={logo}
+				alt="Gisela Pastelería Natural"
+				width={280}
+				height={125}
+				loading="eager"
+				fetchpriority="high"
+				class="h-16 w-auto sm:h-20"
+			/>
+			<p class="font-display italic text-lg text-terracotta-600 sm:text-xl">{t('preloader.welcome')}</p>
+		</div>
+
 		<slot />
+		<script>
+			const preloader = document.getElementById('preloader');
+			if (preloader) {
+				const hidePreloader = () => {
+					preloader.classList.add('preloader-hidden');
+					setTimeout(() => preloader.remove(), 600);
+				};
+				if (document.readyState === 'complete') {
+					hidePreloader();
+				} else {
+					window.addEventListener('load', hidePreloader);
+					setTimeout(hidePreloader, 2500);
+				}
+			}
+
+			const revealables = document.querySelectorAll('[data-reveal]');
+			const observer = new IntersectionObserver(
+				(entries) => {
+					for (const entry of entries) {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('is-visible');
+							observer.unobserve(entry.target);
+						}
+					}
+				},
+				{ threshold: 0.15 }
+			);
+			revealables.forEach((el) => observer.observe(el));
+
+			document.addEventListener('click', (event) => {
+				const target = (event.target as HTMLElement).closest<HTMLElement>('.ripple');
+				if (!target) return;
+
+				const rect = target.getBoundingClientRect();
+				const size = Math.max(rect.width, rect.height);
+				const span = document.createElement('span');
+				span.className = 'ripple-effect';
+				span.style.width = span.style.height = `${size}px`;
+				span.style.left = `${event.clientX - rect.left - size / 2}px`;
+				span.style.top = `${event.clientY - rect.top - size / 2}px`;
+
+				target.appendChild(span);
+				span.addEventListener('animationend', () => span.remove());
+			});
+		</script>
 	</body>
 </html>
 

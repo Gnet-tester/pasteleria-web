@@ -1,0 +1,44 @@
+name: Deploy a IONOS
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Compilar el sitio
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          GOOGLE_PLACE_ID: ${{ secrets.GOOGLE_PLACE_ID }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          PUBLIC_STRIPE_PUBLISHABLE_KEY: ${{ secrets.PUBLIC_STRIPE_PUBLISHABLE_KEY }}
+          PUBLIC_STRIPE_BCB_LINK_SENCILLO: ${{ secrets.PUBLIC_STRIPE_BCB_LINK_SENCILLO }}
+          PUBLIC_STRIPE_BCB_LINK_COMPLETO: ${{ secrets.PUBLIC_STRIPE_BCB_LINK_COMPLETO }}
+          PUBLIC_STRIPE_BCB_LINK_PREMIUM: ${{ secrets.PUBLIC_STRIPE_BCB_LINK_PREMIUM }}
+        run: npm run build
+
+      - name: Desplegar por SFTP a IONOS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          port: ${{ secrets.SFTP_PORT }}
+          protocol: sftp
+          local-dir: ./dist/
+          server-dir: ./
+          dangerous-clean-slate: false

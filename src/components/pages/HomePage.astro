@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Welcome from '../../components/Welcome.astro';
+import Historia from '../../components/Historia.astro';
+import Especialidades from '../../components/Especialidades.astro';
+import BCB from '../../components/BCB.astro';
+import Reviews from '../../components/Reviews.astro';
+import MapSection from '../../components/MapSection.astro';
+import Footer from '../../components/Footer.astro';
+import { useTranslations, defaultLocale, type Locale } from '../../i18n/utils';
+
+interface Props {
+	lang?: Locale;
+}
+
+const { lang = defaultLocale } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<Layout lang={lang} title={t('meta.home.title')} description={t('meta.home.description')}>
+	<Header lang={lang} />
+	<Welcome lang={lang} />
+	<Historia lang={lang} />
+	<Especialidades lang={lang} />
+	<BCB lang={lang} />
+	<Reviews lang={lang} />
+	<MapSection lang={lang} />
+	<Footer lang={lang} />
+</Layout>
