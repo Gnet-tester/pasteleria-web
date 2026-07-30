@@ -29,6 +29,7 @@ jobs:
           PUBLIC_STRIPE_BCB_LINK_SENCILLO: ${{ secrets.PUBLIC_STRIPE_BCB_LINK_SENCILLO }}
           PUBLIC_STRIPE_BCB_LINK_COMPLETO: ${{ secrets.PUBLIC_STRIPE_BCB_LINK_COMPLETO }}
           PUBLIC_STRIPE_BCB_LINK_PREMIUM: ${{ secrets.PUBLIC_STRIPE_BCB_LINK_PREMIUM }}
+          PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.PUBLIC_GA_MEASUREMENT_ID }}
         run: npm run build
 
       - name: Desplegar por SFTP a IONOS

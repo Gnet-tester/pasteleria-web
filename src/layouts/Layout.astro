@@ -32,6 +32,8 @@ const ogLocales: Record<Locale, string> = {
 	it: 'it_IT'
 };
 
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+
 const canonicalPath = getPathWithoutLocale(Astro.url.pathname);
 const alternateLinks = locales.map((locale) => ({
 	locale,
@@ -129,6 +131,26 @@ const businessSchema = {
 
 		<!-- JSON-LD: Bakery / LocalBusiness -->
 		<script type="application/ld+json" set:html={JSON.stringify(businessSchema)} is:inline />
+
+		<!-- Google Analytics 4 -->
+		{
+			gaMeasurementId && (
+				<>
+					<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
+					<script
+						is:inline
+						define:vars={{ gaMeasurementId }}
+					>
+						window.dataLayer = window.dataLayer || [];
+						function gtag() {
+							dataLayer.push(arguments);
+						}
+						gtag('js', new Date());
+						gtag('config', gaMeasurementId);
+					</script>
+				</>
+			)
+		}
 	</head>
 	<body>
 		<slot />

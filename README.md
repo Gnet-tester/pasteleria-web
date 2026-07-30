@@ -58,6 +58,7 @@ El despliegue es automático: cada `push` a `main` dispara el workflow [`.github
 - `GOOGLE_PLACES_API_KEY`, `GOOGLE_PLACE_ID`
 - `STRIPE_SECRET_KEY`, `PUBLIC_STRIPE_PUBLISHABLE_KEY`
 - `PUBLIC_STRIPE_BCB_LINK_SENCILLO`, `PUBLIC_STRIPE_BCB_LINK_COMPLETO`, `PUBLIC_STRIPE_BCB_LINK_PREMIUM`
+- `PUBLIC_GA_MEASUREMENT_ID` (ID de medición de Google Analytics 4, formato `G-XXXXXXXXXX`)
 
 Si el dominio en IONOS no apunta a la raíz del espacio web, ajusta `server-dir` en `deploy.yml`.
 
