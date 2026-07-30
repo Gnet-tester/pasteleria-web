@@ -75,7 +75,7 @@ const reviews = await getGoogleReviews();
 
 					{
 						reviews && (
-							<div class="absolute -bottom-6 -right-6 flex flex-col items-center gap-0.5 rounded-2xl bg-terracotta-400 px-5 py-3 text-center text-white shadow-lg">
+							<div class="absolute bottom-2 right-2 flex flex-col items-center gap-0.5 rounded-2xl bg-terracotta-400 px-5 py-3 text-center text-white shadow-lg sm:-bottom-6 sm:-right-6">
 								<span class="font-display text-2xl leading-none">
 									★ {reviews.rating.toFixed(1)}
 								</span>

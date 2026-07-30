@@ -1,4 +1,4 @@
-export const locales = ['es', 'en', 'de', 'fr', 'ko', 'zh'] as const;
+export const locales = ['es', 'en', 'de', 'fr', 'pt', 'it', 'ko', 'zh'] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = 'es';
 
@@ -7,13 +7,14 @@ export const localeNames: Record<Locale, string> = {
 	en: 'English',
 	de: 'Deutsch',
 	fr: 'Français',
+	pt: 'Português',
+	it: 'Italiano',
 	ko: '한국어',
 	zh: '中文'
 };
 
 export const ui: Record<Locale, Record<string, string>> = {
 	es: {
-		'preloader.welcome': 'Bienvenido a nuestra pastelería',
 		'nav.bcb': 'BCB',
 		'nav.carta': 'Carta',
 		'aria.openMenu': 'Abrir menú',
@@ -29,7 +30,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historia.eyebrow': 'Nuestra historia',
 		'historia.title': 'Un sueño hecho realidad desde 2010',
 		'historia.p1':
-			'En 2010 abrimos "Gisela" y hoy nos hemos trasladado a las puertas de nuestro castillo para invitarte a nuestra casa, tomarte un buen desayuno y disfrutar sin prisas de algo rico, real y único.',
+			'En 2010 abrimos "Gisela" y ya hace más de un año que nos trasladamos a las puertas de nuestro castillo para invitarte a nuestra casa, tomarte un buen desayuno y disfrutar sin prisas de algo rico, real y único.',
 		'historia.p2':
 			'Trabajamos cada día con ingredientes honestos y, siempre que podemos, de kilómetro cero: pan de Panadería Álex, café de especialidad Bonarte y las infusiones de La Tetera Azúl.',
 		'historia.badge1': 'La felicidad se come',
@@ -49,6 +50,12 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.item3.desc': 'Blend Bonarte, preparado como a ti te guste.',
 		'especialidades.item3.alt':
 			'Imagen de ejemplo (placeholder, sustituir por foto real de café de especialidad)',
+
+		'especialidadesPage.intro':
+			'Desde nuestros dulces horneados cada día hasta cajas para regalar y café de especialidad: esto es lo que no te puedes perder cuando nos visites.',
+		'especialidadesPage.ctaTitle': '¿Te apetece ver toda la carta?',
+		'especialidadesPage.ctaText':
+			'Descubre todos nuestros dulces, tartas y salados en nuestra carta completa.',
 
 		'bcbTeaser.eyebrow': 'Para peregrinos del Camino de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -106,6 +113,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'meta.carta.title': 'Carta | Gisela Pastelería Natural',
 		'meta.carta.description':
 			'Consulta la carta de Gisela Pastelería Natural: tartas, dulces, desayunos y bebidas elaborados a diario en nuestro obrador de Ponferrada.',
+		'meta.especialidades.title': 'Especialidades | Gisela Pastelería Natural',
+		'meta.especialidades.description':
+			'Descubre nuestros dulces artesanales, cajas para regalar y café de especialidad en Gisela Pastelería Natural, Ponferrada.',
 		'meta.historia.title': 'Nuestra historia | Gisela Pastelería Natural',
 		'meta.historia.description':
 			'Conoce la historia de Gisela Pastelería Natural, un sueño hecho realidad desde 2010 en Ponferrada.',
@@ -130,7 +140,6 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historiaPage.imageAlt': 'Selección de dulces de Gisela Pastelería Natural'
 	},
 	en: {
-		'preloader.welcome': 'Welcome to our bakery',
 		'nav.bcb': 'BCB',
 		'nav.carta': 'Menu',
 		'aria.openMenu': 'Open menu',
@@ -146,7 +155,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historia.eyebrow': 'Our story',
 		'historia.title': 'A dream come true since 2010',
 		'historia.p1':
-			'In 2010 we opened "Gisela" and today we\'ve moved to the gates of our castle, to invite you into our home, enjoy a good breakfast and, without rushing, something delicious, real and unique.',
+			'In 2010 we opened "Gisela" and it\'s now been over a year since we moved to the gates of our castle, to invite you into our home, enjoy a good breakfast and, without rushing, something delicious, real and unique.',
 		'historia.p2':
 			'We work every day with honest ingredients and, whenever we can, zero-kilometre ones: bread from Panadería Álex, speciality coffee from Bonarte, and infusions from La Tetera Azúl.',
 		'historia.badge1': 'Happiness is edible',
@@ -165,6 +174,12 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.item3.title': 'Speciality coffee',
 		'especialidades.item3.desc': 'Bonarte blend, made just how you like it.',
 		'especialidades.item3.alt': 'Example image (placeholder, to be replaced with a real speciality coffee photo)',
+
+		'especialidadesPage.intro':
+			"From sweets baked fresh every day to gift boxes and speciality coffee: this is what you can't miss when you visit us.",
+		'especialidadesPage.ctaTitle': 'Want to see the full menu?',
+		'especialidadesPage.ctaText':
+			'Discover all our sweets, cakes and savoury treats in our full menu.',
 
 		'bcbTeaser.eyebrow': 'For pilgrims on the Camino de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -222,6 +237,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'meta.carta.title': 'Menu | Gisela Pastelería Natural',
 		'meta.carta.description':
 			"Check out Gisela Pastelería Natural's menu: cakes, sweets, breakfasts and drinks made fresh every day in our bakery in Ponferrada.",
+		'meta.especialidades.title': 'Specialities | Gisela Pastelería Natural',
+		'meta.especialidades.description':
+			'Discover our handmade sweets, gift boxes and speciality coffee at Gisela Pastelería Natural, Ponferrada.',
 		'meta.historia.title': 'Our story | Gisela Pastelería Natural',
 		'meta.historia.description':
 			'Discover the story of Gisela Pastelería Natural, a dream come true since 2010 in Ponferrada.',
@@ -246,7 +264,6 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historiaPage.imageAlt': 'Selection of sweets from Gisela Pastelería Natural'
 	},
 	de: {
-		'preloader.welcome': 'Willkommen in unserer Bäckerei',
 		'nav.bcb': 'BCB',
 		'nav.carta': 'Speisekarte',
 		'aria.openMenu': 'Menü öffnen',
@@ -262,7 +279,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historia.eyebrow': 'Unsere Geschichte',
 		'historia.title': 'Ein Traum, der seit 2010 wahr wurde',
 		'historia.p1':
-			'2010 eröffneten wir "Gisela" und heute sind wir an die Tore unserer Burg umgezogen, um dich zu uns einzuladen, ein gutes Frühstück zu genießen und dir ohne Eile etwas Leckeres, Echtes und Einzigartiges zu gönnen.',
+			'2010 eröffneten wir "Gisela" und vor mittlerweile über einem Jahr sind wir an die Tore unserer Burg umgezogen, um dich zu uns einzuladen, ein gutes Frühstück zu genießen und dir ohne Eile etwas Leckeres, Echtes und Einzigartiges zu gönnen.',
 		'historia.p2':
 			'Wir arbeiten jeden Tag mit ehrlichen und, wann immer möglich, regionalen Zutaten: Brot von Panadería Álex, Spezialitätenkaffee von Bonarte und Aufgüsse von La Tetera Azúl.',
 		'historia.badge1': 'Glück kann man essen',
@@ -283,6 +300,12 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.item3.desc': 'Bonarte-Blend, zubereitet ganz nach deinem Geschmack.',
 		'especialidades.item3.alt':
 			'Beispielbild (Platzhalter, wird durch ein echtes Foto vom Spezialitätenkaffee ersetzt)',
+
+		'especialidadesPage.intro':
+			'Von täglich frisch gebackenen Süßigkeiten bis hin zu Geschenkboxen und Spezialitätenkaffee: Das solltest du bei deinem Besuch nicht verpassen.',
+		'especialidadesPage.ctaTitle': 'Möchtest du die ganze Karte sehen?',
+		'especialidadesPage.ctaText':
+			'Entdecke all unsere Süßigkeiten, Torten und herzhaften Köstlichkeiten in unserer vollständigen Karte.',
 
 		'bcbTeaser.eyebrow': 'Für Pilger auf dem Jakobsweg',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -340,6 +363,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'meta.carta.title': 'Speisekarte | Gisela Pastelería Natural',
 		'meta.carta.description':
 			'Entdecke die Karte von Gisela Pastelería Natural: Torten, Süßigkeiten, Frühstück und Getränke, täglich frisch in unserer Backstube in Ponferrada.',
+		'meta.especialidades.title': 'Spezialitäten | Gisela Pastelería Natural',
+		'meta.especialidades.description':
+			'Entdecke unsere handgemachten Süßigkeiten, Geschenkboxen und Spezialitätenkaffee bei Gisela Pastelería Natural in Ponferrada.',
 		'meta.historia.title': 'Unsere Geschichte | Gisela Pastelería Natural',
 		'meta.historia.description':
 			'Entdecke die Geschichte von Gisela Pastelería Natural, ein Traum, der seit 2010 in Ponferrada wahr wurde.',
@@ -364,7 +390,6 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historiaPage.imageAlt': 'Auswahl an Süßigkeiten von Gisela Pastelería Natural'
 	},
 	fr: {
-		'preloader.welcome': 'Bienvenue dans notre pâtisserie',
 		'nav.bcb': 'BCB',
 		'nav.carta': 'Carte',
 		'aria.openMenu': 'Ouvrir le menu',
@@ -380,7 +405,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historia.eyebrow': 'Notre histoire',
 		'historia.title': 'Un rêve devenu réalité depuis 2010',
 		'historia.p1':
-			'En 2010, nous avons ouvert "Gisela" et aujourd\'hui nous nous sommes installés aux portes de notre château pour vous inviter chez nous, prendre un bon petit-déjeuner et profiter, sans vous presser, de quelque chose de délicieux, vrai et unique.',
+			'En 2010, nous avons ouvert "Gisela" et cela fait maintenant plus d\'un an que nous nous sommes installés aux portes de notre château pour vous inviter chez nous, prendre un bon petit-déjeuner et profiter, sans vous presser, de quelque chose de délicieux, vrai et unique.',
 		'historia.p2':
 			'Nous travaillons chaque jour avec des ingrédients honnêtes et, autant que possible, en circuit court : le pain de Panadería Álex, le café de spécialité de Bonarte et les infusions de La Tetera Azúl.',
 		'historia.badge1': 'Le bonheur, ça se mange',
@@ -401,6 +426,12 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.item3.desc': "Mélange Bonarte, préparé comme vous l'aimez.",
 		'especialidades.item3.alt':
 			"Image d'exemple (temporaire, à remplacer par une vraie photo de café de spécialité)",
+
+		'especialidadesPage.intro':
+			"Des douceurs cuites chaque jour aux coffrets cadeaux et au café de spécialité : voici ce qu'il ne faut pas manquer lors de votre visite.",
+		'especialidadesPage.ctaTitle': 'Envie de voir toute la carte ?',
+		'especialidadesPage.ctaText':
+			'Découvrez toutes nos douceurs, gâteaux et salés dans notre carte complète.',
 
 		'bcbTeaser.eyebrow': 'Pour les pèlerins du Chemin de Saint-Jacques',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -458,6 +489,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'meta.carta.title': 'Carte | Gisela Pastelería Natural',
 		'meta.carta.description':
 			'Découvrez la carte de Gisela Pastelería Natural : gâteaux, douceurs, petits-déjeuners et boissons élaborés chaque jour dans notre atelier à Ponferrada.',
+		'meta.especialidades.title': 'Spécialités | Gisela Pastelería Natural',
+		'meta.especialidades.description':
+			'Découvrez nos douceurs artisanales, nos coffrets cadeaux et notre café de spécialité chez Gisela Pastelería Natural, à Ponferrada.',
 		'meta.historia.title': 'Notre histoire | Gisela Pastelería Natural',
 		'meta.historia.description':
 			'Découvrez l\'histoire de Gisela Pastelería Natural, un rêve devenu réalité depuis 2010 à Ponferrada.',
@@ -482,7 +516,6 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historiaPage.imageAlt': 'Sélection de douceurs de Gisela Pastelería Natural'
 	},
 	ko: {
-		'preloader.welcome': '저희 베이커리에 오신 것을 환영합니다',
 		'nav.bcb': 'BCB',
 		'nav.carta': '메뉴',
 		'aria.openMenu': '메뉴 열기',
@@ -498,7 +531,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historia.eyebrow': '우리의 이야기',
 		'historia.title': '2010년부터 이어온 꿈',
 		'historia.p1':
-			'2010년, 우리는 "Gisela"를 열었고 지금은 성문 앞으로 자리를 옮겨 여러분을 저희 집으로 초대합니다. 좋은 아침 식사를 즐기고, 서두르지 않고 맛있고 진짜인, 특별한 무언가를 만끽하세요.',
+			'2010년, 우리는 "Gisela"를 열었고 1년도 더 전에 성문 앞으로 자리를 옮겨 여러분을 저희 집으로 초대합니다. 좋은 아침 식사를 즐기고, 서두르지 않고 맛있고 진짜인, 특별한 무언가를 만끽하세요.',
 		'historia.p2':
 			'저희는 매일 정직한 재료로, 가능한 한 지역 재료로 작업합니다: Panadería Álex의 빵, Bonarte의 스페셜티 커피, La Tetera Azúl의 차.',
 		'historia.badge1': '행복은 먹는 것',
@@ -517,6 +550,11 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.item3.title': '스페셜티 커피',
 		'especialidades.item3.desc': '보나르테 블렌드, 원하는 대로 즐기세요.',
 		'especialidades.item3.alt': '예시 이미지 (임시, 추후 실제 스페셜티 커피 사진으로 교체 예정)',
+
+		'especialidadesPage.intro':
+			'매일 갓 구운 디저트부터 선물용 박스, 스페셜티 커피까지. 방문하실 때 놓치면 안 될 것들입니다.',
+		'especialidadesPage.ctaTitle': '전체 메뉴를 보고 싶으신가요?',
+		'especialidadesPage.ctaText': '저희의 모든 디저트, 케이크, 짭짤한 메뉴를 전체 메뉴에서 확인하세요.',
 
 		'bcbTeaser.eyebrow': '산티아고 순례길 순례자를 위해',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -572,6 +610,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'meta.carta.title': '메뉴 | Gisela Pastelería Natural',
 		'meta.carta.description':
 			'Gisela Pastelería Natural의 메뉴를 확인하세요: 폰페라다 공방에서 매일 만드는 케이크, 디저트, 아침 식사, 음료.',
+		'meta.especialidades.title': '스페셜 메뉴 | Gisela Pastelería Natural',
+		'meta.especialidades.description':
+			'폰페라다의 Gisela Pastelería Natural에서 매일 구운 디저트, 선물용 박스, 스페셜티 커피를 만나보세요.',
 		'meta.historia.title': '우리의 이야기 | Gisela Pastelería Natural',
 		'meta.historia.description': '2010년부터 폰페라다에서 이어온 Gisela Pastelería Natural의 이야기를 만나보세요.',
 
@@ -594,7 +635,6 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historiaPage.imageAlt': 'Gisela Pastelería Natural의 디저트 모음'
 	},
 	zh: {
-		'preloader.welcome': '欢迎光临我们的烘焙坊',
 		'nav.bcb': 'BCB',
 		'nav.carta': '菜单',
 		'aria.openMenu': '打开菜单',
@@ -610,7 +650,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'historia.eyebrow': '我们的故事',
 		'historia.title': '自2010年起梦想成真',
 		'historia.p1':
-			'2010年我们开设了"Gisela"，如今我们搬到了城堡门前，邀请您走进我们的家，享用一顿美味的早餐，不慌不忙地品味真实而独特的美味。',
+			'2010年我们开设了"Gisela"，一年多前我们搬到了城堡门前，邀请您走进我们的家，享用一顿美味的早餐，不慌不忙地品味真实而独特的美味。',
 		'historia.p2':
 			'我们每天都用诚实的食材工作，并尽可能选用本地食材：来自Panadería Álex的面包、Bonarte的精品咖啡，以及La Tetera Azúl的花草茶。',
 		'historia.badge1': '幸福是可以吃的',
@@ -629,6 +669,11 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.item3.title': '精品咖啡',
 		'especialidades.item3.desc': 'Bonarte拼配咖啡，按您喜欢的方式冲泡。',
 		'especialidades.item3.alt': '示例图片（占位图，稍后将替换为真实的精品咖啡照片）',
+
+		'especialidadesPage.intro':
+			'从每日新鲜出炉的甜点，到送礼礼盒和精品咖啡：这些都是您来访时不容错过的。',
+		'especialidadesPage.ctaTitle': '想看看完整菜单吗？',
+		'especialidadesPage.ctaText': '在我们的完整菜单中探索所有甜点、蛋糕和咸点。',
 
 		'bcbTeaser.eyebrow': '为圣地亚哥朝圣者',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -683,6 +728,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'meta.carta.title': '菜单 | Gisela Pastelería Natural',
 		'meta.carta.description':
 			'查看Gisela天然烘焙坊的菜单：每天在蓬费拉达工坊制作的蛋糕、甜点、早餐和饮品。',
+		'meta.especialidades.title': '特色推荐 | Gisela Pastelería Natural',
+		'meta.especialidades.description':
+			'在蓬费拉达的Gisela天然烘焙坊，探索我们每日新鲜制作的甜点、礼盒和精品咖啡。',
 		'meta.historia.title': '我们的故事 | Gisela Pastelería Natural',
 		'meta.historia.description': '了解Gisela天然烘焙坊的故事，自2010年起在蓬费拉达梦想成真。',
 
@@ -703,5 +751,255 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'在这里，您将了解Gisela的完整故事：她作为英语、德语和中文认证翻译官的岁月，她决定放下文字、投身烘焙坊的那一刻，以及她与母亲如何共同打造出蓬费拉达应得的这家烘焙坊。这是一段关于勇气、酸种面团和对天然食材深深热爱的故事。',
 		'historiaPage.backToSite': '返回网站',
 		'historiaPage.imageAlt': 'Gisela天然烘焙坊的甜点精选'
+	},
+	pt: {
+		'nav.bcb': 'BCB',
+		'nav.carta': 'Menu',
+		'aria.openMenu': 'Abrir menu',
+
+		'hero.badge': 'Pastelaria natural em Ponferrada',
+		'hero.title': 'Momentos doces feitos com ingredientes naturais',
+		'hero.subtitle':
+			'Na Gisela Pastelería Natural elaboramos cada bolo e cada doce de forma artesanal, cuidando a origem dos nossos ingredientes para que possa desfrutar de um sabor autêntico, todos os dias.',
+		'hero.ctaOrder': 'Encomende o seu bolo',
+		'hero.ctaInstagram': 'Siga-nos no Instagram',
+		'hero.scroll': 'Continue a descer',
+
+		'historia.eyebrow': 'A nossa história',
+		'historia.title': 'Um sonho tornado realidade desde 2010',
+		'historia.p1':
+			'Em 2010 abrimos a "Gisela" e já lá vai mais de um ano desde que nos mudámos para os portões do nosso castelo, para o convidar a entrar em nossa casa, tomar um bom pequeno-almoço e desfrutar, sem pressa, de algo delicioso, real e único.',
+		'historia.p2':
+			'Trabalhamos todos os dias com ingredientes honestos e, sempre que possível, de quilómetro zero: pão da Panadería Álex, café de especialidade da Bonarte e as infusões da La Tetera Azúl.',
+		'historia.badge1': 'A felicidade come-se',
+		'historia.badge2': 'Km 0',
+		'historia.imageAlt': 'Alan, da equipa Gisela, a saborear uma das nossas kukis',
+
+		'especialidades.eyebrow': 'Especialidades',
+		'especialidades.title': 'O que não pode perder',
+		'especialidades.badge': 'Sem conservantes',
+		'especialidades.item1.title': 'Os nossos doces',
+		'especialidades.item1.desc': 'Bolos, brownies e kukis cozidos todos os dias no nosso obrador.',
+		'especialidades.item1.alt': 'Seleção de copos de sobremesa da Gisela Pastelería Natural',
+		'especialidades.item2.title': 'Para oferecer',
+		'especialidades.item2.desc': 'Caixas e cestas para levar um pouco de Gisela para onde quiser.',
+		'especialidades.item2.alt': 'Caixa de kukis da Gisela Pastelería Natural, pronta para oferecer',
+		'especialidades.item3.title': 'Café de especialidade',
+		'especialidades.item3.desc': 'Blend Bonarte, preparado como preferir.',
+		'especialidades.item3.alt':
+			'Imagem de exemplo (temporária, a substituir por uma foto real de café de especialidade)',
+
+		'especialidadesPage.intro':
+			'Desde os doces cozidos todos os dias até às caixas para oferecer e ao café de especialidade: isto é o que não pode perder quando nos visitar.',
+		'especialidadesPage.ctaTitle': 'Apetece-lhe ver a carta completa?',
+		'especialidadesPage.ctaText':
+			'Descubra todos os nossos doces, bolos e salgados na nossa carta completa.',
+
+		'bcbTeaser.eyebrow': 'Para peregrinos do Caminho de Santiago',
+		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
+		'bcbTeaser.text':
+			'Ofereça um pequeno-almoço a um peregrino: a um amigo, a um familiar ou a quem esteja a fazer o Caminho. A pessoa só precisa de passar pela Gisela Pastelería Natural e dizer-nos o seu nome para desfrutar.',
+		'bcbTeaser.cta': 'Descubra o BCB',
+		'bcbTeaser.badge': 'Cozemos para si',
+
+		'bcbPage.title': 'BCB · Buen Camino Breakfast | Gisela Pastelería Natural',
+		'bcbPage.description':
+			'Ofereça um pequeno-almoço a um peregrino do Caminho de Santiago de passagem por Ponferrada. Um projeto da Gisela Pastelería Natural.',
+		'bcbPage.poweredBy': 'Um projeto da Gisela Pastelería Natural',
+		'bcbPage.intro':
+			'Para quem faz o Caminho de Santiago e passa por Ponferrada: um pequeno-almoço a sério para recuperar forças. Ofereça-o a um amigo, a um familiar ou a quem esteja a caminhar — só precisa de passar pela Gisela e dizer-nos o seu nome.',
+		'bcbPage.badge1': 'Bom Caminho',
+		'bcbPage.badge2': 'Pequeno-almoço em Ponferrada',
+		'bcbPage.regalar': 'Oferecer',
+		'bcbPage.proximamente': 'Brevemente',
+		'bcbPage.disclaimer':
+			'Preços orientativos, sujeitos a ajuste. O pequeno-almoço é levantado na nossa loja em Ponferrada.',
+
+		'tier.sencillo.name': 'Simples',
+		'tier.sencillo.desc': 'Café de especialidade + torrada clássica.',
+		'tier.completo.name': 'Completo',
+		'tier.completo.desc': 'Bowl ou torrada especial + bebida + doce artesanal.',
+		'tier.premium.name': 'Premium',
+		'tier.premium.desc': 'Seleção premium + café de especialidade + doce artesanal.',
+
+		'reviews.title': 'O que dizem os nossos clientes',
+		'reviews.fallbackSubtitle': 'Avaliações verificadas do perfil de empresa do Google.',
+		'reviews.countSuffix': 'avaliações no Google',
+		'reviews.fallbackText':
+			'Em breve poderá ver aqui as nossas avaliações reais do Google. Entretanto, pode consultá-las diretamente na nossa ficha de negócio.',
+		'reviews.verMas': 'Ver mais',
+		'reviews.verTodas': 'Ver todas as avaliações no Google',
+
+		'map.visitanos': 'Visite-nos',
+		'map.cta': 'Abrir no Google Maps →',
+		'map.ariaLabel': 'Abrir a localização da Gisela Pastelería Natural no Google Maps',
+
+		'footer.description':
+			'Pastelaria natural e artesanal, feita todos os dias em Ponferrada com ingredientes de qualidade.',
+		'footer.visitanos': 'Visite-nos',
+		'footer.horario': 'Horário',
+		'footer.dias': 'Segunda a domingo',
+		'footer.rights': 'Todos os direitos reservados.',
+
+		'carta.title': 'O nosso menu',
+		'carta.intro':
+			'Tudo o que vê, cheira e saboreia aqui — doce e salgado — é elaborado no nosso próprio obrador, com ingredientes honestos e, sempre que possível, de quilómetro zero. Pergunte à nossa equipa sobre informação de alergénios.',
+
+		'meta.home.title': 'Gisela Pastelería Natural | Pastelaria artesanal em Ponferrada',
+		'meta.home.description':
+			'Pastelaria natural e artesanal em Ponferrada, León. Bolos, doces e pastelaria caseira feitos todos os dias com ingredientes naturais.',
+		'meta.carta.title': 'Menu | Gisela Pastelería Natural',
+		'meta.carta.description':
+			'Consulte o menu da Gisela Pastelería Natural: bolos, doces, pequenos-almoços e bebidas feitos diariamente no nosso obrador em Ponferrada.',
+		'meta.especialidades.title': 'Especialidades | Gisela Pastelería Natural',
+		'meta.especialidades.description':
+			'Descubra os nossos doces artesanais, caixas para oferecer e café de especialidade na Gisela Pastelería Natural, Ponferrada.',
+		'meta.historia.title': 'A nossa história | Gisela Pastelería Natural',
+		'meta.historia.description':
+			'Conheça a história da Gisela Pastelería Natural, um sonho tornado realidade desde 2010 em Ponferrada.',
+
+		'historiaPage.location': 'Gisela Pastelería Natural · Ponferrada, León',
+		'historiaPage.title': 'Uma tradutora que escolheu a <em>pastelaria</em>',
+		'historiaPage.heroSubtitle':
+			'A história de como três idiomas se tornaram o prólogo da melhor pastelaria do Bierzo.',
+		'historiaPage.p1':
+			'Gisela nasceu na Alemanha e construiu uma carreira brilhante como tradutora juramentada de inglês, alemão e chinês. Três idiomas. Três mundos. Mas havia algo que a atraía com mais força do que qualquer palavra: o seu amor pela pastelaria, nascido na cozinha da sua mãe.',
+		'historiaPage.p2':
+			'Decidiu deixar tudo para trás e abriu a Gisela Pastelería Natural com a sua mãe há mais de 16 anos. Desde então não parou de se formar em técnicas de pastelaria de todo o mundo, e construiu uma equipa unida que ela própria descreve como "uma massa mãe: misturados, unidos e a borbulhar de ideias".',
+		'historiaPage.quote': 'Quer saber qual é o nosso ingrediente secreto? É não ter ingredientes secretos.',
+		'historiaPage.p3':
+			'Hoje, cada peça que sai do seu obrador leva ingredientes de quilómetro zero, sem conservantes nem aditivos. Porque a felicidade come-se, e aqui temos a receita.',
+		'historiaPage.reviewsLabel': 'Avaliações do Google',
+		'historiaPage.comingSoonBadge': 'Brevemente',
+		'historiaPage.comingSoonTitle': 'Estamos a preparar algo especial para lhe contar tudo',
+		'historiaPage.comingSoonText':
+			'Aqui encontrará a história completa da Gisela: os seus anos como tradutora juramentada de inglês, alemão e chinês, o momento em que decidiu trocar as palavras pelo obrador, e como, junto com a sua mãe, construíram a pastelaria que Ponferrada merece. Uma história de coragem, massa mãe e muito amor pelo natural.',
+		'historiaPage.backToSite': 'Voltar ao site',
+		'historiaPage.imageAlt': 'Seleção de doces da Gisela Pastelería Natural'
+	},
+	it: {
+		'nav.bcb': 'BCB',
+		'nav.carta': 'Menu',
+		'aria.openMenu': 'Apri il menu',
+
+		'hero.badge': 'Pasticceria naturale a Ponferrada',
+		'hero.title': 'Dolci momenti fatti con ingredienti naturali',
+		'hero.subtitle':
+			'Da Gisela Pastelería Natural realizziamo ogni torta e ogni dolce in modo artigianale, curando l\'origine dei nostri ingredienti affinché tu possa gustare un sapore autentico, ogni giorno.',
+		'hero.ctaOrder': 'Ordina la tua torta',
+		'hero.ctaInstagram': 'Seguici su Instagram',
+		'hero.scroll': 'Continua a scorrere',
+
+		'historia.eyebrow': 'La nostra storia',
+		'historia.title': 'Un sogno diventato realtà dal 2010',
+		'historia.p1':
+			'Nel 2010 abbiamo aperto "Gisela" e ormai da più di un anno ci siamo trasferiti alle porte del nostro castello, per invitarti a casa nostra, gustare una buona colazione e goderti, senza fretta, qualcosa di buono, vero e unico.',
+		'historia.p2':
+			'Lavoriamo ogni giorno con ingredienti onesti e, quando possibile, a chilometro zero: pane di Panadería Álex, caffè speciality di Bonarte e le tisane di La Tetera Azúl.',
+		'historia.badge1': 'La felicità si mangia',
+		'historia.badge2': 'Km 0',
+		'historia.imageAlt': 'Alan, del team Gisela, mentre gusta uno dei nostri kukis',
+
+		'especialidades.eyebrow': 'Specialità',
+		'especialidades.title': 'Quello che non puoi perderti',
+		'especialidades.badge': 'Senza conservanti',
+		'especialidades.item1.title': 'I nostri dolci',
+		'especialidades.item1.desc': 'Torte, brownies e kukis cotti ogni giorno nel nostro laboratorio.',
+		'especialidades.item1.alt': 'Selezione di bicchierini dessert di Gisela Pastelería Natural',
+		'especialidades.item2.title': 'Da regalare',
+		'especialidades.item2.desc': 'Scatole e cesti per portare un po\' di Gisela ovunque tu vada.',
+		'especialidades.item2.alt': 'Scatola di kukis di Gisela Pastelería Natural, pronta da regalare',
+		'especialidades.item3.title': 'Caffè speciality',
+		'especialidades.item3.desc': 'Miscela Bonarte, preparata come preferisci.',
+		'especialidades.item3.alt':
+			"Immagine di esempio (provvisoria, da sostituire con una foto reale del caffè speciality)",
+
+		'especialidadesPage.intro':
+			'Dai dolci sfornati ogni giorno alle scatole da regalo e al caffè speciality: ecco cosa non puoi perderti quando ci vieni a trovare.',
+		'especialidadesPage.ctaTitle': 'Vuoi vedere tutta la carta?',
+		'especialidadesPage.ctaText':
+			'Scopri tutti i nostri dolci, torte e salati nella nostra carta completa.',
+
+		'bcbTeaser.eyebrow': 'Per i pellegrini del Cammino di Santiago',
+		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
+		'bcbTeaser.text':
+			'Regala una colazione a un pellegrino: a un amico, a un familiare o a chi sta percorrendo il Cammino. Basta che passi da Gisela Pastelería Natural e ci dica il suo nome per gustarla.',
+		'bcbTeaser.cta': 'Scopri BCB',
+		'bcbTeaser.badge': 'Cuciniamo per te',
+
+		'bcbPage.title': 'BCB · Buen Camino Breakfast | Gisela Pastelería Natural',
+		'bcbPage.description':
+			'Regala una colazione a un pellegrino del Cammino di Santiago di passaggio a Ponferrada. Un progetto di Gisela Pastelería Natural.',
+		'bcbPage.poweredBy': 'Un progetto di Gisela Pastelería Natural',
+		'bcbPage.intro':
+			'Per chi percorre il Cammino di Santiago e passa da Ponferrada: una vera colazione per ritrovare le energie. Regalala a un amico, a un familiare o a chi sta camminando — basta che passi da Gisela e ci dica il suo nome.',
+		'bcbPage.badge1': 'Buen Camino',
+		'bcbPage.badge2': 'Colazione a Ponferrada',
+		'bcbPage.regalar': 'Regala',
+		'bcbPage.proximamente': 'Prossimamente',
+		'bcbPage.disclaimer':
+			'Prezzi indicativi, soggetti a modifica. La colazione si ritira nel nostro negozio a Ponferrada.',
+
+		'tier.sencillo.name': 'Semplice',
+		'tier.sencillo.desc': 'Caffè speciality + toast classico.',
+		'tier.completo.name': 'Completo',
+		'tier.completo.desc': 'Bowl o toast speciale + bevanda + dolce artigianale.',
+		'tier.premium.name': 'Premium',
+		'tier.premium.desc': 'Selezione premium + caffè speciality + dolce artigianale.',
+
+		'reviews.title': 'Cosa dicono i nostri clienti',
+		'reviews.fallbackSubtitle': 'Recensioni verificate del profilo Google Business.',
+		'reviews.countSuffix': 'recensioni su Google',
+		'reviews.fallbackText':
+			'Presto potrai vedere qui le nostre vere recensioni Google. Nel frattempo, puoi consultarle direttamente sulla nostra scheda attività.',
+		'reviews.verMas': 'Leggi di più',
+		'reviews.verTodas': 'Vedi tutte le recensioni su Google',
+
+		'map.visitanos': 'Vieni a trovarci',
+		'map.cta': 'Apri in Google Maps →',
+		'map.ariaLabel': 'Apri la posizione di Gisela Pastelería Natural in Google Maps',
+
+		'footer.description':
+			'Pasticceria naturale e artigianale, preparata ogni giorno a Ponferrada con ingredienti di qualità.',
+		'footer.visitanos': 'Vieni a trovarci',
+		'footer.horario': 'Orario',
+		'footer.dias': 'Da lunedì a domenica',
+		'footer.rights': 'Tutti i diritti riservati.',
+
+		'carta.title': 'Il nostro menu',
+		'carta.intro':
+			"Tutto ciò che vedi, senti e assapori qui — dolce e salato — lo prepariamo nel nostro laboratorio, con ingredienti onesti e, quando possibile, a chilometro zero. Chiedi al nostro staff informazioni sugli allergeni.",
+
+		'meta.home.title': 'Gisela Pastelería Natural | Pasticceria artigianale a Ponferrada',
+		'meta.home.description':
+			'Pasticceria naturale e artigianale a Ponferrada, León. Torte, dolci e pasticceria fatta in casa, preparati ogni giorno con ingredienti naturali.',
+		'meta.carta.title': 'Menu | Gisela Pastelería Natural',
+		'meta.carta.description':
+			'Scopri il menu di Gisela Pastelería Natural: torte, dolci, colazioni e bevande preparati ogni giorno nel nostro laboratorio a Ponferrada.',
+		'meta.especialidades.title': 'Specialità | Gisela Pastelería Natural',
+		'meta.especialidades.description':
+			'Scopri i nostri dolci artigianali, le scatole da regalo e il caffè speciality da Gisela Pastelería Natural, a Ponferrada.',
+		'meta.historia.title': 'La nostra storia | Gisela Pastelería Natural',
+		'meta.historia.description':
+			'Scopri la storia di Gisela Pastelería Natural, un sogno diventato realtà dal 2010 a Ponferrada.',
+
+		'historiaPage.location': 'Gisela Pastelería Natural · Ponferrada, León',
+		'historiaPage.title': 'Una traduttrice che ha scelto la <em>pasticceria</em>',
+		'historiaPage.heroSubtitle':
+			'La storia di come tre lingue sono diventate il prologo della migliore pasticceria del Bierzo.',
+		'historiaPage.p1':
+			'Gisela è nata in Germania e ha costruito una brillante carriera come traduttrice giurata di inglese, tedesco e cinese. Tre lingue. Tre mondi. Ma c\'era qualcosa che la attraeva più di ogni parola: il suo amore per la pasticceria, nato nella cucina di sua madre.',
+		'historiaPage.p2':
+			'Ha deciso di lasciare tutto e ha aperto Gisela Pastelería Natural insieme a sua madre più di 16 anni fa. Da allora non ha smesso di formarsi nelle tecniche di pasticceria di tutto il mondo, costruendo un team unito che lei stessa descrive come "una pasta madre: mescolati, uniti e ribollenti di idee".',
+		'historiaPage.quote': 'Vuoi sapere qual è il nostro ingrediente segreto? Non avere ingredienti segreti.',
+		'historiaPage.p3':
+			'Oggi, ogni dolce che esce dal suo laboratorio è fatto con ingredienti a chilometro zero, senza conservanti né additivi. Perché la felicità si mangia, e qui abbiamo la ricetta.',
+		'historiaPage.reviewsLabel': 'Recensioni Google',
+		'historiaPage.comingSoonBadge': 'Prossimamente',
+		'historiaPage.comingSoonTitle': 'Stiamo preparando qualcosa di speciale per raccontarti tutto',
+		'historiaPage.comingSoonText':
+			'Qui troverai la storia completa di Gisela: i suoi anni come traduttrice giurata di inglese, tedesco e cinese, il momento in cui ha deciso di scambiare le parole con il laboratorio, e come lei e sua madre hanno costruito la pasticceria che Ponferrada merita. Una storia di coraggio, pasta madre e tanto amore per il naturale.',
+		'historiaPage.backToSite': 'Torna al sito',
+		'historiaPage.imageAlt': 'Selezione di dolci di Gisela Pastelería Natural'
 	}
 };

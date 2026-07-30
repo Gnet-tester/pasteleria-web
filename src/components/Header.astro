@@ -6,9 +6,10 @@ import { useTranslations, getLocalizedPath, getPathWithoutLocale, defaultLocale,
 
 interface Props {
 	lang?: Locale;
+	logoIntro?: boolean;
 }
 
-const { lang = defaultLocale } = Astro.props;
+const { lang = defaultLocale, logoIntro = false } = Astro.props;
 const t = useTranslations(lang);
 const canonicalPath = getPathWithoutLocale(Astro.url.pathname);
 
@@ -17,10 +18,17 @@ const homeHref = getLocalizedPath('/', lang);
 const cartaHref = getLocalizedPath('/carta', lang);
 ---
 
-<header class="sticky top-0 z-50 bg-cream-50/90 backdrop-blur border-b border-sage-100">
+<header class="sticky top-0 z-50 bg-cream-50 border-b border-sage-100">
 	<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
 		<a href={homeHref} class="flex items-center gap-2">
-			<Image src={logo} alt="Gisela Pastelería Natural" width={220} height={98} class="h-10 w-auto md:h-12" />
+			<Image
+				src={logo}
+				alt="Gisela Pastelería Natural"
+				data-header-logo
+				width={220}
+				height={98}
+				class={`h-10 w-auto md:h-12 header-logo-img ${logoIntro ? 'header-logo-img--pending' : ''}`}
+			/>
 		</a>
 
 		<nav class="hidden md:block">
@@ -83,3 +91,24 @@ const cartaHref = getLocalizedPath('/carta', lang);
 		</nav>
 	</div>
 </header>
+
+<script>
+	const headerLogo = document.querySelector<HTMLElement>('[data-header-logo]');
+	if (headerLogo) {
+		const reveal = () => headerLogo.classList.add('header-logo-img--landed');
+		window.addEventListener('hero-logo:landed', reveal, { once: true });
+		window.setTimeout(reveal, 8000);
+	}
+</script>
+
+<style>
+	@media (prefers-reduced-motion: no-preference) {
+		.header-logo-img--pending {
+			opacity: 0;
+		}
+		.header-logo-img--pending.header-logo-img--landed {
+			opacity: 1;
+			transition: opacity 0.2s ease;
+		}
+	}
+</style>

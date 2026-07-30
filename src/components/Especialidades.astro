@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import verrines from '../assets/Imágenes de ejemplo/foto 348.jpg';
 import cajaRegalo from '../assets/Imágenes de ejemplo/Caja de pastas.jpg';
 import placeholder5 from '../assets/placeholders/placeholder-5.jpg';
-import { useTranslations, defaultLocale, type Locale } from '../i18n/utils';
+import { useTranslations, getLocalizedPath, defaultLocale, type Locale } from '../i18n/utils';
 
 interface Props {
 	lang?: Locale;
@@ -46,7 +46,11 @@ const items = [
 		<div class="mt-12 grid gap-6 md:grid-cols-3">
 			{
 				items.map((item) => (
-					<div data-reveal class="overflow-hidden rounded-2xl border border-sage-100 bg-white">
+					<a
+						href={getLocalizedPath('/especialidades', lang)}
+						data-reveal
+						class="block overflow-hidden rounded-2xl border border-sage-100 bg-white transition-shadow hover:shadow-lg"
+					>
 						<Image
 							src={item.image}
 							alt={item.alt}
@@ -60,7 +64,7 @@ const items = [
 							<h3 class="font-display text-xl text-sage-900">{item.title}</h3>
 							<p class="mt-2 text-sm text-sage-700">{item.description}</p>
 						</div>
-					</div>
+					</a>
 				))
 			}
 		</div>
