@@ -1,0 +1,458 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { useTranslations, defaultLocale, type Locale } from '../../i18n/utils';
+
+interface Props {
+	lang?: Locale;
+}
+
+const { lang = defaultLocale } = Astro.props;
+const t = useTranslations(lang);
+
+const sizes = [4, 6, 8, 10, 12];
+const philosophyItems = [1, 2, 3, 4, 5] as const;
+const philosophyIcons = [
+	'<path d="M7 7h10M5 12h14M3 17h18"/>',
+	'<path d="M12 21c-4-2-7-6-7-11a7 7 0 0 1 14 0c0 5-3 9-7 11Z"/><path d="M12 21V9"/>',
+	'<path d="M6 19c0-5 3-9 6-9s6 4 6 9"/><circle cx="12" cy="8" r="1.5"/>',
+	'<circle cx="12" cy="12" r="8"/><path d="M7 7l10 10"/>',
+	'<path d="M12 2c.5 4 3 6.5 7 7-4 .5-6.5 3-7 7-.5-4-3-6.5-7-7 4-.5 6.5-3 7-7Z"/>'
+];
+
+interface Flavor {
+	name: string;
+	color: string;
+	light?: boolean;
+}
+
+const flavorCategories: { title: string; fruit?: boolean; items: Flavor[] }[] = [
+	{
+		title: t('encargaTuTartaPage.flavorsCategory.mousse'),
+		fruit: true,
+		items: [
+			{ name: 'Fresas', color: '#e0475c' },
+			{ name: 'Limón', color: '#f0c93d' },
+			{ name: 'Mango', color: '#f0a23d' },
+			{ name: 'Maracuyá', color: '#9b59b6' },
+			{ name: 'Naranja', color: '#ef8d3d' },
+			{ name: 'Piña', color: '#e8c94a' },
+			{ name: 'Grosella negra', color: '#4a2d5c' },
+			{ name: 'Mandarina', color: '#f2a154' },
+			{ name: 'Coco', color: '#efe6d6', light: true },
+			{ name: 'Lima', color: '#a8c93f' },
+			{ name: 'Frutos del bosque', color: '#7a3a63' },
+			{ name: 'Frambuesa', color: '#c81d5c' }
+		]
+	},
+	{
+		title: t('encargaTuTartaPage.flavorsCategory.chocolate'),
+		items: [{ name: 'Chocolate', color: '#4a2f22' }]
+	},
+	{
+		title: t('encargaTuTartaPage.flavorsCategory.galletas'),
+		items: [
+			{ name: 'Lotus', color: '#c98a4b' },
+			{ name: 'Kinder', color: '#b58a63' },
+			{ name: 'Oreo', color: '#2e211d' }
+		]
+	},
+	{
+		title: t('encargaTuTartaPage.flavorsCategory.frutosSecos'),
+		items: [
+			{ name: 'Avellana', color: '#a9723f' },
+			{ name: 'Pistacho', color: '#8fa661' },
+			{ name: 'Nueces', color: '#b08a5f' }
+		]
+	},
+	{
+		title: t('encargaTuTartaPage.flavorsCategory.clasicos'),
+		items: [
+			{ name: 'Vainilla', color: '#f0dfa8' },
+			{ name: 'Yogur', color: '#eef2f6', light: true },
+			{ name: 'Mocca', color: '#6f4e37' },
+			{ name: 'Nata', color: '#fdfaf3', light: true },
+			{ name: 'Crema', color: '#f5d98a' }
+		]
+	}
+];
+
+const traditionalFlavors: Flavor[] = [
+	{ name: 'Tiramisú', color: '#c9a877' },
+	{ name: 'Sacher', color: '#3d2318' },
+	{ name: 'Tres chocolates', color: '#8a5a3c' },
+	{ name: 'Selva Negra', color: '#2e1a16' }
+];
+---
+
+<Layout lang={lang} title={t('meta.encargaTuTarta.title')} description={t('meta.encargaTuTarta.description')}>
+	<Header lang={lang} />
+
+	<main class="bg-cream-50">
+		<section class="py-16 text-center md:py-24">
+			<div class="mx-auto max-w-2xl px-4 md:px-6">
+				<span class="text-sm font-medium uppercase tracking-widest text-terracotta-500">
+					{t('encargaTuTartaPage.eyebrow')}
+				</span>
+				<h1 class="mt-2 font-display text-4xl text-sage-900 md:text-5xl">
+					{t('encargaTuTartaPage.title')}
+				</h1>
+				<p class="mx-auto mt-4 max-w-xl text-sage-700">{t('encargaTuTartaPage.subtitle')}</p>
+			</div>
+		</section>
+
+		<section class="pb-16 md:pb-24">
+			<div data-cake-diagram class="cake-diagram mx-auto flex flex-col px-4">
+				<div class="cake-layer">
+					<div class="cake-block cake-block--topping">
+						<span class="cake-berry cake-berry--a"></span>
+						<span class="cake-berry cake-berry--b"></span>
+					</div>
+					<span class="cake-connector cake-connector--right"></span>
+					<span class="cake-label cake-label--right">{t('encargaTuTartaPage.diagram.decoracion')}</span>
+				</div>
+
+				<div class="cake-layer">
+					<span class="cake-label cake-label--left">{t('encargaTuTartaPage.diagram.bizcocho')}</span>
+					<span class="cake-connector cake-connector--left"></span>
+					<div class="cake-block cake-block--sponge"></div>
+				</div>
+
+				<div class="cake-layer">
+					<div class="cake-block cake-block--mousse"></div>
+					<span class="cake-connector cake-connector--right"></span>
+					<span class="cake-label cake-label--right">{t('encargaTuTartaPage.diagram.mousse')}</span>
+				</div>
+
+				<div class="cake-layer">
+					<span class="cake-label cake-label--left">{t('encargaTuTartaPage.diagram.bizcocho')}</span>
+					<span class="cake-connector cake-connector--left"></span>
+					<div class="cake-block cake-block--sponge"></div>
+				</div>
+
+				<div class="cake-layer">
+					<div class="cake-block cake-block--mousse"></div>
+					<span class="cake-connector cake-connector--right"></span>
+					<span class="cake-label cake-label--right">{t('encargaTuTartaPage.diagram.mousse')}</span>
+				</div>
+
+				<div class="cake-layer">
+					<span class="cake-label cake-label--left">{t('encargaTuTartaPage.diagram.bizcocho')}</span>
+					<span class="cake-connector cake-connector--left"></span>
+					<div class="cake-block cake-block--sponge"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-cream-100 py-16 text-center md:py-24">
+			<div class="mx-auto max-w-2xl px-4 md:px-6">
+				<h2 class="font-display text-2xl text-sage-900 md:text-3xl">{t('encargaTuTartaPage.sizesTitle')}</h2>
+				<p class="mt-3 text-sage-700">{t('encargaTuTartaPage.sizesIntro')}</p>
+				<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+					{
+						sizes.map((n) => (
+							<div class="flex flex-col items-center gap-1 rounded-2xl border border-sage-200 bg-white px-6 py-4">
+								<span class="font-display text-3xl text-sage-900">{n}</span>
+								<span class="text-xs uppercase tracking-wide text-sage-500">
+									{t('encargaTuTartaPage.sizeUnit')}
+								</span>
+							</div>
+						))
+					}
+				</div>
+				<p class="mt-6 text-sm text-sage-600">{t('encargaTuTartaPage.sizesMore')}</p>
+			</div>
+		</section>
+
+		<section class="py-16 md:py-24">
+			<div class="mx-auto max-w-2xl px-4 text-center md:px-6">
+				<h2 class="font-display text-2xl text-sage-900 md:text-3xl">
+					{t('encargaTuTartaPage.flavorsTitle')}
+				</h2>
+				<p class="mt-3 text-sage-700">{t('encargaTuTartaPage.flavorsNote')}</p>
+			</div>
+
+			<div class="mx-auto mt-10 flex max-w-4xl flex-col gap-10 px-4 md:px-6">
+				{
+					flavorCategories.map((category) => (
+						<div>
+							<h3 class="text-center text-sm font-semibold uppercase tracking-widest text-terracotta-500">
+								{category.title}
+							</h3>
+							<div class="mt-5 flex flex-wrap justify-center gap-x-5 gap-y-4">
+								{category.items.map((item) => (
+									<div class="flex w-16 flex-col items-center gap-2 text-center">
+										<span
+											class:list={[
+												'relative grid h-12 w-12 place-items-center rounded-full',
+												item.light && 'border border-sage-200'
+											]}
+											style={{ backgroundColor: item.color }}
+										>
+											{category.fruit && (
+												<svg
+													viewBox="0 0 14 14"
+													class="absolute -top-0.5 -right-0.5 h-3.5 w-3.5"
+													fill="#6b9e8a"
+												>
+													<path d="M7 1c2 2 3 4 3 6a3 3 0 1 1-6 0c0-2 1-4 3-6Z" />
+												</svg>
+											)}
+										</span>
+										<span class="text-xs leading-tight text-sage-700">{item.name}</span>
+									</div>
+								))}
+							</div>
+						</div>
+					))
+				}
+			</div>
+
+			<div class="mx-auto mt-14 max-w-4xl px-4 md:px-6">
+				<h3 class="text-center font-display text-xl text-sage-900">
+					{t('encargaTuTartaPage.traditionalTitle')}
+				</h3>
+				<div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-4">
+					{
+						traditionalFlavors.map((item) => (
+							<div class="flex w-20 flex-col items-center gap-2 text-center">
+								<span class="h-12 w-12 rounded-full" style={{ backgroundColor: item.color }} />
+								<span class="text-xs leading-tight text-sage-700">{item.name}</span>
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</section>
+
+		<section class="py-16 md:py-24">
+			<div class="mx-auto max-w-5xl px-4 md:px-6">
+				<h2 class="text-center font-display text-2xl text-sage-900 md:text-3xl">
+					{t('encargaTuTartaPage.philosophyTitle')}
+				</h2>
+				<div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+					{
+						philosophyItems.map((i) => (
+							<div class="flex flex-col items-center gap-3 rounded-3xl bg-white p-6 text-center shadow-sm">
+								<span class="grid h-12 w-12 place-items-center rounded-full bg-terracotta-50 text-terracotta-500">
+									<svg
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="h-6 w-6"
+										set:html={philosophyIcons[i - 1]}
+									/>
+								</span>
+								<h3 class="font-display text-lg text-sage-900">
+									{t(`encargaTuTartaPage.philosophy${i}.title`)}
+								</h3>
+								<p class="text-sm text-sage-700">{t(`encargaTuTartaPage.philosophy${i}.desc`)}</p>
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-cream-100 py-16 text-center md:py-20">
+			<div class="mx-auto max-w-xl px-4 md:px-6">
+				<p class="font-display text-xl italic text-terracotta-600">{t('encargaTuTartaPage.closingText')}</p>
+			</div>
+		</section>
+	</main>
+
+	<Footer lang={lang} />
+</Layout>
+
+<script>
+	const el = document.querySelector<HTMLElement>('[data-cake-diagram]');
+	if (el) {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				for (const entry of entries) {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('in-view');
+						observer.unobserve(entry.target);
+					}
+				}
+			},
+			{ threshold: 0.3 }
+		);
+		observer.observe(el);
+	}
+</script>
+
+<style>
+	.cake-diagram {
+		max-width: 420px;
+		gap: 0;
+		transition: gap 0.6s ease 1s;
+	}
+	.cake-diagram.in-view {
+		gap: 10px;
+	}
+
+	.cake-layer {
+		display: grid;
+		grid-template-columns: 3.75rem 0.625rem 1fr 0.625rem 3.75rem;
+		align-items: center;
+	}
+	@media (min-width: 640px) {
+		.cake-layer {
+			grid-template-columns: 4.5rem 1rem 1fr 1rem 4.5rem;
+		}
+	}
+
+	.cake-block {
+		position: relative;
+		grid-column: 3;
+		border-radius: 0.75rem;
+		transform: scaleY(0.06);
+		transition: transform 0.5s ease;
+	}
+	.cake-diagram.in-view .cake-block {
+		transform: scaleY(1);
+	}
+
+	.cake-block--sponge {
+		height: 2.75rem;
+		background: var(--color-terracotta-300);
+	}
+	.cake-block--mousse {
+		height: 1.125rem;
+		background: var(--color-terracotta-200);
+		border: 1px solid var(--color-terracotta-300);
+	}
+	.cake-block--topping {
+		height: 2.25rem;
+		background: var(--color-sage-300);
+		border-radius: 999px 999px 0.75rem 0.75rem;
+	}
+
+	.cake-berry {
+		position: absolute;
+		top: -0.4rem;
+		width: 0.7rem;
+		height: 0.85rem;
+		border-radius: 50% 50% 50% 0;
+		background: var(--color-terracotta-400);
+	}
+	.cake-berry--a {
+		left: 36%;
+		transform: rotate(-20deg);
+	}
+	.cake-berry--b {
+		left: 54%;
+		top: -0.25rem;
+		transform: rotate(15deg);
+	}
+
+	.cake-label,
+	.cake-connector {
+		opacity: 0;
+		transition:
+			opacity 0.5s ease,
+			transform 0.5s ease;
+	}
+	.cake-diagram.in-view .cake-label,
+	.cake-diagram.in-view .cake-connector {
+		opacity: 1;
+	}
+
+	.cake-label {
+		font-size: 0.8rem;
+		font-weight: 500;
+		color: var(--color-sage-700);
+		line-height: 1.2;
+	}
+	.cake-label--left {
+		grid-column: 1;
+		text-align: right;
+		transform: translateX(6px);
+	}
+	.cake-label--right {
+		grid-column: 5;
+		text-align: left;
+		transform: translateX(-6px);
+	}
+	.cake-diagram.in-view .cake-label {
+		transform: translateX(0);
+	}
+
+	.cake-connector {
+		height: 1px;
+		background: var(--color-sage-300);
+	}
+	.cake-connector--left {
+		grid-column: 2;
+	}
+	.cake-connector--right {
+		grid-column: 4;
+	}
+
+	/* stagger: base layer builds first, top layer last */
+	.cake-layer:nth-child(6) .cake-block {
+		transition-delay: 0s;
+	}
+	.cake-layer:nth-child(5) .cake-block {
+		transition-delay: 0.12s;
+	}
+	.cake-layer:nth-child(4) .cake-block {
+		transition-delay: 0.24s;
+	}
+	.cake-layer:nth-child(3) .cake-block {
+		transition-delay: 0.36s;
+	}
+	.cake-layer:nth-child(2) .cake-block {
+		transition-delay: 0.48s;
+	}
+	.cake-layer:nth-child(1) .cake-block {
+		transition-delay: 0.6s;
+	}
+
+	.cake-layer:nth-child(6) .cake-label,
+	.cake-layer:nth-child(6) .cake-connector {
+		transition-delay: 1.3s;
+	}
+	.cake-layer:nth-child(5) .cake-label,
+	.cake-layer:nth-child(5) .cake-connector {
+		transition-delay: 1.35s;
+	}
+	.cake-layer:nth-child(4) .cake-label,
+	.cake-layer:nth-child(4) .cake-connector {
+		transition-delay: 1.4s;
+	}
+	.cake-layer:nth-child(3) .cake-label,
+	.cake-layer:nth-child(3) .cake-connector {
+		transition-delay: 1.45s;
+	}
+	.cake-layer:nth-child(2) .cake-label,
+	.cake-layer:nth-child(2) .cake-connector {
+		transition-delay: 1.5s;
+	}
+	.cake-layer:nth-child(1) .cake-label,
+	.cake-layer:nth-child(1) .cake-connector {
+		transition-delay: 1.55s;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.cake-diagram {
+			gap: 14px;
+			transition: none;
+		}
+		.cake-block {
+			transform: scaleY(1);
+			transition: none;
+		}
+		.cake-label,
+		.cake-connector {
+			opacity: 1;
+			transform: translateX(0);
+			transition: none;
+		}
+	}
+</style>

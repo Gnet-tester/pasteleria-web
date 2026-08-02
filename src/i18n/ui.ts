@@ -19,10 +19,12 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'nav.carta': 'Carta',
 		'aria.openMenu': 'Abrir menú',
 
-		'hero.badge': 'Repostería natural en Ponferrada',
-		'hero.title': 'Dulces momentos hechos con ingredientes naturales',
+		'hero.badge1': 'Obrador familiar',
+		'hero.badge2': 'Honestamente natural',
+		'hero.title': 'La felicidad se come y tenemos la receta',
 		'hero.subtitle':
 			'En Gisela Pastelería Natural elaboramos cada tarta y cada dulce de forma artesanal, cuidando el origen de nuestros ingredientes para que disfrutes de un sabor auténtico, día a día.',
+		'hero.imageAlt': 'Tarta de manzana artesanal de Gisela Pastelería Natural',
 		'hero.ctaOrder': 'Encarga tu tarta',
 		'hero.ctaInstagram': 'Síguenos en Instagram',
 		'hero.scroll': 'Sigue bajando',
@@ -56,6 +58,50 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidadesPage.ctaTitle': '¿Te apetece ver toda la carta?',
 		'especialidadesPage.ctaText':
 			'Descubre todos nuestros dulces, tartas y salados en nuestra carta completa.',
+
+		'nav.encargaTuTarta': 'Encarga tu tarta',
+		'meta.encargaTuTarta.title': 'Encarga tu tarta | Gisela Pastelería Natural',
+		'meta.encargaTuTarta.description':
+			'Descubre cómo son nuestras tartas personalizadas antes de contarnos cómo la quieres, en Gisela Pastelería Natural, Ponferrada.',
+		'encargaTuTartaPage.eyebrow': 'En la pastelería',
+		'encargaTuTartaPage.title': 'Encarga tu tarta',
+		'encargaTuTartaPage.subtitle':
+			'Esta página es una guía para que veas cómo son nuestras tartas antes de contárnoslo en persona — no encargamos tartas por internet, ven a contarnos tu tarta ideal a la pastelería.',
+		'encargaTuTartaPage.diagram.bizcocho': 'Bizcocho',
+		'encargaTuTartaPage.diagram.mousse': 'Mousse',
+		'encargaTuTartaPage.diagram.decoracion': 'Decoración',
+		'encargaTuTartaPage.sizesTitle': 'Elige el tamaño',
+		'encargaTuTartaPage.sizesIntro': 'Todas nuestras tartas se hacen por raciones pares.',
+		'encargaTuTartaPage.sizeUnit': 'personas',
+		'encargaTuTartaPage.sizesMore':
+			'Y tamaños mayores también, siempre en raciones pares — solo tienes que decírnoslo.',
+		'encargaTuTartaPage.flavorsTitle': 'Elige tu sabor',
+		'encargaTuTartaPage.flavorsNote':
+			'Normalmente se eligen dos sabores, salvo en las tartas de sabor tradicional.',
+		'encargaTuTartaPage.flavorsCategory.mousse': 'Mousse de frutas naturales',
+		'encargaTuTartaPage.flavorsCategory.chocolate': 'Chocolate',
+		'encargaTuTartaPage.flavorsCategory.galletas': 'Galletas',
+		'encargaTuTartaPage.flavorsCategory.frutosSecos': 'Frutos secos',
+		'encargaTuTartaPage.flavorsCategory.clasicos': 'Clásicos',
+		'encargaTuTartaPage.traditionalTitle': 'Sabores para tartas tradicionales',
+
+		'encargaTuTartaPage.philosophyTitle': 'Nuestras tartas',
+		'encargaTuTartaPage.philosophy1.title': 'Tartas altas',
+		'encargaTuTartaPage.philosophy1.desc':
+			'Con varias capas de bizcocho y mousse, para que cada porción tenga presencia real.',
+		'encargaTuTartaPage.philosophy2.title': 'Mousses naturales',
+		'encargaTuTartaPage.philosophy2.desc': 'Rellenamos con mousse de verdad, con el sabor que elijas.',
+		'encargaTuTartaPage.philosophy3.title': 'Cobertura de nata o trufa',
+		'encargaTuTartaPage.philosophy3.desc':
+			'Cubrimos con nata montada o trufa de chocolate, nunca con fondant.',
+		'encargaTuTartaPage.philosophy4.title': 'Nada de fondant',
+		'encargaTuTartaPage.philosophy4.desc':
+			'El fondant, al final, no deja de ser una pasta de azúcar con colorante. Preferimos que disfrutes tu tarta entera, sin que sobre nada.',
+		'encargaTuTartaPage.philosophy5.title': 'Sabor y decoración a tu gusto',
+		'encargaTuTartaPage.philosophy5.desc':
+			'Tú eliges el relleno y cómo la quieres decorar — cada tarta es distinta porque cada cliente lo es.',
+		'encargaTuTartaPage.closingText':
+			'Ven a la pastelería y cuéntanos cómo la quieres — entre los dos le damos forma.',
 
 		'bcbTeaser.eyebrow': 'Para peregrinos del Camino de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -102,6 +148,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'footer.horario': 'Horario',
 		'footer.dias': 'Lunes a domingo',
 		'footer.rights': 'Todos los derechos reservados.',
+		'footer.designedBy': 'Diseñada por',
 
 		'carta.title': 'Nuestra carta',
 		'carta.intro':
@@ -144,8 +191,10 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'nav.carta': 'Menu',
 		'aria.openMenu': 'Open menu',
 
-		'hero.badge': 'Natural bakery in Ponferrada',
-		'hero.title': 'Sweet moments made with natural ingredients',
+		'hero.badge1': 'Family-run bakery',
+		'hero.badge2': 'Honestly natural',
+		'hero.title': 'Happiness can be eaten, and we have the recipe',
+		'hero.imageAlt': "Gisela Pastelería Natural's handmade apple cake",
 		'hero.subtitle':
 			'At Gisela Pastelería Natural we handcraft every cake and every sweet, taking care with the origin of our ingredients so you can enjoy an authentic flavour, every day.',
 		'hero.ctaOrder': 'Order your cake',
@@ -180,6 +229,49 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidadesPage.ctaTitle': 'Want to see the full menu?',
 		'especialidadesPage.ctaText':
 			'Discover all our sweets, cakes and savoury treats in our full menu.',
+
+		'nav.encargaTuTarta': 'Order your cake',
+		'meta.encargaTuTarta.title': 'Order your cake | Gisela Pastelería Natural',
+		'meta.encargaTuTarta.description':
+			"See what our custom cakes look like before telling us how you'd like yours at Gisela Pastelería Natural, Ponferrada.",
+		'encargaTuTartaPage.eyebrow': 'At the bakery',
+		'encargaTuTartaPage.title': 'Order your cake',
+		'encargaTuTartaPage.subtitle':
+			"This page is a guide to see what our cakes are like before you tell us in person — we don't take cake orders online, come tell us your ideal cake at the bakery.",
+		'encargaTuTartaPage.diagram.bizcocho': 'Sponge cake',
+		'encargaTuTartaPage.diagram.mousse': 'Mousse',
+		'encargaTuTartaPage.diagram.decoracion': 'Decoration',
+		'encargaTuTartaPage.sizesTitle': 'Choose the size',
+		'encargaTuTartaPage.sizesIntro': 'All our cakes are made in even serving sizes.',
+		'encargaTuTartaPage.sizeUnit': 'people',
+		'encargaTuTartaPage.sizesMore': 'And larger sizes too, always in even numbers — just tell us.',
+		'encargaTuTartaPage.flavorsTitle': 'Choose your flavour',
+		'encargaTuTartaPage.flavorsNote':
+			'Two flavours are usually chosen, except for our traditional-flavour cakes.',
+		'encargaTuTartaPage.flavorsCategory.mousse': 'Natural fruit mousse',
+		'encargaTuTartaPage.flavorsCategory.chocolate': 'Chocolate',
+		'encargaTuTartaPage.flavorsCategory.galletas': 'Cookies',
+		'encargaTuTartaPage.flavorsCategory.frutosSecos': 'Nuts',
+		'encargaTuTartaPage.flavorsCategory.clasicos': 'Classics',
+		'encargaTuTartaPage.traditionalTitle': 'Traditional cake flavours',
+
+		'encargaTuTartaPage.philosophyTitle': 'Our cakes',
+		'encargaTuTartaPage.philosophy1.title': 'Tall cakes',
+		'encargaTuTartaPage.philosophy1.desc':
+			'Several layers of sponge and mousse, so every slice has real presence.',
+		'encargaTuTartaPage.philosophy2.title': 'Natural mousses',
+		'encargaTuTartaPage.philosophy2.desc': 'Filled with real mousse, made with the flavour you choose.',
+		'encargaTuTartaPage.philosophy3.title': 'Cream or truffle coating',
+		'encargaTuTartaPage.philosophy3.desc':
+			'Covered in whipped cream or chocolate truffle, never fondant.',
+		'encargaTuTartaPage.philosophy4.title': 'No fondant',
+		'encargaTuTartaPage.philosophy4.desc':
+			"Fondant is, in the end, sugar paste with colouring. We'd rather you enjoy your whole cake, with nothing left over.",
+		'encargaTuTartaPage.philosophy5.title': 'Flavour and decoration, your way',
+		'encargaTuTartaPage.philosophy5.desc':
+			'You choose the filling and how you want it decorated — every cake is different because every customer is.',
+		'encargaTuTartaPage.closingText':
+			"Come to the bakery and tell us how you want it — together we'll shape it.",
 
 		'bcbTeaser.eyebrow': 'For pilgrims on the Camino de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -226,6 +318,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'footer.horario': 'Opening hours',
 		'footer.dias': 'Monday to Sunday',
 		'footer.rights': 'All rights reserved.',
+		'footer.designedBy': 'Designed by',
 
 		'carta.title': 'Our menu',
 		'carta.intro':
@@ -268,8 +361,10 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'nav.carta': 'Speisekarte',
 		'aria.openMenu': 'Menü öffnen',
 
-		'hero.badge': 'Natürliche Bäckerei in Ponferrada',
-		'hero.title': 'Süße Momente aus natürlichen Zutaten',
+		'hero.badge1': 'Familienbetrieb',
+		'hero.badge2': 'Ehrlich natürlich',
+		'hero.title': 'Glück kann man essen, und wir haben das Rezept dafür',
+		'hero.imageAlt': 'Handgemachte Apfeltorte von Gisela Pastelería Natural',
 		'hero.subtitle':
 			'Bei Gisela Pastelería Natural stellen wir jede Torte und jede Süßigkeit von Hand her und achten auf die Herkunft unserer Zutaten, damit du jeden Tag einen authentischen Geschmack genießen kannst.',
 		'hero.ctaOrder': 'Bestelle deine Torte',
@@ -306,6 +401,49 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidadesPage.ctaTitle': 'Möchtest du die ganze Karte sehen?',
 		'especialidadesPage.ctaText':
 			'Entdecke all unsere Süßigkeiten, Torten und herzhaften Köstlichkeiten in unserer vollständigen Karte.',
+
+		'nav.encargaTuTarta': 'Torte bestellen',
+		'meta.encargaTuTarta.title': 'Torte bestellen | Gisela Pastelería Natural',
+		'meta.encargaTuTarta.description':
+			'Sieh dir an, wie unsere individuellen Torten aussehen, bevor du uns bei Gisela Pastelería Natural in Ponferrada deine Wünsche verrätst.',
+		'encargaTuTartaPage.eyebrow': 'In der Bäckerei',
+		'encargaTuTartaPage.title': 'Torte bestellen',
+		'encargaTuTartaPage.subtitle':
+			'Diese Seite zeigt dir, wie unsere Torten aussehen, bevor du es uns persönlich erzählst — Tortenbestellungen nehmen wir nicht online entgegen, komm vorbei und beschreib uns deine Wunschtorte in der Bäckerei.',
+		'encargaTuTartaPage.diagram.bizcocho': 'Biskuit',
+		'encargaTuTartaPage.diagram.mousse': 'Mousse',
+		'encargaTuTartaPage.diagram.decoracion': 'Dekoration',
+		'encargaTuTartaPage.sizesTitle': 'Wähle die Größe',
+		'encargaTuTartaPage.sizesIntro': 'Alle unsere Torten werden in geraden Portionsgrößen gemacht.',
+		'encargaTuTartaPage.sizeUnit': 'Personen',
+		'encargaTuTartaPage.sizesMore': 'Und größere Größen, immer in geraden Zahlen — sag es uns einfach.',
+		'encargaTuTartaPage.flavorsTitle': 'Wähle deinen Geschmack',
+		'encargaTuTartaPage.flavorsNote':
+			'In der Regel werden zwei Geschmacksrichtungen gewählt, außer bei unseren traditionellen Torten.',
+		'encargaTuTartaPage.flavorsCategory.mousse': 'Mousse aus natürlichen Früchten',
+		'encargaTuTartaPage.flavorsCategory.chocolate': 'Schokolade',
+		'encargaTuTartaPage.flavorsCategory.galletas': 'Kekse',
+		'encargaTuTartaPage.flavorsCategory.frutosSecos': 'Nüsse',
+		'encargaTuTartaPage.flavorsCategory.clasicos': 'Klassiker',
+		'encargaTuTartaPage.traditionalTitle': 'Geschmacksrichtungen für traditionelle Torten',
+
+		'encargaTuTartaPage.philosophyTitle': 'Unsere Torten',
+		'encargaTuTartaPage.philosophy1.title': 'Hohe Torten',
+		'encargaTuTartaPage.philosophy1.desc':
+			'Mehrere Schichten aus Biskuit und Mousse, damit jedes Stück wirklich etwas hermacht.',
+		'encargaTuTartaPage.philosophy2.title': 'Natürliche Mousses',
+		'encargaTuTartaPage.philosophy2.desc': 'Gefüllt mit echter Mousse, im Geschmack deiner Wahl.',
+		'encargaTuTartaPage.philosophy3.title': 'Sahne- oder Trüffel-Überzug',
+		'encargaTuTartaPage.philosophy3.desc':
+			'Überzogen mit Schlagsahne oder Schokoladentrüffel, niemals mit Fondant.',
+		'encargaTuTartaPage.philosophy4.title': 'Kein Fondant',
+		'encargaTuTartaPage.philosophy4.desc':
+			'Fondant ist letztlich nichts als gefärbte Zuckerpaste. Wir möchten lieber, dass du deine ganze Torte genießt, ohne dass etwas übrig bleibt.',
+		'encargaTuTartaPage.philosophy5.title': 'Geschmack und Dekoration nach deinem Geschmack',
+		'encargaTuTartaPage.philosophy5.desc':
+			'Du wählst die Füllung und wie sie dekoriert werden soll — jede Torte ist anders, weil jeder Kunde es ist.',
+		'encargaTuTartaPage.closingText':
+			'Komm in die Bäckerei und erzähl uns, wie du sie haben möchtest — gemeinsam geben wir ihr Form.',
 
 		'bcbTeaser.eyebrow': 'Für Pilger auf dem Jakobsweg',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -352,6 +490,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'footer.horario': 'Öffnungszeiten',
 		'footer.dias': 'Montag bis Sonntag',
 		'footer.rights': 'Alle Rechte vorbehalten.',
+		'footer.designedBy': 'Gestaltet von',
 
 		'carta.title': 'Unsere Karte',
 		'carta.intro':
@@ -394,8 +533,10 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'nav.carta': 'Carte',
 		'aria.openMenu': 'Ouvrir le menu',
 
-		'hero.badge': 'Pâtisserie naturelle à Ponferrada',
-		'hero.title': "Des moments sucrés faits d'ingrédients naturels",
+		'hero.badge1': 'Atelier familial',
+		'hero.badge2': 'Honnêtement naturel',
+		'hero.title': 'Le bonheur, ça se mange, et nous en avons la recette',
+		'hero.imageAlt': 'Tarte aux pommes artisanale de Gisela Pastelería Natural',
 		'hero.subtitle':
 			"Chez Gisela Pastelería Natural, nous élaborons chaque gâteau et chaque douceur de façon artisanale, en veillant à l'origine de nos ingrédients pour que vous profitiez d'une saveur authentique, jour après jour.",
 		'hero.ctaOrder': 'Commandez votre gâteau',
@@ -432,6 +573,51 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidadesPage.ctaTitle': 'Envie de voir toute la carte ?',
 		'especialidadesPage.ctaText':
 			'Découvrez toutes nos douceurs, gâteaux et salés dans notre carte complète.',
+
+		'nav.encargaTuTarta': 'Commander votre gâteau',
+		'meta.encargaTuTarta.title': 'Commander votre gâteau | Gisela Pastelería Natural',
+		'meta.encargaTuTarta.description':
+			'Découvrez à quoi ressemblent nos gâteaux personnalisés avant de nous dire comment vous le voulez, chez Gisela Pastelería Natural à Ponferrada.',
+		'encargaTuTartaPage.eyebrow': 'À la pâtisserie',
+		'encargaTuTartaPage.title': 'Commander votre gâteau',
+		'encargaTuTartaPage.subtitle':
+			"Cette page est un guide pour voir à quoi ressemblent nos gâteaux avant de nous le dire en personne — nous ne prenons pas de commandes de gâteaux en ligne, venez nous raconter votre gâteau idéal à la pâtisserie.",
+		'encargaTuTartaPage.diagram.bizcocho': 'Génoise',
+		'encargaTuTartaPage.diagram.mousse': 'Mousse',
+		'encargaTuTartaPage.diagram.decoracion': 'Décoration',
+		'encargaTuTartaPage.sizesTitle': 'Choisissez la taille',
+		'encargaTuTartaPage.sizesIntro': 'Tous nos gâteaux sont réalisés en nombre de parts pair.',
+		'encargaTuTartaPage.sizeUnit': 'personnes',
+		'encargaTuTartaPage.sizesMore':
+			'Et des tailles plus grandes aussi, toujours en nombre pair — dites-le nous simplement.',
+		'encargaTuTartaPage.flavorsTitle': 'Choisissez votre saveur',
+		'encargaTuTartaPage.flavorsNote':
+			'On choisit généralement deux saveurs, sauf pour nos gâteaux aux saveurs traditionnelles.',
+		'encargaTuTartaPage.flavorsCategory.mousse': 'Mousse aux fruits naturels',
+		'encargaTuTartaPage.flavorsCategory.chocolate': 'Chocolat',
+		'encargaTuTartaPage.flavorsCategory.galletas': 'Biscuits',
+		'encargaTuTartaPage.flavorsCategory.frutosSecos': 'Fruits secs',
+		'encargaTuTartaPage.flavorsCategory.clasicos': 'Classiques',
+		'encargaTuTartaPage.traditionalTitle': 'Saveurs pour gâteaux traditionnels',
+
+		'encargaTuTartaPage.philosophyTitle': 'Nos gâteaux',
+		'encargaTuTartaPage.philosophy1.title': 'Des gâteaux hauts',
+		'encargaTuTartaPage.philosophy1.desc':
+			'Plusieurs couches de génoise et de mousse, pour que chaque part ait une vraie présence.',
+		'encargaTuTartaPage.philosophy2.title': 'Mousses naturelles',
+		'encargaTuTartaPage.philosophy2.desc':
+			"Garnis d'une vraie mousse, avec la saveur de votre choix.",
+		'encargaTuTartaPage.philosophy3.title': 'Couverture chantilly ou truffe',
+		'encargaTuTartaPage.philosophy3.desc':
+			'Recouverts de crème chantilly ou de truffe au chocolat, jamais de pâte à sucre.',
+		'encargaTuTartaPage.philosophy4.title': 'Sans pâte à sucre',
+		'encargaTuTartaPage.philosophy4.desc':
+			"La pâte à sucre n'est, au fond, qu'une pâte sucrée colorée. Nous préférons que vous profitiez de tout votre gâteau, sans rien laisser.",
+		'encargaTuTartaPage.philosophy5.title': 'Saveur et décoration à votre goût',
+		'encargaTuTartaPage.philosophy5.desc':
+			'Vous choisissez la garniture et la décoration — chaque gâteau est différent, comme chaque client.',
+		'encargaTuTartaPage.closingText':
+			'Venez à la pâtisserie nous dire comment vous le voulez — nous lui donnerons forme ensemble.',
 
 		'bcbTeaser.eyebrow': 'Pour les pèlerins du Chemin de Saint-Jacques',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -478,6 +664,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'footer.horario': 'Horaires',
 		'footer.dias': 'Du lundi au dimanche',
 		'footer.rights': 'Tous droits réservés.',
+		'footer.designedBy': 'Conçu par',
 
 		'carta.title': 'Notre carte',
 		'carta.intro':
@@ -520,8 +707,10 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'nav.carta': '메뉴',
 		'aria.openMenu': '메뉴 열기',
 
-		'hero.badge': '폰페라다의 천연 베이커리',
-		'hero.title': '천연 재료로 만든 달콤한 순간',
+		'hero.badge1': '가족이 운영하는 공방',
+		'hero.badge2': '정직하게 자연스러운',
+		'hero.title': '행복은 먹는 것, 그 레시피가 저희에게 있습니다',
+		'hero.imageAlt': 'Gisela Pastelería Natural의 수제 애플 케이크',
 		'hero.subtitle':
 			'지셀라 파스텔레리아 나투랄에서는 모든 케이크와 디저트를 정성껏 수제로 만들며, 재료의 원산지를 소중히 여겨 매일 진짜 맛을 즐기실 수 있도록 합니다.',
 		'hero.ctaOrder': '케이크 주문하기',
@@ -555,6 +744,46 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'매일 갓 구운 디저트부터 선물용 박스, 스페셜티 커피까지. 방문하실 때 놓치면 안 될 것들입니다.',
 		'especialidadesPage.ctaTitle': '전체 메뉴를 보고 싶으신가요?',
 		'especialidadesPage.ctaText': '저희의 모든 디저트, 케이크, 짭짤한 메뉴를 전체 메뉴에서 확인하세요.',
+
+		'nav.encargaTuTarta': '케이크 주문',
+		'meta.encargaTuTarta.title': '케이크 주문 | Gisela Pastelería Natural',
+		'meta.encargaTuTarta.description':
+			'폰페라다의 Gisela Pastelería Natural에서 원하시는 케이크를 말씀해 주시기 전에, 저희의 맞춤 케이크가 어떤 모습인지 확인해 보세요.',
+		'encargaTuTartaPage.eyebrow': '매장에서',
+		'encargaTuTartaPage.title': '케이크 주문',
+		'encargaTuTartaPage.subtitle':
+			'이 페이지는 직접 말씀해 주시기 전에 저희 케이크가 어떤 모습인지 보여드리는 안내 페이지입니다 — 온라인으로는 케이크 주문을 받지 않으니, 매장에 오셔서 원하시는 케이크를 말씀해 주세요.',
+		'encargaTuTartaPage.diagram.bizcocho': '스펀지 케이크',
+		'encargaTuTartaPage.diagram.mousse': '무스',
+		'encargaTuTartaPage.diagram.decoracion': '장식',
+		'encargaTuTartaPage.sizesTitle': '크기 선택',
+		'encargaTuTartaPage.sizesIntro': '저희 케이크는 모두 짝수 인분으로 제작됩니다.',
+		'encargaTuTartaPage.sizeUnit': '인분',
+		'encargaTuTartaPage.sizesMore': '더 큰 사이즈도 짝수 단위로 가능합니다 — 저희에게 말씀해 주세요.',
+		'encargaTuTartaPage.flavorsTitle': '맛을 선택하세요',
+		'encargaTuTartaPage.flavorsNote': '보통 두 가지 맛을 선택하며, 전통 맛 케이크는 예외입니다.',
+		'encargaTuTartaPage.flavorsCategory.mousse': '천연 과일 무스',
+		'encargaTuTartaPage.flavorsCategory.chocolate': '초콜릿',
+		'encargaTuTartaPage.flavorsCategory.galletas': '쿠키',
+		'encargaTuTartaPage.flavorsCategory.frutosSecos': '견과류',
+		'encargaTuTartaPage.flavorsCategory.clasicos': '클래식',
+		'encargaTuTartaPage.traditionalTitle': '전통 케이크 맛',
+
+		'encargaTuTartaPage.philosophyTitle': '저희 케이크',
+		'encargaTuTartaPage.philosophy1.title': '높은 케이크',
+		'encargaTuTartaPage.philosophy1.desc':
+			'여러 겹의 스펀지와 무스로, 한 조각에도 존재감이 느껴지도록 만듭니다.',
+		'encargaTuTartaPage.philosophy2.title': '천연 무스',
+		'encargaTuTartaPage.philosophy2.desc': '원하시는 맛으로 만든 진짜 무스로 채웁니다.',
+		'encargaTuTartaPage.philosophy3.title': '생크림 또는 트러플 커버',
+		'encargaTuTartaPage.philosophy3.desc': '생크림이나 초콜릿 트러플로 덮으며, 퐁당은 사용하지 않습니다.',
+		'encargaTuTartaPage.philosophy4.title': '퐁당 사용 안 함',
+		'encargaTuTartaPage.philosophy4.desc':
+			'퐁당은 결국 색소를 넣은 설탕 반죽일 뿐입니다. 저희는 손님이 케이크를 남김없이 온전히 즐기시길 바랍니다.',
+		'encargaTuTartaPage.philosophy5.title': '맛과 장식은 원하는 대로',
+		'encargaTuTartaPage.philosophy5.desc':
+			'속 재료와 장식 방법을 직접 선택하세요 — 고객님 한 분 한 분이 다르듯 케이크도 모두 다릅니다.',
+		'encargaTuTartaPage.closingText': '매장으로 오셔서 원하시는 케이크를 말씀해 주세요 — 함께 만들어 가겠습니다.',
 
 		'bcbTeaser.eyebrow': '산티아고 순례길 순례자를 위해',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -599,6 +828,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'footer.horario': '영업시간',
 		'footer.dias': '월요일 - 일요일',
 		'footer.rights': '모든 권리 보유.',
+		'footer.designedBy': '디자인:',
 
 		'carta.title': '메뉴판',
 		'carta.intro':
@@ -639,8 +869,10 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'nav.carta': '菜单',
 		'aria.openMenu': '打开菜单',
 
-		'hero.badge': '蓬费拉达天然烘焙坊',
-		'hero.title': '用天然食材制作的甜蜜时光',
+		'hero.badge1': '家族经营的烘焙坊',
+		'hero.badge2': '诚实天然',
+		'hero.title': '幸福是可以品尝的，我们有这个秘方',
+		'hero.imageAlt': 'Gisela天然烘焙坊的手工苹果蛋糕',
 		'hero.subtitle':
 			'在Gisela天然烘焙坊，我们手工制作每一块蛋糕和每一款甜点，用心挑选食材产地，让您每天都能品尝到最地道的味道。',
 		'hero.ctaOrder': '预定你的蛋糕',
@@ -674,6 +906,45 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'从每日新鲜出炉的甜点，到送礼礼盒和精品咖啡：这些都是您来访时不容错过的。',
 		'especialidadesPage.ctaTitle': '想看看完整菜单吗？',
 		'especialidadesPage.ctaText': '在我们的完整菜单中探索所有甜点、蛋糕和咸点。',
+
+		'nav.encargaTuTarta': '定制蛋糕',
+		'meta.encargaTuTarta.title': '定制蛋糕 | Gisela Pastelería Natural',
+		'meta.encargaTuTarta.description':
+			'在蓬费拉达的Gisela天然烘焙坊，亲口告诉我们您想要的蛋糕之前，先了解我们定制蛋糕的样子。',
+		'encargaTuTartaPage.eyebrow': '在烘焙坊',
+		'encargaTuTartaPage.title': '定制蛋糕',
+		'encargaTuTartaPage.subtitle':
+			'这个页面是一份指南，让您在当面告诉我们之前，先看看我们的蛋糕是什么样子——我们不接受线上蛋糕订单，请到店里告诉我们您理想中的蛋糕。',
+		'encargaTuTartaPage.diagram.bizcocho': '海绵蛋糕胚',
+		'encargaTuTartaPage.diagram.mousse': '慕斯',
+		'encargaTuTartaPage.diagram.decoracion': '装饰',
+		'encargaTuTartaPage.sizesTitle': '选择尺寸',
+		'encargaTuTartaPage.sizesIntro': '我们所有的蛋糕份数均为偶数。',
+		'encargaTuTartaPage.sizeUnit': '人份',
+		'encargaTuTartaPage.sizesMore': '也可以定制更大尺寸，同样为偶数——请直接告诉我们。',
+		'encargaTuTartaPage.flavorsTitle': '选择您的口味',
+		'encargaTuTartaPage.flavorsNote': '通常选择两种口味，传统口味蛋糕除外。',
+		'encargaTuTartaPage.flavorsCategory.mousse': '天然水果慕斯',
+		'encargaTuTartaPage.flavorsCategory.chocolate': '巧克力',
+		'encargaTuTartaPage.flavorsCategory.galletas': '饼干',
+		'encargaTuTartaPage.flavorsCategory.frutosSecos': '坚果',
+		'encargaTuTartaPage.flavorsCategory.clasicos': '经典口味',
+		'encargaTuTartaPage.traditionalTitle': '传统蛋糕口味',
+
+		'encargaTuTartaPage.philosophyTitle': '我们的蛋糕',
+		'encargaTuTartaPage.philosophy1.title': '高层蛋糕',
+		'encargaTuTartaPage.philosophy1.desc': '多层海绵蛋糕与慕斯叠加，让每一块都分量十足。',
+		'encargaTuTartaPage.philosophy2.title': '天然慕斯',
+		'encargaTuTartaPage.philosophy2.desc': '选用真正的慕斯夹心，口味由您决定。',
+		'encargaTuTartaPage.philosophy3.title': '奶油或松露外层',
+		'encargaTuTartaPage.philosophy3.desc': '外层覆盖打发奶油或巧克力松露，绝不使用翻糖。',
+		'encargaTuTartaPage.philosophy4.title': '不使用翻糖',
+		'encargaTuTartaPage.philosophy4.desc':
+			'翻糖说到底只是加了色素的糖膏。我们更希望您能享用整个蛋糕，不留下任何浪费。',
+		'encargaTuTartaPage.philosophy5.title': '口味与装饰随心定制',
+		'encargaTuTartaPage.philosophy5.desc':
+			'您来选择夹心口味和装饰方式——每一个蛋糕都不同，正如每一位顾客都独一无二。',
+		'encargaTuTartaPage.closingText': '欢迎到店告诉我们您想要的样子——我们一起把它做出来。',
 
 		'bcbTeaser.eyebrow': '为圣地亚哥朝圣者',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -717,6 +988,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'footer.horario': '营业时间',
 		'footer.dias': '周一至周日',
 		'footer.rights': '版权所有。',
+		'footer.designedBy': '设计：',
 
 		'carta.title': '我们的菜单',
 		'carta.intro':
@@ -757,8 +1029,10 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'nav.carta': 'Menu',
 		'aria.openMenu': 'Abrir menu',
 
-		'hero.badge': 'Pastelaria natural em Ponferrada',
-		'hero.title': 'Momentos doces feitos com ingredientes naturais',
+		'hero.badge1': 'Obrador familiar',
+		'hero.badge2': 'Honestamente natural',
+		'hero.title': 'A felicidade come-se, e temos a receita',
+		'hero.imageAlt': 'Bolo de maçã artesanal da Gisela Pastelería Natural',
 		'hero.subtitle':
 			'Na Gisela Pastelería Natural elaboramos cada bolo e cada doce de forma artesanal, cuidando a origem dos nossos ingredientes para que possa desfrutar de um sabor autêntico, todos os dias.',
 		'hero.ctaOrder': 'Encomende o seu bolo',
@@ -794,6 +1068,49 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidadesPage.ctaTitle': 'Apetece-lhe ver a carta completa?',
 		'especialidadesPage.ctaText':
 			'Descubra todos os nossos doces, bolos e salgados na nossa carta completa.',
+
+		'nav.encargaTuTarta': 'Encomende o seu bolo',
+		'meta.encargaTuTarta.title': 'Encomende o seu bolo | Gisela Pastelería Natural',
+		'meta.encargaTuTarta.description':
+			'Veja como são os nossos bolos personalizados antes de nos dizer como o quer, na Gisela Pastelería Natural, em Ponferrada.',
+		'encargaTuTartaPage.eyebrow': 'Na pastelaria',
+		'encargaTuTartaPage.title': 'Encomende o seu bolo',
+		'encargaTuTartaPage.subtitle':
+			'Esta página é um guia para ver como são os nossos bolos antes de nos contar pessoalmente — não recebemos encomendas de bolos online, venha contar-nos o seu bolo ideal na pastelaria.',
+		'encargaTuTartaPage.diagram.bizcocho': 'Pão de ló',
+		'encargaTuTartaPage.diagram.mousse': 'Mousse',
+		'encargaTuTartaPage.diagram.decoracion': 'Decoração',
+		'encargaTuTartaPage.sizesTitle': 'Escolha o tamanho',
+		'encargaTuTartaPage.sizesIntro': 'Todos os nossos bolos são feitos em número par de doses.',
+		'encargaTuTartaPage.sizeUnit': 'pessoas',
+		'encargaTuTartaPage.sizesMore': 'E tamanhos maiores também, sempre em número par — basta dizer-nos.',
+		'encargaTuTartaPage.flavorsTitle': 'Escolha o seu sabor',
+		'encargaTuTartaPage.flavorsNote':
+			'Normalmente escolhem-se dois sabores, exceto nos bolos de sabor tradicional.',
+		'encargaTuTartaPage.flavorsCategory.mousse': 'Mousse de frutas naturais',
+		'encargaTuTartaPage.flavorsCategory.chocolate': 'Chocolate',
+		'encargaTuTartaPage.flavorsCategory.galletas': 'Bolachas',
+		'encargaTuTartaPage.flavorsCategory.frutosSecos': 'Frutos secos',
+		'encargaTuTartaPage.flavorsCategory.clasicos': 'Clássicos',
+		'encargaTuTartaPage.traditionalTitle': 'Sabores para bolos tradicionais',
+
+		'encargaTuTartaPage.philosophyTitle': 'Os nossos bolos',
+		'encargaTuTartaPage.philosophy1.title': 'Bolos altos',
+		'encargaTuTartaPage.philosophy1.desc':
+			'Várias camadas de pão de ló e mousse, para que cada fatia tenha presença real.',
+		'encargaTuTartaPage.philosophy2.title': 'Mousses naturais',
+		'encargaTuTartaPage.philosophy2.desc': 'Recheados com mousse a sério, com o sabor que escolher.',
+		'encargaTuTartaPage.philosophy3.title': 'Cobertura de nata ou trufa',
+		'encargaTuTartaPage.philosophy3.desc':
+			'Cobertos com chantilly ou trufa de chocolate, nunca com pasta de açúcar.',
+		'encargaTuTartaPage.philosophy4.title': 'Sem pasta de açúcar',
+		'encargaTuTartaPage.philosophy4.desc':
+			'A pasta de açúcar não deixa de ser, no fundo, açúcar com corante. Preferimos que aproveite o bolo todo, sem sobrar nada.',
+		'encargaTuTartaPage.philosophy5.title': 'Sabor e decoração ao seu gosto',
+		'encargaTuTartaPage.philosophy5.desc':
+			'Escolhe o recheio e como o quer decorado — cada bolo é diferente porque cada cliente também é.',
+		'encargaTuTartaPage.closingText':
+			'Venha à pastelaria e conte-nos como o quer — entre os dois damos-lhe forma.',
 
 		'bcbTeaser.eyebrow': 'Para peregrinos do Caminho de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -840,6 +1157,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'footer.horario': 'Horário',
 		'footer.dias': 'Segunda a domingo',
 		'footer.rights': 'Todos os direitos reservados.',
+		'footer.designedBy': 'Concebido por',
 
 		'carta.title': 'O nosso menu',
 		'carta.intro':
@@ -882,8 +1200,10 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'nav.carta': 'Menu',
 		'aria.openMenu': 'Apri il menu',
 
-		'hero.badge': 'Pasticceria naturale a Ponferrada',
-		'hero.title': 'Dolci momenti fatti con ingredienti naturali',
+		'hero.badge1': 'Laboratorio familiare',
+		'hero.badge2': 'Onestamente naturale',
+		'hero.title': 'La felicità si mangia, e noi abbiamo la ricetta',
+		'hero.imageAlt': 'Torta di mele artigianale di Gisela Pastelería Natural',
 		'hero.subtitle':
 			'Da Gisela Pastelería Natural realizziamo ogni torta e ogni dolce in modo artigianale, curando l\'origine dei nostri ingredienti affinché tu possa gustare un sapore autentico, ogni giorno.',
 		'hero.ctaOrder': 'Ordina la tua torta',
@@ -919,6 +1239,48 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidadesPage.ctaTitle': 'Vuoi vedere tutta la carta?',
 		'especialidadesPage.ctaText':
 			'Scopri tutti i nostri dolci, torte e salati nella nostra carta completa.',
+
+		'nav.encargaTuTarta': 'Ordina la tua torta',
+		'meta.encargaTuTarta.title': 'Ordina la tua torta | Gisela Pastelería Natural',
+		'meta.encargaTuTarta.description':
+			'Scopri come sono le nostre torte personalizzate prima di dirci come la vuoi, da Gisela Pastelería Natural, a Ponferrada.',
+		'encargaTuTartaPage.eyebrow': 'In pasticceria',
+		'encargaTuTartaPage.title': 'Ordina la tua torta',
+		'encargaTuTartaPage.subtitle':
+			'Questa pagina è una guida per vedere come sono le nostre torte prima di dircelo di persona — non riceviamo ordini di torte online, vieni a raccontarci la tua torta ideale in pasticceria.',
+		'encargaTuTartaPage.diagram.bizcocho': 'Pan di Spagna',
+		'encargaTuTartaPage.diagram.mousse': 'Mousse',
+		'encargaTuTartaPage.diagram.decoracion': 'Decorazione',
+		'encargaTuTartaPage.sizesTitle': 'Scegli la misura',
+		'encargaTuTartaPage.sizesIntro': 'Tutte le nostre torte sono fatte in porzioni pari.',
+		'encargaTuTartaPage.sizeUnit': 'persone',
+		'encargaTuTartaPage.sizesMore': 'E anche misure più grandi, sempre in numero pari — basta dircelo.',
+		'encargaTuTartaPage.flavorsTitle': 'Scegli il tuo gusto',
+		'encargaTuTartaPage.flavorsNote':
+			'Di solito si scelgono due gusti, tranne per le torte dal gusto tradizionale.',
+		'encargaTuTartaPage.flavorsCategory.mousse': 'Mousse di frutta naturale',
+		'encargaTuTartaPage.flavorsCategory.chocolate': 'Cioccolato',
+		'encargaTuTartaPage.flavorsCategory.galletas': 'Biscotti',
+		'encargaTuTartaPage.flavorsCategory.frutosSecos': 'Frutta secca',
+		'encargaTuTartaPage.flavorsCategory.clasicos': 'Classici',
+		'encargaTuTartaPage.traditionalTitle': 'Gusti per torte tradizionali',
+
+		'encargaTuTartaPage.philosophyTitle': 'Le nostre torte',
+		'encargaTuTartaPage.philosophy1.title': 'Torte alte',
+		'encargaTuTartaPage.philosophy1.desc':
+			'Diversi strati di pan di Spagna e mousse, perché ogni fetta abbia una vera presenza.',
+		'encargaTuTartaPage.philosophy2.title': 'Mousse naturali',
+		'encargaTuTartaPage.philosophy2.desc': 'Farcite con mousse vera, con il gusto che preferisci.',
+		'encargaTuTartaPage.philosophy3.title': 'Copertura di panna o tartufo',
+		'encargaTuTartaPage.philosophy3.desc':
+			'Ricoperte di panna montata o tartufo al cioccolato, mai pasta di zucchero.',
+		'encargaTuTartaPage.philosophy4.title': 'Niente pasta di zucchero',
+		'encargaTuTartaPage.philosophy4.desc':
+			'La pasta di zucchero, in fondo, non è altro che zucchero colorato. Preferiamo che tu gusti tutta la torta, senza che avanzi nulla.',
+		'encargaTuTartaPage.philosophy5.title': 'Gusto e decorazione a modo tuo',
+		'encargaTuTartaPage.philosophy5.desc':
+			'Scegli tu il ripieno e come vuoi che sia decorata — ogni torta è diversa perché ogni cliente lo è.',
+		'encargaTuTartaPage.closingText': 'Vieni in pasticceria e raccontaci come la vuoi — la creiamo insieme.',
 
 		'bcbTeaser.eyebrow': 'Per i pellegrini del Cammino di Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -965,6 +1327,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'footer.horario': 'Orario',
 		'footer.dias': 'Da lunedì a domenica',
 		'footer.rights': 'Tutti i diritti riservati.',
+		'footer.designedBy': 'Progettato da',
 
 		'carta.title': 'Il nostro menu',
 		'carta.intro':
