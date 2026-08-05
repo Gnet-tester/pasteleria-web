@@ -1,0 +1,89 @@
+---
+import { Image } from 'astro:assets';
+import cajaPastas from '../assets/Imágenes de ejemplo/Caja de pastas.jpg';
+import foto33 from '../assets/Imágenes de ejemplo/Foto 33.jpg';
+import tartaManzana from '../assets/Tarta de manzana.jpg';
+import foto348 from '../assets/Imágenes de ejemplo/foto 348.jpg';
+import { useTranslations, getLocalizedPath, defaultLocale, type Locale } from '../i18n/utils';
+
+interface Props {
+	lang?: Locale;
+}
+
+const { lang = defaultLocale } = Astro.props;
+const t = useTranslations(lang);
+
+const items = [
+	{
+		image: cajaPastas,
+		alt: t('servicesGrid.empresas.alt'),
+		title: t('servicesGrid.empresas.title'),
+		tagline: t('servicesGrid.empresas.tagline'),
+		href: getLocalizedPath('/para-empresas', lang),
+		span: 'md:col-span-3'
+	},
+	{
+		image: foto33,
+		alt: t('servicesGrid.horno.alt'),
+		title: t('servicesGrid.horno.title'),
+		tagline: t('servicesGrid.horno.tagline'),
+		href: getLocalizedPath('/del-horno-a-tu-casa', lang),
+		span: 'md:col-span-2'
+	},
+	{
+		image: tartaManzana,
+		alt: t('servicesGrid.tartas.alt'),
+		title: t('servicesGrid.tartas.title'),
+		tagline: t('servicesGrid.tartas.tagline'),
+		href: getLocalizedPath('/encarga-tu-tarta', lang),
+		span: 'md:col-span-2'
+	},
+	{
+		image: foto348,
+		alt: t('servicesGrid.ultimaHora.alt'),
+		title: t('servicesGrid.ultimaHora.title'),
+		tagline: t('servicesGrid.ultimaHora.tagline'),
+		href: getLocalizedPath('/ultima-hora', lang),
+		span: 'md:col-span-3'
+	}
+];
+---
+
+<section class="bg-cream-50 py-16 md:py-24">
+	<div class="mx-auto max-w-6xl px-4 md:px-6">
+		<div data-reveal class="mx-auto max-w-2xl text-center">
+			<h2 class="font-display text-3xl text-sage-900 md:text-4xl">{t('servicesGrid.title')}</h2>
+			<p class="mt-3 text-sage-700">{t('servicesGrid.subtitle')}</p>
+		</div>
+
+		<div class="mt-12 grid gap-5 md:grid-cols-5">
+			{
+				items.map((item) => (
+					<a
+						href={item.href}
+						data-reveal
+						class:list={[
+							'group relative flex h-64 flex-col justify-end overflow-hidden rounded-3xl shadow-sm transition-shadow hover:shadow-lg sm:h-72',
+							item.span
+						]}
+					>
+						<Image
+							src={item.image}
+							alt={item.alt}
+							width={900}
+							widths={[500, 700, 900]}
+							sizes="(min-width: 768px) 45vw, 100vw"
+							quality={65}
+							class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+						/>
+						<div class="absolute inset-0 bg-gradient-to-t from-sage-900/85 via-sage-900/20 to-transparent" />
+						<div class="relative z-10 p-6 text-cream-50">
+							<h3 class="font-display text-xl md:text-2xl">{item.title}</h3>
+							<p class="mt-1 text-sm text-cream-100/90">{item.tagline}</p>
+						</div>
+					</a>
+				))
+			}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,100 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import foto33 from '../../assets/Imágenes de ejemplo/Foto 33.jpg';
+import { useTranslations, defaultLocale, type Locale } from '../../i18n/utils';
+
+interface Props {
+	lang?: Locale;
+}
+
+const { lang = defaultLocale } = Astro.props;
+const t = useTranslations(lang);
+
+const itemIndexes = [1, 2, 3, 4] as const;
+const itemIcons = [
+	'<path d="M3 8l9-5 9 5-9 5-9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/>',
+	'<path d="M4 10h16l-2 9H6l-2-9Z"/><path d="M8 10a4 4 0 0 1 8 0"/>',
+	'<circle cx="12" cy="8" r="6"/><path d="M12 14c0 2-1 2-1 4s1 2 1 2"/>',
+	'<path d="M4 4h16v12H8l-4 4V4Z"/>'
+];
+---
+
+<Layout lang={lang} title={t('meta.delHorno.title')} description={t('meta.delHorno.description')}>
+	<Header lang={lang} />
+
+	<main class="bg-cream-50">
+		<section class="relative overflow-hidden py-20 text-center md:py-28">
+			<Image
+				src={foto33}
+				alt=""
+				class="absolute inset-0 h-full w-full object-cover"
+				width={1600}
+				widths={[640, 1024, 1600]}
+				sizes="100vw"
+				quality={55}
+				loading="eager"
+			/>
+			<div class="absolute inset-0 bg-sage-900/75"></div>
+			<div class="relative mx-auto max-w-2xl px-4 md:px-6">
+				<span class="text-sm font-medium uppercase tracking-widest text-terracotta-300">
+					{t('delHornoPage.eyebrow')}
+				</span>
+				<h1 class="mt-2 font-display text-4xl text-cream-50 md:text-5xl">{t('delHornoPage.title')}</h1>
+				<p class="mx-auto mt-4 max-w-xl text-cream-100">{t('delHornoPage.subtitle')}</p>
+			</div>
+		</section>
+
+		<section class="py-16 md:py-24">
+			<div class="mx-auto max-w-5xl px-4 md:px-6">
+				<div class="grid gap-6 sm:grid-cols-2">
+					{
+						itemIndexes.map((i) => (
+							<div class="flex flex-col items-center gap-3 rounded-3xl bg-white p-6 text-center shadow-sm">
+								<span class="grid h-12 w-12 place-items-center rounded-full bg-sage-50 text-sage-500">
+									<svg
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="h-6 w-6"
+										set:html={itemIcons[i - 1]}
+									/>
+								</span>
+								<h2 class="font-display text-lg text-sage-900">{t(`delHornoPage.item${i}.title`)}</h2>
+								<p class="text-sm text-sage-700">{t(`delHornoPage.item${i}.desc`)}</p>
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-cream-100 py-16 text-center md:py-24">
+			<div class="mx-auto max-w-xl px-4 md:px-6">
+				<h2 class="font-display text-2xl text-sage-900 md:text-3xl">{t('delHornoPage.ctaTitle')}</h2>
+				<p class="mt-4 text-sage-700">{t('delHornoPage.ctaText')}</p>
+				<div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+					<a
+						href="mailto:administracion@miskukis.com"
+						class="ripple rounded-full bg-sage-400 px-8 py-3 text-center font-medium text-white shadow-sm transition-colors hover:bg-sage-500"
+					>
+						{t('delHornoPage.ctaEmail')}
+					</a>
+					<a
+						href="tel:+34987009022"
+						class="ripple rounded-full border border-sage-300 px-8 py-3 text-center font-medium text-sage-700 transition-colors hover:bg-sage-100"
+					>
+						{t('delHornoPage.ctaCall')}
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer lang={lang} />
+</Layout>

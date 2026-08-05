@@ -1,0 +1,102 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import cajaPastas from '../../assets/Imágenes de ejemplo/Caja de pastas.jpg';
+import { useTranslations, defaultLocale, type Locale } from '../../i18n/utils';
+
+interface Props {
+	lang?: Locale;
+}
+
+const { lang = defaultLocale } = Astro.props;
+const t = useTranslations(lang);
+
+const itemIndexes = [1, 2, 3, 4] as const;
+const itemIcons = [
+	'<path d="M4 3h13v9a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V3Z"/><path d="M17 7h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M4 21h13"/>',
+	'<path d="M3 15h18l-2 5H5l-2-5Z"/><path d="M7 15V9a5 5 0 0 1 10 0v6"/>',
+	'<rect x="4" y="9" width="16" height="11" rx="1"/><path d="M4 9V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/><path d="M12 5v15"/>',
+	'<rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8 8h8M8 12h8M8 16h5"/>'
+];
+---
+
+<Layout lang={lang} title={t('meta.paraEmpresas.title')} description={t('meta.paraEmpresas.description')}>
+	<Header lang={lang} />
+
+	<main class="bg-cream-50">
+		<section class="relative overflow-hidden py-20 text-center md:py-28">
+			<Image
+				src={cajaPastas}
+				alt=""
+				class="absolute inset-0 h-full w-full object-cover"
+				width={1600}
+				widths={[640, 1024, 1600]}
+				sizes="100vw"
+				quality={55}
+				loading="eager"
+			/>
+			<div class="absolute inset-0 bg-sage-900/75"></div>
+			<div class="relative mx-auto max-w-2xl px-4 md:px-6">
+				<span class="text-sm font-medium uppercase tracking-widest text-terracotta-300">
+					{t('paraEmpresasPage.eyebrow')}
+				</span>
+				<h1 class="mt-2 font-display text-4xl text-cream-50 md:text-5xl">{t('paraEmpresasPage.title')}</h1>
+				<p class="mx-auto mt-4 max-w-xl text-cream-100">{t('paraEmpresasPage.subtitle')}</p>
+			</div>
+		</section>
+
+		<section class="py-16 md:py-24">
+			<div class="mx-auto max-w-5xl px-4 md:px-6">
+				<div class="grid gap-6 sm:grid-cols-2">
+					{
+						itemIndexes.map((i) => (
+							<div class="flex flex-col items-center gap-3 rounded-3xl bg-white p-6 text-center shadow-sm">
+								<span class="grid h-12 w-12 place-items-center rounded-full bg-terracotta-50 text-terracotta-500">
+									<svg
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="h-6 w-6"
+										set:html={itemIcons[i - 1]}
+									/>
+								</span>
+								<h2 class="font-display text-lg text-sage-900">
+									{t(`paraEmpresasPage.item${i}.title`)}
+								</h2>
+								<p class="text-sm text-sage-700">{t(`paraEmpresasPage.item${i}.desc`)}</p>
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-cream-100 py-16 text-center md:py-24">
+			<div class="mx-auto max-w-xl px-4 md:px-6">
+				<h2 class="font-display text-2xl text-sage-900 md:text-3xl">{t('paraEmpresasPage.ctaTitle')}</h2>
+				<p class="mt-4 text-sage-700">{t('paraEmpresasPage.ctaText')}</p>
+				<div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+					<a
+						href="mailto:administracion@miskukis.com"
+						class="ripple rounded-full bg-terracotta-400 px-8 py-3 text-center font-medium text-white shadow-sm transition-colors hover:bg-terracotta-500"
+					>
+						{t('paraEmpresasPage.ctaEmail')}
+					</a>
+					<a
+						href="tel:+34987009022"
+						class="ripple rounded-full border border-sage-300 px-8 py-3 text-center font-medium text-sage-700 transition-colors hover:bg-sage-100"
+					>
+						{t('paraEmpresasPage.ctaCall')}
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer lang={lang} />
+</Layout>

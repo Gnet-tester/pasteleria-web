@@ -42,19 +42,21 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.eyebrow': 'Especialidades',
 		'especialidades.title': 'Lo que no te puedes perder',
 		'especialidades.badge': 'Sin conservantes',
-		'especialidades.item1.title': 'Nuestros dulces',
-		'especialidades.item1.desc': 'Tartas, brownies y kukis horneados cada día en nuestro obrador.',
-		'especialidades.item1.alt': 'Selección de vasitos de postre de Gisela Pastelería Natural',
-		'especialidades.item2.title': 'Para regalar',
-		'especialidades.item2.desc': 'Cajas y cestas para llevar un poquitín de Gisela donde quieras.',
-		'especialidades.item2.alt': 'Caja de kukis de Gisela Pastelería Natural para regalar',
-		'especialidades.item3.title': 'Café de especialidad',
-		'especialidades.item3.desc': 'Blend Bonarte, preparado como a ti te guste.',
-		'especialidades.item3.alt':
-			'Imagen de ejemplo (placeholder, sustituir por foto real de café de especialidad)',
+		'especialidades.item1.title': 'Desayunos',
+		'especialidades.item1.desc':
+			'Empieza el día con un desayuno completo y recién hecho, con nuestro pan y dulces de cada mañana.',
+		'especialidades.item1.alt': 'Desayuno de Gisela Pastelería Natural con tarta y fruta fresca',
+		'especialidades.item2.title': 'Catering para empresas',
+		'especialidades.item2.desc':
+			'Dulces y salados para reuniones, eventos y celebraciones de empresa, preparados a tu medida.',
+		'especialidades.item2.alt': 'Selección de dulces de Gisela Pastelería Natural para catering de empresas',
+		'especialidades.item3.title': 'Tartas personalizadas',
+		'especialidades.item3.desc':
+			'Elige el tamaño, el sabor y la decoración — cada tarta se hace a tu gusto.',
+		'especialidades.item3.alt': 'Tarta de manzana personalizada de Gisela Pastelería Natural',
 
 		'especialidadesPage.intro':
-			'Desde nuestros dulces horneados cada día hasta cajas para regalar y café de especialidad: esto es lo que no te puedes perder cuando nos visites.',
+			'Desde desayunos recién hechos hasta catering para tu empresa y tartas a tu medida: esto es lo que no te puedes perder cuando nos visites.',
 		'especialidadesPage.ctaTitle': '¿Te apetece ver toda la carta?',
 		'especialidadesPage.ctaText':
 			'Descubre todos nuestros dulces, tartas y salados en nuestra carta completa.',
@@ -102,6 +104,79 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'Tú eliges el relleno y cómo la quieres decorar — cada tarta es distinta porque cada cliente lo es.',
 		'encargaTuTartaPage.closingText':
 			'Ven a la pastelería y cuéntanos cómo la quieres — entre los dos le damos forma.',
+
+		'servicesGrid.title': 'Todo lo que Gisela puede hacer por ti',
+		'servicesGrid.subtitle':
+			'Desde el desayuno de tu equipo hasta la tarta de tus sueños — descubre todo lo que preparamos para ti.',
+		'servicesGrid.empresas.title': 'Para empresas',
+		'servicesGrid.empresas.tagline': 'Desayunos, catering y detalles corporativos',
+		'servicesGrid.empresas.alt': 'Cajas de dulces de Gisela Pastelería Natural preparadas para empresas',
+		'servicesGrid.horno.title': 'Desayunos y cestas personalizados',
+		'servicesGrid.horno.tagline': 'Del horno a tu casa, cuando tú quieras',
+		'servicesGrid.horno.alt': 'Desayuno artesanal de Gisela Pastelería Natural listo para llevar a casa',
+		'servicesGrid.tartas.title': 'Tartas personalizadas',
+		'servicesGrid.tartas.tagline': 'El tamaño, el sabor y la decoración, a tu gusto',
+		'servicesGrid.tartas.alt': 'Tarta personalizada de Gisela Pastelería Natural',
+		'servicesGrid.ultimaHora.title': 'Última hora',
+		'servicesGrid.ultimaHora.tagline': 'Todas las novedades de Gisela',
+		'servicesGrid.ultimaHora.alt': 'Selección de dulces de Gisela Pastelería Natural',
+
+		'meta.paraEmpresas.title': 'Gisela para empresas | Gisela Pastelería Natural',
+		'meta.paraEmpresas.description':
+			'Desayunos de trabajo, catering para eventos y detalles corporativos con el sabor artesanal de Gisela Pastelería Natural, en Ponferrada.',
+		'paraEmpresasPage.eyebrow': 'Para empresas',
+		'paraEmpresasPage.title': 'Gisela para empresas',
+		'paraEmpresasPage.subtitle':
+			'Desayunos de trabajo, catering para eventos y detalles corporativos, con el sabor artesanal de siempre — para que tu empresa también disfrute de Gisela.',
+		'paraEmpresasPage.item1.title': 'Desayunos de trabajo',
+		'paraEmpresasPage.item1.desc':
+			'Bandejas de dulces y salados recién hechos para empezar bien las reuniones de tu equipo.',
+		'paraEmpresasPage.item2.title': 'Catering para eventos',
+		'paraEmpresasPage.item2.desc':
+			'Propuestas dulces y saladas a medida para presentaciones, formaciones o celebraciones de empresa.',
+		'paraEmpresasPage.item3.title': 'Detalles corporativos',
+		'paraEmpresasPage.item3.desc':
+			'Cajas y cestas personalizables para regalar a clientes, proveedores o a tu propio equipo.',
+		'paraEmpresasPage.item4.title': 'Facturación para empresas',
+		'paraEmpresasPage.item4.desc': 'Pedidos con factura, para que la gestión con tu empresa sea sencilla.',
+		'paraEmpresasPage.ctaTitle': '¿Hablamos de tu próximo evento?',
+		'paraEmpresasPage.ctaText':
+			'Cuéntanos qué necesitas y lo preparamos juntos — escríbenos o pásate por la pastelería.',
+		'paraEmpresasPage.ctaEmail': 'Escríbenos',
+		'paraEmpresasPage.ctaCall': 'Llámanos',
+
+		'meta.delHorno.title': 'Del horno a tu casa | Gisela Pastelería Natural',
+		'meta.delHorno.description':
+			'Desayunos y cestas personalizadas de Gisela Pastelería Natural, recién horneados y listos para llevar a tu casa.',
+		'delHornoPage.eyebrow': 'A domicilio',
+		'delHornoPage.title': 'Del horno a tu casa',
+		'delHornoPage.subtitle':
+			'Desayunos y cestas personalizadas, recién horneados y listos para sorprender allá donde estés.',
+		'delHornoPage.item1.title': 'Desayunos a domicilio',
+		'delHornoPage.item1.desc':
+			'Elige entre nuestras propuestas de desayuno y te lo llevamos calentito a primera hora.',
+		'delHornoPage.item2.title': 'Cestas personalizadas',
+		'delHornoPage.item2.desc':
+			'Combina dulces, salados y bebidas para crear una cesta a tu gusto — perfecta para regalar.',
+		'delHornoPage.item3.title': 'Ocasiones especiales',
+		'delHornoPage.item3.desc': 'Cumpleaños, aniversarios o un día cualquiera que merece un detalle dulce.',
+		'delHornoPage.item4.title': 'Cómo pedir',
+		'delHornoPage.item4.desc':
+			'Escríbenos con la fecha y lo que te apetece, y nosotros nos encargamos del resto.',
+		'delHornoPage.ctaTitle': '¿Te preparamos tu cesta?',
+		'delHornoPage.ctaText':
+			'Cuéntanos la ocasión y lo que te apetece — escríbenos o pásate por la pastelería.',
+		'delHornoPage.ctaEmail': 'Escríbenos',
+		'delHornoPage.ctaCall': 'Llámanos',
+
+		'meta.ultimaHora.title': 'Última hora | Gisela Pastelería Natural',
+		'meta.ultimaHora.description':
+			'Todas las novedades de Gisela Pastelería Natural: lanzamientos, novedades de temporada y mucho más.',
+		'ultimaHoraPage.eyebrow': 'Novedades',
+		'ultimaHoraPage.title': 'Última hora',
+		'ultimaHoraPage.subtitle':
+			'Todo lo nuevo en Gisela Pastelería Natural: lanzamientos, novedades de temporada y alguna que otra sorpresa.',
+		'ultimaHoraPage.footerNote': 'Vuelve pronto — seguimos añadiendo novedades por aquí.',
 
 		'bcbTeaser.eyebrow': 'Para peregrinos del Camino de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -214,18 +289,20 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.eyebrow': 'Specialities',
 		'especialidades.title': "What you can't miss",
 		'especialidades.badge': 'No preservatives',
-		'especialidades.item1.title': 'Our sweets',
-		'especialidades.item1.desc': 'Cakes, brownies and kukis baked fresh every day in our bakery.',
-		'especialidades.item1.alt': 'Selection of dessert cups from Gisela Pastelería Natural',
-		'especialidades.item2.title': 'To gift',
-		'especialidades.item2.desc': 'Boxes and baskets to take a little bit of Gisela wherever you go.',
-		'especialidades.item2.alt': 'Box of kukis from Gisela Pastelería Natural, ready to gift',
-		'especialidades.item3.title': 'Speciality coffee',
-		'especialidades.item3.desc': 'Bonarte blend, made just how you like it.',
-		'especialidades.item3.alt': 'Example image (placeholder, to be replaced with a real speciality coffee photo)',
+		'especialidades.item1.title': 'Breakfasts',
+		'especialidades.item1.desc':
+			'Start the day with a full, freshly made breakfast, with our bread and morning sweets.',
+		'especialidades.item1.alt': 'Breakfast at Gisela Pastelería Natural with cake and fresh fruit',
+		'especialidades.item2.title': 'Corporate catering',
+		'especialidades.item2.desc':
+			'Sweet and savoury treats for meetings, events and company celebrations, made to your needs.',
+		'especialidades.item2.alt': 'Selection of treats from Gisela Pastelería Natural for corporate catering',
+		'especialidades.item3.title': 'Custom cakes',
+		'especialidades.item3.desc': 'Choose the size, the flavour and the decoration — every cake is made your way.',
+		'especialidades.item3.alt': 'Custom apple cake from Gisela Pastelería Natural',
 
 		'especialidadesPage.intro':
-			"From sweets baked fresh every day to gift boxes and speciality coffee: this is what you can't miss when you visit us.",
+			"From freshly made breakfasts to corporate catering and cakes made to order: this is what you can't miss when you visit us.",
 		'especialidadesPage.ctaTitle': 'Want to see the full menu?',
 		'especialidadesPage.ctaText':
 			'Discover all our sweets, cakes and savoury treats in our full menu.',
@@ -272,6 +349,77 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'You choose the filling and how you want it decorated — every cake is different because every customer is.',
 		'encargaTuTartaPage.closingText':
 			"Come to the bakery and tell us how you want it — together we'll shape it.",
+
+		'servicesGrid.title': 'Everything Gisela Can Do For You',
+		'servicesGrid.subtitle':
+			"From your team's breakfast to the cake of your dreams — discover everything we prepare for you.",
+		'servicesGrid.empresas.title': 'For businesses',
+		'servicesGrid.empresas.tagline': 'Breakfasts, catering and corporate gifts',
+		'servicesGrid.empresas.alt': 'Boxes of sweets from Gisela Pastelería Natural prepared for businesses',
+		'servicesGrid.horno.title': 'Breakfasts & custom baskets',
+		'servicesGrid.horno.tagline': 'From our oven to your door, whenever you like',
+		'servicesGrid.horno.alt': 'Handmade breakfast from Gisela Pastelería Natural ready to take home',
+		'servicesGrid.tartas.title': 'Custom cakes',
+		'servicesGrid.tartas.tagline': 'The size, the flavour and the decoration, your way',
+		'servicesGrid.tartas.alt': 'Custom cake from Gisela Pastelería Natural',
+		'servicesGrid.ultimaHora.title': 'Latest news',
+		'servicesGrid.ultimaHora.tagline': 'Everything new at Gisela',
+		'servicesGrid.ultimaHora.alt': 'Selection of sweets from Gisela Pastelería Natural',
+
+		'meta.paraEmpresas.title': 'Gisela for businesses | Gisela Pastelería Natural',
+		'meta.paraEmpresas.description':
+			'Work breakfasts, event catering and corporate gifts with the handmade taste of Gisela Pastelería Natural, in Ponferrada.',
+		'paraEmpresasPage.eyebrow': 'For businesses',
+		'paraEmpresasPage.title': 'Gisela for businesses',
+		'paraEmpresasPage.subtitle':
+			'Work breakfasts, event catering and corporate gifts, with the same handmade taste — so your business can enjoy Gisela too.',
+		'paraEmpresasPage.item1.title': 'Work breakfasts',
+		'paraEmpresasPage.item1.desc':
+			'Trays of freshly made sweet and savoury treats to kick off your team meetings.',
+		'paraEmpresasPage.item2.title': 'Event catering',
+		'paraEmpresasPage.item2.desc':
+			'Sweet and savoury spreads tailored for presentations, training sessions or company celebrations.',
+		'paraEmpresasPage.item3.title': 'Corporate gifts',
+		'paraEmpresasPage.item3.desc':
+			'Customisable boxes and baskets to gift to clients, suppliers or your own team.',
+		'paraEmpresasPage.item4.title': 'Invoicing for businesses',
+		'paraEmpresasPage.item4.desc': 'Orders with an invoice, so managing it with your company is easy.',
+		'paraEmpresasPage.ctaTitle': 'Shall we talk about your next event?',
+		'paraEmpresasPage.ctaText':
+			"Tell us what you need and we'll prepare it together — write to us or drop by the bakery.",
+		'paraEmpresasPage.ctaEmail': 'Email us',
+		'paraEmpresasPage.ctaCall': 'Call us',
+
+		'meta.delHorno.title': 'From our oven to your home | Gisela Pastelería Natural',
+		'meta.delHorno.description':
+			'Custom breakfasts and baskets from Gisela Pastelería Natural, freshly baked and ready to bring to your home.',
+		'delHornoPage.eyebrow': 'Home delivery',
+		'delHornoPage.title': 'From our oven to your home',
+		'delHornoPage.subtitle':
+			'Custom breakfasts and baskets, freshly baked and ready to surprise you wherever you are.',
+		'delHornoPage.item1.title': 'Breakfast delivery',
+		'delHornoPage.item1.desc':
+			'Choose from our breakfast options and we bring it to you warm, first thing in the morning.',
+		'delHornoPage.item2.title': 'Custom baskets',
+		'delHornoPage.item2.desc':
+			'Mix sweets, savoury bites and drinks to build a basket your way — perfect as a gift.',
+		'delHornoPage.item3.title': 'Special occasions',
+		'delHornoPage.item3.desc': 'Birthdays, anniversaries, or just an ordinary day that deserves something sweet.',
+		'delHornoPage.item4.title': 'How to order',
+		'delHornoPage.item4.desc': "Tell us the date and what you fancy, and we'll take care of the rest.",
+		'delHornoPage.ctaTitle': 'Shall we prepare your basket?',
+		'delHornoPage.ctaText': 'Tell us the occasion and what you fancy — write to us or drop by the bakery.',
+		'delHornoPage.ctaEmail': 'Email us',
+		'delHornoPage.ctaCall': 'Call us',
+
+		'meta.ultimaHora.title': 'Latest news | Gisela Pastelería Natural',
+		'meta.ultimaHora.description':
+			'All the latest from Gisela Pastelería Natural: launches, seasonal news and much more.',
+		'ultimaHoraPage.eyebrow': 'News',
+		'ultimaHoraPage.title': 'Latest news',
+		'ultimaHoraPage.subtitle':
+			'Everything new at Gisela Pastelería Natural: launches, seasonal news and the occasional surprise.',
+		'ultimaHoraPage.footerNote': 'Check back soon — we keep adding news here.',
 
 		'bcbTeaser.eyebrow': 'For pilgrims on the Camino de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -384,20 +532,21 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.eyebrow': 'Spezialitäten',
 		'especialidades.title': 'Was du nicht verpassen solltest',
 		'especialidades.badge': 'Ohne Konservierungsstoffe',
-		'especialidades.item1.title': 'Unsere Süßigkeiten',
-		'especialidades.item1.desc': 'Torten, Brownies und Kukis, täglich frisch in unserer Backstube gebacken.',
-		'especialidades.item1.alt': 'Auswahl an Dessertbechern von Gisela Pastelería Natural',
-		'especialidades.item2.title': 'Zum Verschenken',
+		'especialidades.item1.title': 'Frühstück',
+		'especialidades.item1.desc':
+			'Starte den Tag mit einem vollständigen, frisch zubereiteten Frühstück, mit unserem Brot und den Morgen-Süßigkeiten.',
+		'especialidades.item1.alt': 'Frühstück bei Gisela Pastelería Natural mit Torte und frischem Obst',
+		'especialidades.item2.title': 'Firmen-Catering',
 		'especialidades.item2.desc':
-			'Boxen und Körbe, um ein Stückchen Gisela überallhin mitzunehmen.',
-		'especialidades.item2.alt': 'Kukis-Box von Gisela Pastelería Natural zum Verschenken',
-		'especialidades.item3.title': 'Spezialitätenkaffee',
-		'especialidades.item3.desc': 'Bonarte-Blend, zubereitet ganz nach deinem Geschmack.',
-		'especialidades.item3.alt':
-			'Beispielbild (Platzhalter, wird durch ein echtes Foto vom Spezialitätenkaffee ersetzt)',
+			'Süßes und Herzhaftes für Meetings, Events und Firmenfeiern, ganz nach deinen Wünschen zubereitet.',
+		'especialidades.item2.alt': 'Auswahl an Köstlichkeiten von Gisela Pastelería Natural für Firmen-Catering',
+		'especialidades.item3.title': 'Individuelle Torten',
+		'especialidades.item3.desc':
+			'Wähle die Größe, den Geschmack und die Dekoration — jede Torte wird ganz nach deinem Geschmack gemacht.',
+		'especialidades.item3.alt': 'Individuelle Apfeltorte von Gisela Pastelería Natural',
 
 		'especialidadesPage.intro':
-			'Von täglich frisch gebackenen Süßigkeiten bis hin zu Geschenkboxen und Spezialitätenkaffee: Das solltest du bei deinem Besuch nicht verpassen.',
+			'Von frisch zubereiteten Frühstücken über Firmen-Catering bis hin zu Torten nach Maß: Das solltest du bei deinem Besuch nicht verpassen.',
 		'especialidadesPage.ctaTitle': 'Möchtest du die ganze Karte sehen?',
 		'especialidadesPage.ctaText':
 			'Entdecke all unsere Süßigkeiten, Torten und herzhaften Köstlichkeiten in unserer vollständigen Karte.',
@@ -444,6 +593,77 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'Du wählst die Füllung und wie sie dekoriert werden soll — jede Torte ist anders, weil jeder Kunde es ist.',
 		'encargaTuTartaPage.closingText':
 			'Komm in die Bäckerei und erzähl uns, wie du sie haben möchtest — gemeinsam geben wir ihr Form.',
+
+		'servicesGrid.title': 'Alles, was Gisela für dich tun kann',
+		'servicesGrid.subtitle':
+			'Vom Frühstück für dein Team bis zur Torte deiner Träume — entdecke alles, was wir für dich vorbereiten.',
+		'servicesGrid.empresas.title': 'Für Unternehmen',
+		'servicesGrid.empresas.tagline': 'Frühstück, Catering und Firmengeschenke',
+		'servicesGrid.empresas.alt': 'Süßigkeitenboxen von Gisela Pastelería Natural für Unternehmen',
+		'servicesGrid.horno.title': 'Frühstück & individuelle Körbe',
+		'servicesGrid.horno.tagline': 'Aus unserem Ofen zu dir nach Hause, wann immer du willst',
+		'servicesGrid.horno.alt': 'Handgemachtes Frühstück von Gisela Pastelería Natural, zum Mitnehmen bereit',
+		'servicesGrid.tartas.title': 'Individuelle Torten',
+		'servicesGrid.tartas.tagline': 'Größe, Geschmack und Dekoration ganz nach deinem Wunsch',
+		'servicesGrid.tartas.alt': 'Individuelle Torte von Gisela Pastelería Natural',
+		'servicesGrid.ultimaHora.title': 'Neuigkeiten',
+		'servicesGrid.ultimaHora.tagline': 'Alles Neue bei Gisela',
+		'servicesGrid.ultimaHora.alt': 'Auswahl an Süßigkeiten von Gisela Pastelería Natural',
+
+		'meta.paraEmpresas.title': 'Gisela für Unternehmen | Gisela Pastelería Natural',
+		'meta.paraEmpresas.description':
+			'Arbeitsfrühstück, Event-Catering und Firmengeschenke mit dem handwerklichen Geschmack von Gisela Pastelería Natural, in Ponferrada.',
+		'paraEmpresasPage.eyebrow': 'Für Unternehmen',
+		'paraEmpresasPage.title': 'Gisela für Unternehmen',
+		'paraEmpresasPage.subtitle':
+			'Arbeitsfrühstück, Event-Catering und Firmengeschenke, mit demselben handwerklichen Geschmack — damit auch dein Unternehmen Gisela genießen kann.',
+		'paraEmpresasPage.item1.title': 'Arbeitsfrühstück',
+		'paraEmpresasPage.item1.desc':
+			'Tabletts mit frisch zubereiteten süßen und herzhaften Leckereien für einen guten Start in die Teambesprechung.',
+		'paraEmpresasPage.item2.title': 'Event-Catering',
+		'paraEmpresasPage.item2.desc':
+			'Süße und herzhafte Angebote nach Maß für Präsentationen, Schulungen oder Firmenfeiern.',
+		'paraEmpresasPage.item3.title': 'Firmengeschenke',
+		'paraEmpresasPage.item3.desc':
+			'Individuell gestaltbare Boxen und Körbe zum Verschenken an Kunden, Lieferanten oder das eigene Team.',
+		'paraEmpresasPage.item4.title': 'Rechnungsstellung für Unternehmen',
+		'paraEmpresasPage.item4.desc': 'Bestellungen mit Rechnung, damit die Abwicklung mit deinem Unternehmen einfach ist.',
+		'paraEmpresasPage.ctaTitle': 'Lass uns über dein nächstes Event sprechen',
+		'paraEmpresasPage.ctaText':
+			'Erzähl uns, was du brauchst, und wir bereiten es gemeinsam vor — schreib uns oder komm in der Bäckerei vorbei.',
+		'paraEmpresasPage.ctaEmail': 'Schreib uns',
+		'paraEmpresasPage.ctaCall': 'Ruf uns an',
+
+		'meta.delHorno.title': 'Vom Ofen zu dir nach Hause | Gisela Pastelería Natural',
+		'meta.delHorno.description':
+			'Individuelle Frühstücke und Körbe von Gisela Pastelería Natural, frisch gebacken und bereit für dein Zuhause.',
+		'delHornoPage.eyebrow': 'Lieferung nach Hause',
+		'delHornoPage.title': 'Vom Ofen zu dir nach Hause',
+		'delHornoPage.subtitle':
+			'Individuelle Frühstücke und Körbe, frisch gebacken und bereit, dich zu überraschen, wo immer du bist.',
+		'delHornoPage.item1.title': 'Frühstückslieferung',
+		'delHornoPage.item1.desc': 'Wähle aus unseren Frühstücksangeboten und wir bringen es dir warm am frühen Morgen.',
+		'delHornoPage.item2.title': 'Individuelle Körbe',
+		'delHornoPage.item2.desc':
+			'Kombiniere Süßes, Herzhaftes und Getränke zu einem Korb ganz nach deinem Geschmack — perfekt zum Verschenken.',
+		'delHornoPage.item3.title': 'Besondere Anlässe',
+		'delHornoPage.item3.desc': 'Geburtstage, Jubiläen oder einfach ein ganz normaler Tag, der etwas Süßes verdient.',
+		'delHornoPage.item4.title': 'So bestellst du',
+		'delHornoPage.item4.desc': 'Schreib uns das Datum und was du dir wünschst, und wir kümmern uns um den Rest.',
+		'delHornoPage.ctaTitle': 'Sollen wir deinen Korb vorbereiten?',
+		'delHornoPage.ctaText':
+			'Erzähl uns den Anlass und was du dir wünschst — schreib uns oder komm in der Bäckerei vorbei.',
+		'delHornoPage.ctaEmail': 'Schreib uns',
+		'delHornoPage.ctaCall': 'Ruf uns an',
+
+		'meta.ultimaHora.title': 'Neuigkeiten | Gisela Pastelería Natural',
+		'meta.ultimaHora.description':
+			'Alle Neuigkeiten von Gisela Pastelería Natural: Neueinführungen, Saisonnews und vieles mehr.',
+		'ultimaHoraPage.eyebrow': 'Neuigkeiten',
+		'ultimaHoraPage.title': 'Neuigkeiten',
+		'ultimaHoraPage.subtitle':
+			'Alles Neue bei Gisela Pastelería Natural: Neueinführungen, Saisonnews und die eine oder andere Überraschung.',
+		'ultimaHoraPage.footerNote': 'Schau bald wieder vorbei — wir fügen hier laufend Neuigkeiten hinzu.',
 
 		'bcbTeaser.eyebrow': 'Für Pilger auf dem Jakobsweg',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -556,20 +776,22 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.eyebrow': 'Spécialités',
 		'especialidades.title': "Ce qu'il ne faut pas manquer",
 		'especialidades.badge': 'Sans conservateurs',
-		'especialidades.item1.title': 'Nos douceurs',
-		'especialidades.item1.desc': 'Gâteaux, brownies et kukis cuits chaque jour dans notre atelier.',
-		'especialidades.item1.alt': 'Sélection de verrines de dessert de Gisela Pastelería Natural',
-		'especialidades.item2.title': 'À offrir',
+		'especialidades.item1.title': 'Petits-déjeuners',
+		'especialidades.item1.desc':
+			'Commencez la journée avec un petit-déjeuner complet et fraîchement préparé, avec notre pain et nos douceurs du matin.',
+		'especialidades.item1.alt': 'Petit-déjeuner chez Gisela Pastelería Natural avec gâteau et fruits frais',
+		'especialidades.item2.title': 'Traiteur pour entreprises',
 		'especialidades.item2.desc':
-			'Boîtes et paniers pour emporter un peu de Gisela partout avec vous.',
-		'especialidades.item2.alt': 'Boîte de kukis de Gisela Pastelería Natural, prête à offrir',
-		'especialidades.item3.title': 'Café de spécialité',
-		'especialidades.item3.desc': "Mélange Bonarte, préparé comme vous l'aimez.",
-		'especialidades.item3.alt':
-			"Image d'exemple (temporaire, à remplacer par une vraie photo de café de spécialité)",
+			"Douceurs et salés pour réunions, événements et fêtes d'entreprise, préparés sur mesure.",
+		'especialidades.item2.alt':
+			"Sélection de douceurs de Gisela Pastelería Natural pour traiteur d'entreprise",
+		'especialidades.item3.title': 'Gâteaux personnalisés',
+		'especialidades.item3.desc':
+			'Choisissez la taille, la saveur et la décoration — chaque gâteau est réalisé à votre goût.',
+		'especialidades.item3.alt': 'Gâteau aux pommes personnalisé de Gisela Pastelería Natural',
 
 		'especialidadesPage.intro':
-			"Des douceurs cuites chaque jour aux coffrets cadeaux et au café de spécialité : voici ce qu'il ne faut pas manquer lors de votre visite.",
+			"Des petits-déjeuners frais au traiteur pour entreprises en passant par des gâteaux sur mesure : voici ce qu'il ne faut pas manquer lors de votre visite.",
 		'especialidadesPage.ctaTitle': 'Envie de voir toute la carte ?',
 		'especialidadesPage.ctaText':
 			'Découvrez toutes nos douceurs, gâteaux et salés dans notre carte complète.',
@@ -618,6 +840,79 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'Vous choisissez la garniture et la décoration — chaque gâteau est différent, comme chaque client.',
 		'encargaTuTartaPage.closingText':
 			'Venez à la pâtisserie nous dire comment vous le voulez — nous lui donnerons forme ensemble.',
+
+		'servicesGrid.title': 'Tout ce que Gisela peut faire pour vous',
+		'servicesGrid.subtitle':
+			'Du petit-déjeuner de votre équipe au gâteau de vos rêves — découvrez tout ce que nous préparons pour vous.',
+		'servicesGrid.empresas.title': 'Pour les entreprises',
+		'servicesGrid.empresas.tagline': "Petits-déjeuners, traiteur et cadeaux d'entreprise",
+		'servicesGrid.empresas.alt':
+			'Boîtes de douceurs de Gisela Pastelería Natural préparées pour les entreprises',
+		'servicesGrid.horno.title': 'Petits-déjeuners et paniers personnalisés',
+		'servicesGrid.horno.tagline': 'De notre four à votre porte, quand vous le souhaitez',
+		'servicesGrid.horno.alt': 'Petit-déjeuner artisanal de Gisela Pastelería Natural prêt à emporter',
+		'servicesGrid.tartas.title': 'Gâteaux personnalisés',
+		'servicesGrid.tartas.tagline': 'La taille, la saveur et la décoration, à votre goût',
+		'servicesGrid.tartas.alt': 'Gâteau personnalisé de Gisela Pastelería Natural',
+		'servicesGrid.ultimaHora.title': 'Dernières nouvelles',
+		'servicesGrid.ultimaHora.tagline': 'Toutes les nouveautés de Gisela',
+		'servicesGrid.ultimaHora.alt': 'Sélection de douceurs de Gisela Pastelería Natural',
+
+		'meta.paraEmpresas.title': 'Gisela pour les entreprises | Gisela Pastelería Natural',
+		'meta.paraEmpresas.description':
+			"Petits-déjeuners de travail, traiteur d'événements et cadeaux d'entreprise avec la saveur artisanale de Gisela Pastelería Natural, à Ponferrada.",
+		'paraEmpresasPage.eyebrow': 'Pour les entreprises',
+		'paraEmpresasPage.title': 'Gisela pour les entreprises',
+		'paraEmpresasPage.subtitle':
+			"Petits-déjeuners de travail, traiteur d'événements et cadeaux d'entreprise, avec la même saveur artisanale — pour que votre entreprise profite aussi de Gisela.",
+		'paraEmpresasPage.item1.title': 'Petits-déjeuners de travail',
+		'paraEmpresasPage.item1.desc':
+			'Plateaux de douceurs et salés fraîchement préparés pour bien démarrer les réunions de votre équipe.',
+		'paraEmpresasPage.item2.title': "Traiteur d'événements",
+		'paraEmpresasPage.item2.desc':
+			"Propositions sucrées et salées sur mesure pour présentations, formations ou fêtes d'entreprise.",
+		'paraEmpresasPage.item3.title': "Cadeaux d'entreprise",
+		'paraEmpresasPage.item3.desc':
+			'Boîtes et paniers personnalisables à offrir à vos clients, fournisseurs ou à votre équipe.',
+		'paraEmpresasPage.item4.title': 'Facturation pour entreprises',
+		'paraEmpresasPage.item4.desc': 'Commandes avec facture, pour simplifier la gestion avec votre entreprise.',
+		'paraEmpresasPage.ctaTitle': 'Parlons de votre prochain événement ?',
+		'paraEmpresasPage.ctaText':
+			'Dites-nous ce dont vous avez besoin et préparons-le ensemble — écrivez-nous ou passez à la pâtisserie.',
+		'paraEmpresasPage.ctaEmail': 'Écrivez-nous',
+		'paraEmpresasPage.ctaCall': 'Appelez-nous',
+
+		'meta.delHorno.title': 'De notre four à votre maison | Gisela Pastelería Natural',
+		'meta.delHorno.description':
+			'Petits-déjeuners et paniers personnalisés de Gisela Pastelería Natural, fraîchement préparés et prêts pour votre maison.',
+		'delHornoPage.eyebrow': 'À domicile',
+		'delHornoPage.title': 'De notre four à votre maison',
+		'delHornoPage.subtitle':
+			'Petits-déjeuners et paniers personnalisés, fraîchement préparés et prêts à vous surprendre où que vous soyez.',
+		'delHornoPage.item1.title': 'Petit-déjeuner à domicile',
+		'delHornoPage.item1.desc':
+			"Choisissez parmi nos propositions de petit-déjeuner et nous vous l'apportons chaud, tôt le matin.",
+		'delHornoPage.item2.title': 'Paniers personnalisés',
+		'delHornoPage.item2.desc':
+			'Combinez douceurs, salés et boissons pour créer un panier à votre goût — parfait à offrir.',
+		'delHornoPage.item3.title': 'Occasions spéciales',
+		'delHornoPage.item3.desc': "Anniversaires, fêtes ou simplement un jour ordinaire qui mérite une touche sucrée.",
+		'delHornoPage.item4.title': 'Comment commander',
+		'delHornoPage.item4.desc': 'Écrivez-nous la date et ce qui vous fait envie, et nous nous occupons du reste.',
+		'delHornoPage.ctaTitle': 'On vous prépare votre panier ?',
+		'delHornoPage.ctaText':
+			"Dites-nous l'occasion et ce qui vous fait envie — écrivez-nous ou passez à la pâtisserie.",
+		'delHornoPage.ctaEmail': 'Écrivez-nous',
+		'delHornoPage.ctaCall': 'Appelez-nous',
+
+		'meta.ultimaHora.title': 'Dernières nouvelles | Gisela Pastelería Natural',
+		'meta.ultimaHora.description':
+			"Toute l'actualité de Gisela Pastelería Natural : lancements, nouveautés saisonnières et bien plus encore.",
+		'ultimaHoraPage.eyebrow': 'Nouveautés',
+		'ultimaHoraPage.title': 'Dernières nouvelles',
+		'ultimaHoraPage.subtitle':
+			"Toutes les nouveautés de Gisela Pastelería Natural : lancements, actualités saisonnières et quelques surprises.",
+		'ultimaHoraPage.footerNote': 'Revenez bientôt — nous ajoutons régulièrement des nouveautés ici.',
 
 		'bcbTeaser.eyebrow': 'Pour les pèlerins du Chemin de Saint-Jacques',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -730,18 +1025,19 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.eyebrow': '스페셜 메뉴',
 		'especialidades.title': '놓치면 안 될 메뉴',
 		'especialidades.badge': '방부제 무첨가',
-		'especialidades.item1.title': '우리의 디저트',
-		'especialidades.item1.desc': '매일 저희 공방에서 갓 구운 케이크, 브라우니, 쿠키.',
-		'especialidades.item1.alt': '지셀라 파스텔레리아 나투랄의 디저트 컵 모음',
-		'especialidades.item2.title': '선물용',
-		'especialidades.item2.desc': '어디든 지셀라의 특별함을 전할 수 있는 박스와 바구니.',
-		'especialidades.item2.alt': '선물하기 좋은 지셀라 파스텔레리아 나투랄 쿠키 박스',
-		'especialidades.item3.title': '스페셜티 커피',
-		'especialidades.item3.desc': '보나르테 블렌드, 원하는 대로 즐기세요.',
-		'especialidades.item3.alt': '예시 이미지 (임시, 추후 실제 스페셜티 커피 사진으로 교체 예정)',
+		'especialidades.item1.title': '조식',
+		'especialidades.item1.desc': '매일 아침 갓 구운 빵과 디저트로 완성하는 든든한 아침 식사로 하루를 시작하세요.',
+		'especialidades.item1.alt': 'Gisela Pastelería Natural의 케이크와 신선한 과일로 차린 아침 식사',
+		'especialidades.item2.title': '기업 케이터링',
+		'especialidades.item2.desc':
+			'회의, 행사, 회사 축하 자리를 위한 디저트와 짭짤한 요리를 원하시는 대로 준비해 드립니다.',
+		'especialidades.item2.alt': '기업 케이터링을 위한 Gisela Pastelería Natural의 디저트 모음',
+		'especialidades.item3.title': '맞춤 케이크',
+		'especialidades.item3.desc': '크기, 맛, 장식을 직접 선택하세요 — 모든 케이크를 원하는 대로 만들어 드립니다.',
+		'especialidades.item3.alt': 'Gisela Pastelería Natural의 맞춤 애플 케이크',
 
 		'especialidadesPage.intro':
-			'매일 갓 구운 디저트부터 선물용 박스, 스페셜티 커피까지. 방문하실 때 놓치면 안 될 것들입니다.',
+			'갓 만든 조식부터 기업 케이터링, 맞춤 케이크까지. 방문하실 때 놓치면 안 될 것들입니다.',
 		'especialidadesPage.ctaTitle': '전체 메뉴를 보고 싶으신가요?',
 		'especialidadesPage.ctaText': '저희의 모든 디저트, 케이크, 짭짤한 메뉴를 전체 메뉴에서 확인하세요.',
 
@@ -784,6 +1080,64 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'encargaTuTartaPage.philosophy5.desc':
 			'속 재료와 장식 방법을 직접 선택하세요 — 고객님 한 분 한 분이 다르듯 케이크도 모두 다릅니다.',
 		'encargaTuTartaPage.closingText': '매장으로 오셔서 원하시는 케이크를 말씀해 주세요 — 함께 만들어 가겠습니다.',
+
+		'servicesGrid.title': 'Gisela가 당신을 위해 할 수 있는 모든 것',
+		'servicesGrid.subtitle': '팀의 아침 식사부터 꿈꾸던 케이크까지 — 저희가 준비한 모든 것을 만나보세요.',
+		'servicesGrid.empresas.title': '기업 고객',
+		'servicesGrid.empresas.tagline': '조식, 케이터링, 기업 선물',
+		'servicesGrid.empresas.alt': '기업을 위해 준비된 Gisela Pastelería Natural의 디저트 박스',
+		'servicesGrid.horno.title': '맞춤 조식 & 바구니',
+		'servicesGrid.horno.tagline': '오븐에서 집까지, 원하실 때 언제든지',
+		'servicesGrid.horno.alt': '집으로 가져갈 준비가 된 Gisela Pastelería Natural의 수제 조식',
+		'servicesGrid.tartas.title': '맞춤 케이크',
+		'servicesGrid.tartas.tagline': '크기, 맛, 장식을 원하는 대로',
+		'servicesGrid.tartas.alt': 'Gisela Pastelería Natural의 맞춤 케이크',
+		'servicesGrid.ultimaHora.title': '최신 소식',
+		'servicesGrid.ultimaHora.tagline': 'Gisela의 모든 새로운 소식',
+		'servicesGrid.ultimaHora.alt': 'Gisela Pastelería Natural의 디저트 모음',
+
+		'meta.paraEmpresas.title': '기업을 위한 Gisela | Gisela Pastelería Natural',
+		'meta.paraEmpresas.description': '폰페라다의 Gisela Pastelería Natural이 선사하는 업무용 조식, 행사 케이터링, 기업 선물.',
+		'paraEmpresasPage.eyebrow': '기업 고객',
+		'paraEmpresasPage.title': '기업을 위한 Gisela',
+		'paraEmpresasPage.subtitle': '업무용 조식, 행사 케이터링, 기업 선물까지 — 귀사도 Gisela의 맛을 누려보세요.',
+		'paraEmpresasPage.item1.title': '업무용 조식',
+		'paraEmpresasPage.item1.desc': '팀 회의를 위한 갓 만든 달콤하고 짭짤한 디저트 트레이.',
+		'paraEmpresasPage.item2.title': '행사 케이터링',
+		'paraEmpresasPage.item2.desc': '발표, 교육, 회사 행사를 위한 맞춤 디저트와 짭짤한 요리.',
+		'paraEmpresasPage.item3.title': '기업 선물',
+		'paraEmpresasPage.item3.desc': '고객, 협력사 또는 직원들에게 선물할 수 있는 맞춤형 박스와 바구니.',
+		'paraEmpresasPage.item4.title': '기업용 세금계산서 발행',
+		'paraEmpresasPage.item4.desc': '세금계산서 발행이 가능해 기업 관리가 간편합니다.',
+		'paraEmpresasPage.ctaTitle': '다음 행사에 대해 이야기해 볼까요?',
+		'paraEmpresasPage.ctaText': '필요하신 것을 알려주시면 함께 준비해 드립니다 — 메시지를 보내주시거나 매장을 방문해 주세요.',
+		'paraEmpresasPage.ctaEmail': '메시지 보내기',
+		'paraEmpresasPage.ctaCall': '전화하기',
+
+		'meta.delHorno.title': '오븐에서 집까지 | Gisela Pastelería Natural',
+		'meta.delHorno.description': '갓 구워 집까지 배달되는 Gisela Pastelería Natural의 맞춤 조식과 바구니.',
+		'delHornoPage.eyebrow': '홈 딜리버리',
+		'delHornoPage.title': '오븐에서 집까지',
+		'delHornoPage.subtitle': '갓 구운 맞춤 조식과 바구니를 어디에 계시든 놀라운 순간으로 만들어 드립니다.',
+		'delHornoPage.item1.title': '조식 배달',
+		'delHornoPage.item1.desc': '원하시는 조식을 선택하시면 이른 아침 따뜻하게 배달해 드립니다.',
+		'delHornoPage.item2.title': '맞춤 바구니',
+		'delHornoPage.item2.desc': '디저트, 짭짤한 요리, 음료를 조합해 나만의 바구니를 만들어보세요 — 선물로도 완벽합니다.',
+		'delHornoPage.item3.title': '특별한 날',
+		'delHornoPage.item3.desc': '생일, 기념일, 혹은 달콤함이 필요한 평범한 하루까지.',
+		'delHornoPage.item4.title': '주문 방법',
+		'delHornoPage.item4.desc': '원하시는 날짜와 내용을 알려주시면 나머지는 저희가 준비합니다.',
+		'delHornoPage.ctaTitle': '바구니를 준비해 드릴까요?',
+		'delHornoPage.ctaText': '어떤 날인지, 무엇을 원하시는지 알려주세요 — 메시지를 보내주시거나 매장을 방문해 주세요.',
+		'delHornoPage.ctaEmail': '메시지 보내기',
+		'delHornoPage.ctaCall': '전화하기',
+
+		'meta.ultimaHora.title': '최신 소식 | Gisela Pastelería Natural',
+		'meta.ultimaHora.description': 'Gisela Pastelería Natural의 모든 소식: 신규 출시, 시즌 소식 등.',
+		'ultimaHoraPage.eyebrow': '소식',
+		'ultimaHoraPage.title': '최신 소식',
+		'ultimaHoraPage.subtitle': 'Gisela Pastelería Natural의 새로운 소식: 신규 출시, 시즌 소식, 그리고 가끔의 깜짝 소식까지.',
+		'ultimaHoraPage.footerNote': '곧 다시 확인해 주세요 — 계속해서 새로운 소식을 추가하고 있습니다.',
 
 		'bcbTeaser.eyebrow': '산티아고 순례길 순례자를 위해',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -892,18 +1246,18 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.eyebrow': '特色推荐',
 		'especialidades.title': '不容错过的美味',
 		'especialidades.badge': '无防腐剂',
-		'especialidades.item1.title': '我们的甜点',
-		'especialidades.item1.desc': '每天在我们的烘焙工坊新鲜出炉的蛋糕、布朗尼和曲奇。',
-		'especialidades.item1.alt': 'Gisela天然烘焙坊的甜点杯精选',
-		'especialidades.item2.title': '送礼佳选',
-		'especialidades.item2.desc': '精美礼盒和礼篮，将Gisela的美味带到任何地方。',
-		'especialidades.item2.alt': '适合送礼的Gisela天然烘焙坊曲奇礼盒',
-		'especialidades.item3.title': '精品咖啡',
-		'especialidades.item3.desc': 'Bonarte拼配咖啡，按您喜欢的方式冲泡。',
-		'especialidades.item3.alt': '示例图片（占位图，稍后将替换为真实的精品咖啡照片）',
+		'especialidades.item1.title': '早餐',
+		'especialidades.item1.desc': '用我们每天新鲜出炉的面包和甜点，开启元气满满的一天。',
+		'especialidades.item1.alt': 'Gisela天然烘焙坊的早餐，搭配蛋糕与新鲜水果',
+		'especialidades.item2.title': '企业餐饮服务',
+		'especialidades.item2.desc': '为会议、活动和企业庆典定制的甜点与咸点。',
+		'especialidades.item2.alt': 'Gisela天然烘焙坊为企业餐饮服务准备的甜点精选',
+		'especialidades.item3.title': '定制蛋糕',
+		'especialidades.item3.desc': '选择尺寸、口味与装饰——每个蛋糕都按您的喜好制作。',
+		'especialidades.item3.alt': 'Gisela天然烘焙坊的定制苹果蛋糕',
 
 		'especialidadesPage.intro':
-			'从每日新鲜出炉的甜点，到送礼礼盒和精品咖啡：这些都是您来访时不容错过的。',
+			'从新鲜早餐到企业餐饮服务，再到定制蛋糕：这些都是您来访时不容错过的。',
 		'especialidadesPage.ctaTitle': '想看看完整菜单吗？',
 		'especialidadesPage.ctaText': '在我们的完整菜单中探索所有甜点、蛋糕和咸点。',
 
@@ -945,6 +1299,64 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'encargaTuTartaPage.philosophy5.desc':
 			'您来选择夹心口味和装饰方式——每一个蛋糕都不同，正如每一位顾客都独一无二。',
 		'encargaTuTartaPage.closingText': '欢迎到店告诉我们您想要的样子——我们一起把它做出来。',
+
+		'servicesGrid.title': 'Gisela能为您做的一切',
+		'servicesGrid.subtitle': '从团队的早餐到梦想中的蛋糕——探索我们为您准备的一切。',
+		'servicesGrid.empresas.title': '企业服务',
+		'servicesGrid.empresas.tagline': '早餐、餐饮服务与企业礼品',
+		'servicesGrid.empresas.alt': '为企业准备的Gisela天然烘焙坊甜点礼盒',
+		'servicesGrid.horno.title': '定制早餐与礼篮',
+		'servicesGrid.horno.tagline': '新鲜出炉，随时送到您家',
+		'servicesGrid.horno.alt': 'Gisela天然烘焙坊准备好带回家的手工早餐',
+		'servicesGrid.tartas.title': '定制蛋糕',
+		'servicesGrid.tartas.tagline': '尺寸、口味与装饰，随您心意',
+		'servicesGrid.tartas.alt': 'Gisela天然烘焙坊的定制蛋糕',
+		'servicesGrid.ultimaHora.title': '最新动态',
+		'servicesGrid.ultimaHora.tagline': 'Gisela的所有最新消息',
+		'servicesGrid.ultimaHora.alt': 'Gisela天然烘焙坊的甜点精选',
+
+		'meta.paraEmpresas.title': '企业版Gisela | Gisela Pastelería Natural',
+		'meta.paraEmpresas.description': '蓬费拉达Gisela天然烘焙坊为企业提供的工作早餐、活动餐饮与企业礼品。',
+		'paraEmpresasPage.eyebrow': '企业服务',
+		'paraEmpresasPage.title': '企业版Gisela',
+		'paraEmpresasPage.subtitle': '工作早餐、活动餐饮与企业礼品——让您的企业也能享受Gisela的美味。',
+		'paraEmpresasPage.item1.title': '工作早餐',
+		'paraEmpresasPage.item1.desc': '新鲜制作的甜点与咸点拼盘，为团队会议开启美好的一天。',
+		'paraEmpresasPage.item2.title': '活动餐饮',
+		'paraEmpresasPage.item2.desc': '为演讲、培训或公司庆典量身定制的甜咸点心。',
+		'paraEmpresasPage.item3.title': '企业礼品',
+		'paraEmpresasPage.item3.desc': '可定制的礼盒和礼篮，赠予客户、供应商或您的团队。',
+		'paraEmpresasPage.item4.title': '企业开票服务',
+		'paraEmpresasPage.item4.desc': '订单可开具发票，方便企业管理。',
+		'paraEmpresasPage.ctaTitle': '一起聊聊您的下一场活动吧？',
+		'paraEmpresasPage.ctaText': '告诉我们您的需求，我们一起准备——请联系我们或亲临店内。',
+		'paraEmpresasPage.ctaEmail': '联系我们',
+		'paraEmpresasPage.ctaCall': '致电我们',
+
+		'meta.delHorno.title': '从烤箱到您家 | Gisela Pastelería Natural',
+		'meta.delHorno.description': 'Gisela天然烘焙坊的定制早餐与礼篮，新鲜出炉，随时送到您家。',
+		'delHornoPage.eyebrow': '送货上门',
+		'delHornoPage.title': '从烤箱到您家',
+		'delHornoPage.subtitle': '新鲜出炉的定制早餐与礼篮，无论您在哪里，都能带来惊喜。',
+		'delHornoPage.item1.title': '早餐配送',
+		'delHornoPage.item1.desc': '选择您喜欢的早餐，我们会在清晨为您送上热腾腾的美味。',
+		'delHornoPage.item2.title': '定制礼篮',
+		'delHornoPage.item2.desc': '搭配甜点、咸点与饮品，打造专属礼篮——送礼首选。',
+		'delHornoPage.item3.title': '特别时刻',
+		'delHornoPage.item3.desc': '生日、纪念日，或只是平凡的一天，都值得一份甜蜜。',
+		'delHornoPage.item4.title': '如何下单',
+		'delHornoPage.item4.desc': '告诉我们日期和您的心意，其余的交给我们。',
+		'delHornoPage.ctaTitle': '为您准备礼篮好吗？',
+		'delHornoPage.ctaText': '告诉我们场合和您的心意——请联系我们或亲临店内。',
+		'delHornoPage.ctaEmail': '联系我们',
+		'delHornoPage.ctaCall': '致电我们',
+
+		'meta.ultimaHora.title': '最新动态 | Gisela Pastelería Natural',
+		'meta.ultimaHora.description': 'Gisela天然烘焙坊的所有最新消息：新品发布、季节动态等。',
+		'ultimaHoraPage.eyebrow': '动态',
+		'ultimaHoraPage.title': '最新动态',
+		'ultimaHoraPage.subtitle': 'Gisela天然烘焙坊的所有新鲜事：新品发布、季节动态，还有不定期的小惊喜。',
+		'ultimaHoraPage.footerNote': '欢迎常来看看——我们会持续更新动态。',
 
 		'bcbTeaser.eyebrow': '为圣地亚哥朝圣者',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -1052,19 +1464,20 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.eyebrow': 'Especialidades',
 		'especialidades.title': 'O que não pode perder',
 		'especialidades.badge': 'Sem conservantes',
-		'especialidades.item1.title': 'Os nossos doces',
-		'especialidades.item1.desc': 'Bolos, brownies e kukis cozidos todos os dias no nosso obrador.',
-		'especialidades.item1.alt': 'Seleção de copos de sobremesa da Gisela Pastelería Natural',
-		'especialidades.item2.title': 'Para oferecer',
-		'especialidades.item2.desc': 'Caixas e cestas para levar um pouco de Gisela para onde quiser.',
-		'especialidades.item2.alt': 'Caixa de kukis da Gisela Pastelería Natural, pronta para oferecer',
-		'especialidades.item3.title': 'Café de especialidade',
-		'especialidades.item3.desc': 'Blend Bonarte, preparado como preferir.',
-		'especialidades.item3.alt':
-			'Imagem de exemplo (temporária, a substituir por uma foto real de café de especialidade)',
+		'especialidades.item1.title': 'Pequenos-almoços',
+		'especialidades.item1.desc':
+			'Comece o dia com um pequeno-almoço completo e acabado de fazer, com o nosso pão e doces da manhã.',
+		'especialidades.item1.alt': 'Pequeno-almoço na Gisela Pastelería Natural com bolo e fruta fresca',
+		'especialidades.item2.title': 'Catering para empresas',
+		'especialidades.item2.desc':
+			'Doces e salgados para reuniões, eventos e celebrações de empresa, feitos à sua medida.',
+		'especialidades.item2.alt': 'Seleção de doces da Gisela Pastelería Natural para catering de empresas',
+		'especialidades.item3.title': 'Bolos personalizados',
+		'especialidades.item3.desc': 'Escolha o tamanho, o sabor e a decoração — cada bolo é feito ao seu gosto.',
+		'especialidades.item3.alt': 'Bolo de maçã personalizado da Gisela Pastelería Natural',
 
 		'especialidadesPage.intro':
-			'Desde os doces cozidos todos os dias até às caixas para oferecer e ao café de especialidade: isto é o que não pode perder quando nos visitar.',
+			'Desde pequenos-almoços acabados de fazer até catering para empresas e bolos à sua medida: isto é o que não pode perder quando nos visitar.',
 		'especialidadesPage.ctaTitle': 'Apetece-lhe ver a carta completa?',
 		'especialidadesPage.ctaText':
 			'Descubra todos os nossos doces, bolos e salgados na nossa carta completa.',
@@ -1111,6 +1524,77 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'Escolhe o recheio e como o quer decorado — cada bolo é diferente porque cada cliente também é.',
 		'encargaTuTartaPage.closingText':
 			'Venha à pastelaria e conte-nos como o quer — entre os dois damos-lhe forma.',
+
+		'servicesGrid.title': 'Tudo o que a Gisela pode fazer por si',
+		'servicesGrid.subtitle':
+			'Do pequeno-almoço da sua equipa ao bolo dos seus sonhos — descubra tudo o que preparamos para si.',
+		'servicesGrid.empresas.title': 'Para empresas',
+		'servicesGrid.empresas.tagline': 'Pequenos-almoços, catering e presentes corporativos',
+		'servicesGrid.empresas.alt': 'Caixas de doces da Gisela Pastelería Natural preparadas para empresas',
+		'servicesGrid.horno.title': 'Pequenos-almoços e cestas personalizadas',
+		'servicesGrid.horno.tagline': 'Do forno até sua casa, quando quiser',
+		'servicesGrid.horno.alt': 'Pequeno-almoço artesanal da Gisela Pastelería Natural pronto para levar para casa',
+		'servicesGrid.tartas.title': 'Bolos personalizados',
+		'servicesGrid.tartas.tagline': 'O tamanho, o sabor e a decoração, ao seu gosto',
+		'servicesGrid.tartas.alt': 'Bolo personalizado da Gisela Pastelería Natural',
+		'servicesGrid.ultimaHora.title': 'Última hora',
+		'servicesGrid.ultimaHora.tagline': 'Todas as novidades da Gisela',
+		'servicesGrid.ultimaHora.alt': 'Seleção de doces da Gisela Pastelería Natural',
+
+		'meta.paraEmpresas.title': 'Gisela para empresas | Gisela Pastelería Natural',
+		'meta.paraEmpresas.description':
+			'Pequenos-almoços de trabalho, catering para eventos e presentes corporativos com o sabor artesanal da Gisela Pastelería Natural, em Ponferrada.',
+		'paraEmpresasPage.eyebrow': 'Para empresas',
+		'paraEmpresasPage.title': 'Gisela para empresas',
+		'paraEmpresasPage.subtitle':
+			'Pequenos-almoços de trabalho, catering para eventos e presentes corporativos, com o sabor artesanal de sempre — para que a sua empresa também desfrute da Gisela.',
+		'paraEmpresasPage.item1.title': 'Pequenos-almoços de trabalho',
+		'paraEmpresasPage.item1.desc':
+			'Tabuleiros de doces e salgados acabados de fazer para começar bem as reuniões da sua equipa.',
+		'paraEmpresasPage.item2.title': 'Catering para eventos',
+		'paraEmpresasPage.item2.desc':
+			'Propostas doces e salgadas à medida para apresentações, formações ou celebrações de empresa.',
+		'paraEmpresasPage.item3.title': 'Presentes corporativos',
+		'paraEmpresasPage.item3.desc':
+			'Caixas e cestas personalizáveis para oferecer a clientes, fornecedores ou à sua própria equipa.',
+		'paraEmpresasPage.item4.title': 'Faturação para empresas',
+		'paraEmpresasPage.item4.desc': 'Encomendas com fatura, para que a gestão com a sua empresa seja simples.',
+		'paraEmpresasPage.ctaTitle': 'Vamos falar sobre o seu próximo evento?',
+		'paraEmpresasPage.ctaText':
+			'Diga-nos o que precisa e preparamos juntos — escreva-nos ou passe pela pastelaria.',
+		'paraEmpresasPage.ctaEmail': 'Escreva-nos',
+		'paraEmpresasPage.ctaCall': 'Ligue-nos',
+
+		'meta.delHorno.title': 'Do forno para sua casa | Gisela Pastelería Natural',
+		'meta.delHorno.description':
+			'Pequenos-almoços e cestas personalizadas da Gisela Pastelería Natural, acabados de fazer e prontos para sua casa.',
+		'delHornoPage.eyebrow': 'Ao domicílio',
+		'delHornoPage.title': 'Do forno para sua casa',
+		'delHornoPage.subtitle':
+			'Pequenos-almoços e cestas personalizadas, acabados de fazer e prontos para surpreender onde quer que esteja.',
+		'delHornoPage.item1.title': 'Pequeno-almoço ao domicílio',
+		'delHornoPage.item1.desc':
+			'Escolha entre as nossas propostas de pequeno-almoço e levamo-lo quentinho logo de manhã.',
+		'delHornoPage.item2.title': 'Cestas personalizadas',
+		'delHornoPage.item2.desc':
+			'Combine doces, salgados e bebidas para criar uma cesta ao seu gosto — perfeita para oferecer.',
+		'delHornoPage.item3.title': 'Ocasiões especiais',
+		'delHornoPage.item3.desc': 'Aniversários, datas especiais ou um dia qualquer que merece um doce mimo.',
+		'delHornoPage.item4.title': 'Como encomendar',
+		'delHornoPage.item4.desc': 'Escreva-nos a data e o que lhe apetece, e nós tratamos do resto.',
+		'delHornoPage.ctaTitle': 'Preparamos a sua cesta?',
+		'delHornoPage.ctaText': 'Diga-nos a ocasião e o que lhe apetece — escreva-nos ou passe pela pastelaria.',
+		'delHornoPage.ctaEmail': 'Escreva-nos',
+		'delHornoPage.ctaCall': 'Ligue-nos',
+
+		'meta.ultimaHora.title': 'Última hora | Gisela Pastelería Natural',
+		'meta.ultimaHora.description':
+			'Todas as novidades da Gisela Pastelería Natural: lançamentos, novidades sazonais e muito mais.',
+		'ultimaHoraPage.eyebrow': 'Novidades',
+		'ultimaHoraPage.title': 'Última hora',
+		'ultimaHoraPage.subtitle':
+			'Tudo o que há de novo na Gisela Pastelería Natural: lançamentos, novidades sazonais e alguma que outra surpresa.',
+		'ultimaHoraPage.footerNote': 'Volte em breve — continuamos a adicionar novidades por aqui.',
 
 		'bcbTeaser.eyebrow': 'Para peregrinos do Caminho de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -1223,19 +1707,19 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'especialidades.eyebrow': 'Specialità',
 		'especialidades.title': 'Quello che non puoi perderti',
 		'especialidades.badge': 'Senza conservanti',
-		'especialidades.item1.title': 'I nostri dolci',
-		'especialidades.item1.desc': 'Torte, brownies e kukis cotti ogni giorno nel nostro laboratorio.',
-		'especialidades.item1.alt': 'Selezione di bicchierini dessert di Gisela Pastelería Natural',
-		'especialidades.item2.title': 'Da regalare',
-		'especialidades.item2.desc': 'Scatole e cesti per portare un po\' di Gisela ovunque tu vada.',
-		'especialidades.item2.alt': 'Scatola di kukis di Gisela Pastelería Natural, pronta da regalare',
-		'especialidades.item3.title': 'Caffè speciality',
-		'especialidades.item3.desc': 'Miscela Bonarte, preparata come preferisci.',
-		'especialidades.item3.alt':
-			"Immagine di esempio (provvisoria, da sostituire con una foto reale del caffè speciality)",
+		'especialidades.item1.title': 'Colazioni',
+		'especialidades.item1.desc':
+			'Inizia la giornata con una colazione completa e appena fatta, con il nostro pane e i dolci del mattino.',
+		'especialidades.item1.alt': 'Colazione da Gisela Pastelería Natural con torta e frutta fresca',
+		'especialidades.item2.title': 'Catering per aziende',
+		'especialidades.item2.desc': 'Dolci e salati per riunioni, eventi e feste aziendali, preparati su misura.',
+		'especialidades.item2.alt': 'Selezione di dolci di Gisela Pastelería Natural per catering aziendale',
+		'especialidades.item3.title': 'Torte personalizzate',
+		'especialidades.item3.desc': 'Scegli la misura, il gusto e la decorazione — ogni torta è fatta come piace a te.',
+		'especialidades.item3.alt': 'Torta di mele personalizzata di Gisela Pastelería Natural',
 
 		'especialidadesPage.intro':
-			'Dai dolci sfornati ogni giorno alle scatole da regalo e al caffè speciality: ecco cosa non puoi perderti quando ci vieni a trovare.',
+			'Dalle colazioni appena fatte al catering per aziende, fino alle torte su misura: ecco cosa non puoi perderti quando ci vieni a trovare.',
 		'especialidadesPage.ctaTitle': 'Vuoi vedere tutta la carta?',
 		'especialidadesPage.ctaText':
 			'Scopri tutti i nostri dolci, torte e salati nella nostra carta completa.',
@@ -1281,6 +1765,76 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'encargaTuTartaPage.philosophy5.desc':
 			'Scegli tu il ripieno e come vuoi che sia decorata — ogni torta è diversa perché ogni cliente lo è.',
 		'encargaTuTartaPage.closingText': 'Vieni in pasticceria e raccontaci come la vuoi — la creiamo insieme.',
+
+		'servicesGrid.title': 'Tutto ciò che Gisela può fare per te',
+		'servicesGrid.subtitle':
+			'Dalla colazione del tuo team alla torta dei tuoi sogni — scopri tutto ciò che prepariamo per te.',
+		'servicesGrid.empresas.title': 'Per le aziende',
+		'servicesGrid.empresas.tagline': 'Colazioni, catering e regali aziendali',
+		'servicesGrid.empresas.alt': 'Scatole di dolci di Gisela Pastelería Natural preparate per le aziende',
+		'servicesGrid.horno.title': 'Colazioni e ceste personalizzate',
+		'servicesGrid.horno.tagline': 'Dal nostro forno a casa tua, quando vuoi',
+		'servicesGrid.horno.alt': 'Colazione artigianale di Gisela Pastelería Natural pronta da portare a casa',
+		'servicesGrid.tartas.title': 'Torte personalizzate',
+		'servicesGrid.tartas.tagline': 'La misura, il gusto e la decorazione, come vuoi tu',
+		'servicesGrid.tartas.alt': 'Torta personalizzata di Gisela Pastelería Natural',
+		'servicesGrid.ultimaHora.title': 'Ultima ora',
+		'servicesGrid.ultimaHora.tagline': 'Tutte le novità di Gisela',
+		'servicesGrid.ultimaHora.alt': 'Selezione di dolci di Gisela Pastelería Natural',
+
+		'meta.paraEmpresas.title': 'Gisela per le aziende | Gisela Pastelería Natural',
+		'meta.paraEmpresas.description':
+			'Colazioni di lavoro, catering per eventi e regali aziendali con il gusto artigianale di Gisela Pastelería Natural, a Ponferrada.',
+		'paraEmpresasPage.eyebrow': 'Per le aziende',
+		'paraEmpresasPage.title': 'Gisela per le aziende',
+		'paraEmpresasPage.subtitle':
+			'Colazioni di lavoro, catering per eventi e regali aziendali, con lo stesso gusto artigianale — perché anche la tua azienda possa godersi Gisela.',
+		'paraEmpresasPage.item1.title': 'Colazioni di lavoro',
+		'paraEmpresasPage.item1.desc':
+			'Vassoi di dolci e salati appena fatti per iniziare bene le riunioni del tuo team.',
+		'paraEmpresasPage.item2.title': 'Catering per eventi',
+		'paraEmpresasPage.item2.desc':
+			'Proposte dolci e salate su misura per presentazioni, corsi di formazione o feste aziendali.',
+		'paraEmpresasPage.item3.title': 'Regali aziendali',
+		'paraEmpresasPage.item3.desc':
+			'Scatole e ceste personalizzabili da regalare a clienti, fornitori o al tuo team.',
+		'paraEmpresasPage.item4.title': 'Fatturazione per le aziende',
+		'paraEmpresasPage.item4.desc': 'Ordini con fattura, per rendere semplice la gestione con la tua azienda.',
+		'paraEmpresasPage.ctaTitle': 'Parliamo del tuo prossimo evento?',
+		'paraEmpresasPage.ctaText':
+			'Dicci di cosa hai bisogno e lo prepariamo insieme — scrivici o passa in pasticceria.',
+		'paraEmpresasPage.ctaEmail': 'Scrivici',
+		'paraEmpresasPage.ctaCall': 'Chiamaci',
+
+		'meta.delHorno.title': 'Dal nostro forno a casa tua | Gisela Pastelería Natural',
+		'meta.delHorno.description':
+			'Colazioni e ceste personalizzate di Gisela Pastelería Natural, appena sfornate e pronte per casa tua.',
+		'delHornoPage.eyebrow': 'A domicilio',
+		'delHornoPage.title': 'Dal nostro forno a casa tua',
+		'delHornoPage.subtitle':
+			'Colazioni e ceste personalizzate, appena sfornate e pronte a sorprenderti ovunque tu sia.',
+		'delHornoPage.item1.title': 'Colazione a domicilio',
+		'delHornoPage.item1.desc': 'Scegli tra le nostre proposte di colazione e te la portiamo calda, di prima mattina.',
+		'delHornoPage.item2.title': 'Ceste personalizzate',
+		'delHornoPage.item2.desc':
+			'Combina dolci, salati e bevande per creare una cesta come vuoi tu — perfetta da regalare.',
+		'delHornoPage.item3.title': 'Occasioni speciali',
+		'delHornoPage.item3.desc': 'Compleanni, anniversari o semplicemente un giorno qualunque che merita un dolce pensiero.',
+		'delHornoPage.item4.title': 'Come ordinare',
+		'delHornoPage.item4.desc': 'Scrivici la data e cosa desideri, e al resto pensiamo noi.',
+		'delHornoPage.ctaTitle': 'Ti prepariamo la tua cesta?',
+		'delHornoPage.ctaText': "Dicci l'occasione e cosa desideri — scrivici o passa in pasticceria.",
+		'delHornoPage.ctaEmail': 'Scrivici',
+		'delHornoPage.ctaCall': 'Chiamaci',
+
+		'meta.ultimaHora.title': 'Ultima ora | Gisela Pastelería Natural',
+		'meta.ultimaHora.description':
+			'Tutte le novità di Gisela Pastelería Natural: lanci, novità di stagione e molto altro.',
+		'ultimaHoraPage.eyebrow': 'Novità',
+		'ultimaHoraPage.title': 'Ultima ora',
+		'ultimaHoraPage.subtitle':
+			'Tutte le novità di Gisela Pastelería Natural: lanci, novità di stagione e qualche sorpresa ogni tanto.',
+		'ultimaHoraPage.footerNote': 'Torna presto — continuiamo ad aggiungere novità qui.',
 
 		'bcbTeaser.eyebrow': 'Per i pellegrini del Cammino di Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
