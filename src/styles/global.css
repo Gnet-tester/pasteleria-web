@@ -68,3 +68,13 @@ body {
 		display: none;
 	}
 }
+
+.flour-texture {
+	background-color: var(--color-cream-200);
+	background-repeat: repeat;
+	background-image:
+		radial-gradient(circle at 15% 20%, rgba(255, 253, 250, 0.6), transparent 55%),
+		radial-gradient(circle at 85% 75%, rgba(176, 135, 107, 0.1), transparent 55%),
+		url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%223%22 stitchTiles=%22stitch%22 result=%22noise%22/><feColorMatrix in=%22noise%22 type=%22saturate%22 values=%220%22 result=%22gray%22/><feComponentTransfer in=%22gray%22><feFuncR type=%22linear%22 slope=%220.45%22 intercept=%220.6%22/><feFuncG type=%22linear%22 slope=%220.45%22 intercept=%220.6%22/><feFuncB type=%22linear%22 slope=%220.45%22 intercept=%220.6%22/></feComponentTransfer></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/></svg>');
+	background-blend-mode: normal, normal, multiply;
+}

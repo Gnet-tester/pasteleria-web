@@ -30,18 +30,18 @@ const reviews = await getGoogleReviews();
 	<div class="absolute inset-0 bg-cream-50/60"></div>
 
 	<div
-		class="relative mx-auto grid max-w-6xl items-center gap-12 px-4 py-24 md:grid-cols-2 md:gap-16 md:px-6 md:py-32"
+		class="relative mx-auto grid max-w-6xl items-center gap-12 px-4 pt-10 pb-16 md:grid-cols-2 md:gap-16 md:px-6 md:py-32"
 	>
-		<div class="order-1 flex flex-col items-start gap-6 text-left">
-			<div class="flex flex-wrap gap-2">
+		<div class="order-1 flex flex-col items-center gap-6 text-center md:items-start md:text-left">
+			<div class="flex flex-nowrap justify-center gap-2 md:justify-start">
 				<span
-					class="inline-flex items-center gap-2 rounded-full bg-sage-100 px-4 py-1.5 text-sm font-medium text-sage-700"
+					class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-sage-100 px-3 py-1 text-xs font-medium text-sage-700 sm:px-4 sm:py-1.5 sm:text-sm"
 				>
-					<Image src={leaf} alt="" width={20} height={20} class="h-5 w-5" />
+					<Image src={leaf} alt="" width={20} height={20} class="h-4 w-4 sm:h-5 sm:w-5" />
 					{t('hero.badge1')}
 				</span>
 				<span
-					class="inline-flex items-center gap-2 rounded-full bg-terracotta-50 px-4 py-1.5 text-sm font-medium text-terracotta-600"
+					class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-terracotta-50 px-3 py-1 text-xs font-medium text-terracotta-600 sm:px-4 sm:py-1.5 sm:text-sm"
 				>
 					{t('hero.badge2')}
 				</span>
@@ -73,10 +73,10 @@ const reviews = await getGoogleReviews();
 				)
 			}
 
-			<div class="flex flex-col gap-3 sm:flex-row">
+			<div class="flex w-full flex-row flex-nowrap justify-center gap-2 sm:w-auto sm:gap-3 md:justify-start">
 				<a
 					href={getLocalizedPath('/historia', lang)}
-					class="ripple rounded-full bg-sage-400 px-8 py-3 text-center font-medium text-white shadow-sm transition-colors hover:bg-sage-500"
+					class="ripple flex-1 rounded-full bg-sage-400 px-3 py-2.5 text-center text-xs font-medium text-white shadow-sm transition-colors hover:bg-sage-500 sm:flex-none sm:px-8 sm:py-3 sm:text-base"
 				>
 					{t('historia.eyebrow')}
 				</a>
@@ -84,7 +84,7 @@ const reviews = await getGoogleReviews();
 					href="https://www.instagram.com/gisela.pastelerianatural"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="ripple rounded-full border border-sage-300 px-8 py-3 text-center font-medium text-sage-700 transition-colors hover:bg-sage-100"
+					class="ripple flex-1 rounded-full border border-sage-300 px-3 py-2.5 text-center text-xs font-medium text-sage-700 transition-colors hover:bg-sage-100 sm:flex-none sm:px-8 sm:py-3 sm:text-base"
 				>
 					{t('hero.ctaInstagram')}
 				</a>
