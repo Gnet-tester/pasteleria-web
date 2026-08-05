@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/mantenimiento\.html$
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|svg|webp|ico|woff2?)$ [NC]
+RewriteRule ^(.*)$ /mantenimiento.html [R=503,L]
+
+ErrorDocument 503 /mantenimiento.html
+Header always set Retry-After "7200"

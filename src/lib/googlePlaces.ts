@@ -20,7 +20,7 @@ export async function getGoogleReviews(): Promise<GoogleReviewsData | null> {
 
 	if (!apiKey || !placeId) return null;
 
-	const placeUrl = `https://search.google.com/local/writereview?placeid=${placeId}`;
+	const placeUrl = `https://search.google.com/local/reviews?placeid=${placeId}`;
 
 	try {
 		const params = new URLSearchParams({
