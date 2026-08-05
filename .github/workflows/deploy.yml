@@ -32,6 +32,13 @@ jobs:
           PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.PUBLIC_GA_MEASUREMENT_ID }}
         run: npm run build
 
+      - name: Aplicar modo mantenimiento si está activo
+        run: |
+          if [ -f MAINTENANCE_ON ]; then
+            echo "MAINTENANCE_ON detectado: sustituyendo todas las páginas por la de mantenimiento"
+            find dist -name "*.html" ! -name "mantenimiento.html" -exec cp public/mantenimiento.html {} \;
+          fi
+
       - name: Desplegar por SFTP a IONOS
         uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
