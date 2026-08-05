@@ -40,5 +40,5 @@ jobs:
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           local_path: ./dist/*
-          remote_path: ./
+          remote_path: ./sitio-web/
           sftp_only: true
