@@ -1,7 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import leaf from '../assets/Favicon.svg';
-import tartaManzana from '../assets/Tarta de manzana.jpg';
+import fotoDesayuno from '../assets/Foto desayuno.jpg';
+import bocadilloEclipse from '../assets/Bocadillo eclipse.png';
 import cajaPastas from '../assets/Imágenes de ejemplo/Caja de pastas.jpg';
 import { getGoogleReviews } from '../lib/googlePlaces';
 import { useTranslations, getLocalizedPath, defaultLocale, type Locale } from '../i18n/utils';
@@ -95,9 +96,9 @@ const reviews = await getGoogleReviews();
 			<div
 				class="hero-parallax-frame relative mx-auto h-80 max-w-sm overflow-hidden rounded-[2rem] shadow-xl sm:h-96 md:h-[560px] md:max-w-none"
 			>
-				<div class="hero-parallax-layer" data-parallax-speed="0.12">
+				<div class="hero-slide hero-parallax-layer is-active" data-parallax-speed="0.12">
 					<Image
-						src={tartaManzana}
+						src={fotoDesayuno}
 						alt={t('hero.imageAlt')}
 						width={900}
 						widths={[480, 700, 900]}
@@ -105,6 +106,18 @@ const reviews = await getGoogleReviews();
 						quality={72}
 						loading="eager"
 						fetchpriority="high"
+						class="h-full w-full object-cover"
+					/>
+				</div>
+				<div class="hero-slide hero-parallax-layer" data-parallax-speed="0.12">
+					<Image
+						src={bocadilloEclipse}
+						alt={t('hero.imageAlt')}
+						width={900}
+						widths={[480, 700, 900]}
+						sizes="(min-width: 768px) 40vw, 80vw"
+						quality={72}
+						loading="eager"
 						class="h-full w-full object-cover"
 					/>
 				</div>
@@ -159,6 +172,16 @@ const reviews = await getGoogleReviews();
 		);
 		observer.observe(heroSection);
 	}
+
+	const slides = document.querySelectorAll<HTMLElement>('#inicio .hero-slide');
+	if (slides.length > 1 && !reducedMotion) {
+		let current = 0;
+		setInterval(() => {
+			slides[current].classList.remove('is-active');
+			current = (current + 1) % slides.length;
+			slides[current].classList.add('is-active');
+		}, 4500);
+	}
 </script>
 
 <style>
@@ -168,12 +191,31 @@ const reviews = await getGoogleReviews();
 		height: 136%;
 	}
 
+	.hero-slide {
+		opacity: 0;
+		transition: opacity 1.2s ease;
+	}
+
+	.hero-slide.is-active {
+		opacity: 1;
+	}
+
 	@media (prefers-reduced-motion: reduce) {
 		.hero-parallax-layer {
 			position: static;
 			inset: auto;
 			height: 100%;
 			transform: none !important;
+		}
+
+		.hero-slide {
+			display: none;
+			opacity: 1;
+			transition: none;
+		}
+
+		.hero-slide.is-active {
+			display: block;
 		}
 	}
 </style>
