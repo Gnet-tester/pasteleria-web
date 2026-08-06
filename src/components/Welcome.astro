@@ -92,7 +92,7 @@ const reviews = await getGoogleReviews();
 			</div>
 		</div>
 
-		<div class="order-2">
+		<div class="order-2 relative">
 			<div
 				class="hero-parallax-frame relative mx-auto h-80 max-w-sm overflow-hidden rounded-[2rem] shadow-xl sm:h-96 md:h-[560px] md:max-w-none"
 			>
@@ -121,6 +121,14 @@ const reviews = await getGoogleReviews();
 						class="h-full w-full object-cover"
 					/>
 				</div>
+			</div>
+
+			<div id="heroPopup" class="hero-popup rounded-2xl bg-white p-4 shadow-lg">
+				<button type="button" id="heroPopupClose" aria-label="Cerrar" class="hero-popup-close">&times;</button>
+				<p class="font-display text-lg text-sage-900">Dulce y salado</p>
+				<p class="mt-1 text-sm text-sage-600">
+					Tartas, dulces y también bocados salados — tenemos algo para cada antojo.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -182,6 +190,16 @@ const reviews = await getGoogleReviews();
 			slides[current].classList.add('is-active');
 		}, 4500);
 	}
+
+	const heroPopup = document.getElementById('heroPopup');
+	const heroPopupClose = document.getElementById('heroPopupClose');
+	if (heroPopup && heroPopupClose && !sessionStorage.getItem('heroPopupDismissed')) {
+		setTimeout(() => heroPopup.classList.add('is-visible'), 1200);
+		heroPopupClose.addEventListener('click', () => {
+			heroPopup.classList.remove('is-visible');
+			sessionStorage.setItem('heroPopupDismissed', '1');
+		});
+	}
 </script>
 
 <style>
@@ -198,6 +216,42 @@ const reviews = await getGoogleReviews();
 
 	.hero-slide.is-active {
 		opacity: 1;
+	}
+
+	.hero-popup {
+		position: absolute;
+		z-index: 20;
+		bottom: -1.25rem;
+		left: 1.25rem;
+		width: min(15rem, calc(100% - 2.5rem));
+		opacity: 0;
+		transform: translateY(0.75rem);
+		pointer-events: none;
+		transition:
+			opacity 0.4s ease,
+			transform 0.4s ease;
+	}
+
+	.hero-popup.is-visible {
+		opacity: 1;
+		transform: translateY(0);
+		pointer-events: auto;
+	}
+
+	.hero-popup-close {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.75rem;
+		border: none;
+		background: none;
+		font-size: 1.25rem;
+		line-height: 1;
+		color: var(--color-sage-400);
+		cursor: pointer;
+	}
+
+	.hero-popup-close:hover {
+		color: var(--color-sage-700);
 	}
 
 	@media (prefers-reduced-motion: reduce) {
