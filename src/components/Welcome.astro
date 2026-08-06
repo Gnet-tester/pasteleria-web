@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import leaf from '../assets/Favicon.svg';
 import fotoDesayuno from '../assets/Foto desayuno.jpg';
-import bocadilloEclipse from '../assets/Bocadillo eclipse.png';
+import tartaManzana from '../assets/Tarta de manzana.jpg';
 import cajaPastas from '../assets/Imágenes de ejemplo/Caja de pastas.jpg';
 import { getGoogleReviews } from '../lib/googlePlaces';
 import { useTranslations, getLocalizedPath, defaultLocale, type Locale } from '../i18n/utils';
@@ -111,7 +111,7 @@ const reviews = await getGoogleReviews();
 				</div>
 				<div class="hero-slide hero-parallax-layer" data-parallax-speed="0.12">
 					<Image
-						src={bocadilloEclipse}
+						src={tartaManzana}
 						alt={t('hero.imageAlt')}
 						width={900}
 						widths={[480, 700, 900]}
