@@ -146,7 +146,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaCall': 'Llámanos',
 		'paraEmpresasPage.cateringTitle': 'Catering salado',
 		'paraEmpresasPage.cateringText':
-			'Para tus reuniones, coffee breaks y eventos de empresa: bocados salados variados, listos para compartir.',
+			'Para tus reuniones, coffee breaks y eventos de empresa: bocados salados y dulces variados, listos para compartir.',
 		'paraEmpresasPage.cateringAlt1': 'Tostas variadas de aguacate, tomate y queso para catering de empresa',
 		'paraEmpresasPage.cateringAlt2':
 			'Selección de empanadillas, croissants rellenos y mini bocadillos para catering',
@@ -420,7 +420,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaCall': 'Call us',
 		'paraEmpresasPage.cateringTitle': 'Savoury catering',
 		'paraEmpresasPage.cateringText':
-			'For your meetings, coffee breaks and company events: a varied selection of savoury bites, ready to share.',
+			'For your meetings, coffee breaks and company events: a varied selection of savoury and sweet bites, ready to share.',
 		'paraEmpresasPage.cateringAlt1': 'Assorted avocado, tomato and cheese toasts for corporate catering',
 		'paraEmpresasPage.cateringAlt2': 'Selection of pastries, filled croissants and mini sandwiches for catering',
 
@@ -692,7 +692,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaCall': 'Ruf uns an',
 		'paraEmpresasPage.cateringTitle': 'Herzhaftes Catering',
 		'paraEmpresasPage.cateringText':
-			'Für Meetings, Kaffeepausen und Firmenevents: eine vielfältige Auswahl herzhafter Häppchen zum Teilen.',
+			'Für Meetings, Kaffeepausen und Firmenevents: eine vielfältige Auswahl herzhafter und süßer Häppchen zum Teilen.',
 		'paraEmpresasPage.cateringAlt1': 'Verschiedene Toasts mit Avocado, Tomate und Käse für Firmen-Catering',
 		'paraEmpresasPage.cateringAlt2':
 			'Auswahl an Pasteten, gefüllten Croissants und Mini-Sandwiches für Catering',
@@ -970,7 +970,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaCall': 'Appelez-nous',
 		'paraEmpresasPage.cateringTitle': 'Traiteur salé',
 		'paraEmpresasPage.cateringText':
-			"Pour vos réunions, pauses café et événements d'entreprise : une sélection variée de bouchées salées, prêtes à partager.",
+			"Pour vos réunions, pauses café et événements d'entreprise : une sélection variée de bouchées salées et sucrées, prêtes à partager.",
 		'paraEmpresasPage.cateringAlt1':
 			"Assortiment de toasts à l'avocat, tomate et fromage pour traiteur d'entreprise",
 		'paraEmpresasPage.cateringAlt2': 'Sélection de chaussons, croissants garnis et mini-sandwichs pour traiteur',
@@ -1232,7 +1232,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaCall': '전화하기',
 		'paraEmpresasPage.cateringTitle': '세이보리 케이터링',
 		'paraEmpresasPage.cateringText':
-			'회의, 커피 브레이크, 기업 행사를 위한 다양한 짭짤한 핑거푸드 — 나눠 먹기 좋습니다.',
+			'회의, 커피 브레이크, 기업 행사를 위한 다양한 짭짤하고 달콤한 핑거푸드 — 나눠 먹기 좋습니다.',
 		'paraEmpresasPage.cateringAlt1': '기업 케이터링용 아보카도, 토마토, 치즈 토스트 모음',
 		'paraEmpresasPage.cateringAlt2': '케이터링용 엠파나디야, 속을 채운 크루아상, 미니 샌드위치 모음',
 
@@ -1476,7 +1476,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaEmail': '联系我们',
 		'paraEmpresasPage.ctaCall': '致电我们',
 		'paraEmpresasPage.cateringTitle': '咸味餐饮服务',
-		'paraEmpresasPage.cateringText': '为您的会议、茶歇和企业活动准备的多样咸味小食，方便分享。',
+		'paraEmpresasPage.cateringText': '为您的会议、茶歇和企业活动准备的多样咸味与甜味小食，方便分享。',
 		'paraEmpresasPage.cateringAlt1': '为企业餐饮准备的牛油果、番茄和奶酪什锦吐司',
 		'paraEmpresasPage.cateringAlt2': '餐饮用什锦小馅饼、夹馅牛角包和迷你三明治精选',
 
@@ -1734,7 +1734,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaCall': 'Ligue-nos',
 		'paraEmpresasPage.cateringTitle': 'Catering salgado',
 		'paraEmpresasPage.cateringText':
-			'Para as suas reuniões, coffee breaks e eventos de empresa: uma seleção variada de petiscos salgados, prontos a partilhar.',
+			'Para as suas reuniões, coffee breaks e eventos de empresa: uma seleção variada de petiscos salgados e doces, prontos a partilhar.',
 		'paraEmpresasPage.cateringAlt1': 'Tostas variadas de abacate, tomate e queijo para catering empresarial',
 		'paraEmpresasPage.cateringAlt2': 'Seleção de empadas, croissants recheados e mini sandes para catering',
 
@@ -2004,7 +2004,7 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaCall': 'Chiamaci',
 		'paraEmpresasPage.cateringTitle': 'Catering salato',
 		'paraEmpresasPage.cateringText':
-			'Per le tue riunioni, coffee break ed eventi aziendali: una selezione variegata di stuzzichini salati, pronti da condividere.',
+			'Per le tue riunioni, coffee break ed eventi aziendali: una selezione variegata di stuzzichini salati e dolci, pronti da condividere.',
 		'paraEmpresasPage.cateringAlt1': 'Tost misti con avocado, pomodoro e formaggio per catering aziendale',
 		'paraEmpresasPage.cateringAlt2': 'Selezione di sfogliatine, croissant farciti e mini panini per catering',
 
