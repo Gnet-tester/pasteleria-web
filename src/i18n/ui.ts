@@ -117,9 +117,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'servicesGrid.tartas.title': 'Tartas personalizadas',
 		'servicesGrid.tartas.tagline': 'El tamaño, el sabor y la decoración, a tu gusto',
 		'servicesGrid.tartas.alt': 'Tarta personalizada de Gisela Pastelería Natural',
-		'servicesGrid.ultimaHora.title': 'Última hora',
-		'servicesGrid.ultimaHora.tagline': 'Todas las novedades de Gisela',
-		'servicesGrid.ultimaHora.alt': 'Selección de dulces de Gisela Pastelería Natural',
+		'servicesGrid.mesasDulces.title': 'Mesas dulces para tus eventos',
+		'servicesGrid.mesasDulces.tagline': 'Bodas, comuniones y celebraciones a tu medida',
+		'servicesGrid.mesasDulces.alt': 'Mesa dulce decorada de Gisela Pastelería Natural',
 
 		'meta.paraEmpresas.title': 'Gisela para empresas | Gisela Pastelería Natural',
 		'meta.paraEmpresas.description':
@@ -144,6 +144,12 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'Cuéntanos qué necesitas y lo preparamos juntos — escríbenos o pásate por la pastelería.',
 		'paraEmpresasPage.ctaEmail': 'Escríbenos',
 		'paraEmpresasPage.ctaCall': 'Llámanos',
+		'paraEmpresasPage.cateringTitle': 'Catering salado',
+		'paraEmpresasPage.cateringText':
+			'Para tus reuniones, coffee breaks y eventos de empresa: bocados salados variados, listos para compartir.',
+		'paraEmpresasPage.cateringAlt1': 'Tostas variadas de aguacate, tomate y queso para catering de empresa',
+		'paraEmpresasPage.cateringAlt2':
+			'Selección de empanadillas, croissants rellenos y mini bocadillos para catering',
 
 		'meta.delHorno.title': 'Del horno a tu casa | Gisela Pastelería Natural',
 		'meta.delHorno.description':
@@ -169,14 +175,37 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'delHornoPage.ctaEmail': 'Escríbenos',
 		'delHornoPage.ctaCall': 'Llámanos',
 
-		'meta.ultimaHora.title': 'Última hora | Gisela Pastelería Natural',
-		'meta.ultimaHora.description':
-			'Todas las novedades de Gisela Pastelería Natural: lanzamientos, novedades de temporada y mucho más.',
-		'ultimaHoraPage.eyebrow': 'Novedades',
-		'ultimaHoraPage.title': 'Última hora',
-		'ultimaHoraPage.subtitle':
-			'Todo lo nuevo en Gisela Pastelería Natural: lanzamientos, novedades de temporada y alguna que otra sorpresa.',
-		'ultimaHoraPage.footerNote': 'Vuelve pronto — seguimos añadiendo novedades por aquí.',
+		'meta.mesasDulces.title': 'Mesas dulces para eventos | Gisela Pastelería Natural',
+		'meta.mesasDulces.description':
+			'Mesas dulces personalizadas y tartas de boda para tus celebraciones: bodas, comuniones, cumpleaños y eventos de empresa.',
+
+		'mesasDulcesPage.eyebrow': 'Para tus eventos',
+		'mesasDulcesPage.title': 'Mesas dulces que enamoran',
+		'mesasDulcesPage.subtitle':
+			'Bodas, comuniones, cumpleaños y celebraciones de empresa — creamos mesas dulces a medida, con el estilo y los sabores de Gisela.',
+		'mesasDulcesPage.item1.title': 'Mesas dulces personalizadas',
+		'mesasDulcesPage.item1.desc':
+			'Diseñamos la selección de dulces según la temática, los colores y el número de invitados de tu evento.',
+		'mesasDulcesPage.item2.title': 'Tartas de boda y celebración',
+		'mesasDulcesPage.item2.desc': 'Tartas a medida para el gran día, con el sabor y el estilo que imaginas.',
+		'mesasDulcesPage.item3.title': 'Detalles para invitados',
+		'mesasDulcesPage.item3.desc':
+			'Cajitas y dulces individuales para que tus invitados se lleven un recuerdo delicioso.',
+		'mesasDulcesPage.item4.title': 'Asesoramiento y montaje',
+		'mesasDulcesPage.item4.desc':
+			'Te acompañamos desde el primer boceto hasta el montaje el día del evento.',
+		'mesasDulcesPage.galleryTitle': 'Personalízala a tu gusto',
+		'mesasDulcesPage.gallerySubtitle':
+			'Ven a la pastelería y hablamos contigo en persona para concretar cada detalle.',
+		'mesasDulcesPage.gallery.alt1': 'Mesa dulce decorada con macarons, cupcakes y flores',
+		'mesasDulcesPage.gallery.alt2': 'Porción de tarta individual decorada',
+		'mesasDulcesPage.gallery.alt3': 'Tarta de manzana artesanal de Gisela',
+		'mesasDulcesPage.gallery.alt4': 'Selección de postres de Gisela Pastelería Natural',
+		'mesasDulcesPage.ctaTitle': '¿Tienes un evento en mente?',
+		'mesasDulcesPage.ctaText':
+			'Cuéntanos la fecha, el estilo y el número de invitados, y diseñamos juntos tu mesa dulce perfecta.',
+		'mesasDulcesPage.ctaEmail': 'Escríbenos',
+		'mesasDulcesPage.ctaCall': 'Llamar ahora',
 
 		'bcbTeaser.eyebrow': 'Para peregrinos del Camino de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -362,9 +391,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'servicesGrid.tartas.title': 'Custom cakes',
 		'servicesGrid.tartas.tagline': 'The size, the flavour and the decoration, your way',
 		'servicesGrid.tartas.alt': 'Custom cake from Gisela Pastelería Natural',
-		'servicesGrid.ultimaHora.title': 'Latest news',
-		'servicesGrid.ultimaHora.tagline': 'Everything new at Gisela',
-		'servicesGrid.ultimaHora.alt': 'Selection of sweets from Gisela Pastelería Natural',
+		'servicesGrid.mesasDulces.title': 'Sweet tables for your events',
+		'servicesGrid.mesasDulces.tagline': 'Weddings, communions and celebrations, your way',
+		'servicesGrid.mesasDulces.alt': 'Decorated sweet table from Gisela Pastelería Natural',
 
 		'meta.paraEmpresas.title': 'Gisela for businesses | Gisela Pastelería Natural',
 		'meta.paraEmpresas.description':
@@ -389,6 +418,11 @@ export const ui: Record<Locale, Record<string, string>> = {
 			"Tell us what you need and we'll prepare it together — write to us or drop by the bakery.",
 		'paraEmpresasPage.ctaEmail': 'Email us',
 		'paraEmpresasPage.ctaCall': 'Call us',
+		'paraEmpresasPage.cateringTitle': 'Savoury catering',
+		'paraEmpresasPage.cateringText':
+			'For your meetings, coffee breaks and company events: a varied selection of savoury bites, ready to share.',
+		'paraEmpresasPage.cateringAlt1': 'Assorted avocado, tomato and cheese toasts for corporate catering',
+		'paraEmpresasPage.cateringAlt2': 'Selection of pastries, filled croissants and mini sandwiches for catering',
 
 		'meta.delHorno.title': 'From our oven to your home | Gisela Pastelería Natural',
 		'meta.delHorno.description':
@@ -412,14 +446,37 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'delHornoPage.ctaEmail': 'Email us',
 		'delHornoPage.ctaCall': 'Call us',
 
-		'meta.ultimaHora.title': 'Latest news | Gisela Pastelería Natural',
-		'meta.ultimaHora.description':
-			'All the latest from Gisela Pastelería Natural: launches, seasonal news and much more.',
-		'ultimaHoraPage.eyebrow': 'News',
-		'ultimaHoraPage.title': 'Latest news',
-		'ultimaHoraPage.subtitle':
-			'Everything new at Gisela Pastelería Natural: launches, seasonal news and the occasional surprise.',
-		'ultimaHoraPage.footerNote': 'Check back soon — we keep adding news here.',
+		'meta.mesasDulces.title': 'Sweet tables for events | Gisela Pastelería Natural',
+		'meta.mesasDulces.description':
+			'Custom sweet tables and wedding cakes for your celebrations: weddings, communions, birthdays and corporate events.',
+
+		'mesasDulcesPage.eyebrow': 'For your events',
+		'mesasDulcesPage.title': 'Sweet tables to fall in love with',
+		'mesasDulcesPage.subtitle':
+			'Weddings, communions, birthdays and corporate celebrations — we create bespoke sweet tables with Gisela\'s own style and flavours.',
+		'mesasDulcesPage.item1.title': 'Custom sweet tables',
+		'mesasDulcesPage.item1.desc':
+			'We design the selection of sweets around your theme, colours and number of guests.',
+		'mesasDulcesPage.item2.title': 'Wedding and celebration cakes',
+		'mesasDulcesPage.item2.desc': 'Bespoke cakes for the big day, with the flavour and style you imagine.',
+		'mesasDulcesPage.item3.title': 'Favours for your guests',
+		'mesasDulcesPage.item3.desc':
+			'Little boxes and individual sweets so your guests take home a delicious memory.',
+		'mesasDulcesPage.item4.title': 'Guidance and set-up',
+		'mesasDulcesPage.item4.desc':
+			'We\'re with you from the first sketch through to the set-up on the day of your event.',
+		'mesasDulcesPage.galleryTitle': 'Make it your own',
+		'mesasDulcesPage.gallerySubtitle':
+			"Come by the bakery and let's talk in person to work out every detail.",
+		'mesasDulcesPage.gallery.alt1': 'Sweet table decorated with macarons, cupcakes and flowers',
+		'mesasDulcesPage.gallery.alt2': 'Decorated individual cake slice',
+		'mesasDulcesPage.gallery.alt3': 'Handmade apple cake from Gisela',
+		'mesasDulcesPage.gallery.alt4': 'Selection of desserts from Gisela Pastelería Natural',
+		'mesasDulcesPage.ctaTitle': 'Got an event in mind?',
+		'mesasDulcesPage.ctaText':
+			'Tell us the date, the style and the number of guests, and we\'ll design your perfect sweet table together.',
+		'mesasDulcesPage.ctaEmail': 'Email us',
+		'mesasDulcesPage.ctaCall': 'Call now',
 
 		'bcbTeaser.eyebrow': 'For pilgrims on the Camino de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -606,9 +663,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'servicesGrid.tartas.title': 'Individuelle Torten',
 		'servicesGrid.tartas.tagline': 'Größe, Geschmack und Dekoration ganz nach deinem Wunsch',
 		'servicesGrid.tartas.alt': 'Individuelle Torte von Gisela Pastelería Natural',
-		'servicesGrid.ultimaHora.title': 'Neuigkeiten',
-		'servicesGrid.ultimaHora.tagline': 'Alles Neue bei Gisela',
-		'servicesGrid.ultimaHora.alt': 'Auswahl an Süßigkeiten von Gisela Pastelería Natural',
+		'servicesGrid.mesasDulces.title': 'Süße Tische für deine Events',
+		'servicesGrid.mesasDulces.tagline': 'Hochzeiten, Kommunionen und Feiern nach Maß',
+		'servicesGrid.mesasDulces.alt': 'Dekorierter süßer Tisch von Gisela Pastelería Natural',
 
 		'meta.paraEmpresas.title': 'Gisela für Unternehmen | Gisela Pastelería Natural',
 		'meta.paraEmpresas.description':
@@ -633,6 +690,12 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'Erzähl uns, was du brauchst, und wir bereiten es gemeinsam vor — schreib uns oder komm in der Bäckerei vorbei.',
 		'paraEmpresasPage.ctaEmail': 'Schreib uns',
 		'paraEmpresasPage.ctaCall': 'Ruf uns an',
+		'paraEmpresasPage.cateringTitle': 'Herzhaftes Catering',
+		'paraEmpresasPage.cateringText':
+			'Für Meetings, Kaffeepausen und Firmenevents: eine vielfältige Auswahl herzhafter Häppchen zum Teilen.',
+		'paraEmpresasPage.cateringAlt1': 'Verschiedene Toasts mit Avocado, Tomate und Käse für Firmen-Catering',
+		'paraEmpresasPage.cateringAlt2':
+			'Auswahl an Pasteten, gefüllten Croissants und Mini-Sandwiches für Catering',
 
 		'meta.delHorno.title': 'Vom Ofen zu dir nach Hause | Gisela Pastelería Natural',
 		'meta.delHorno.description':
@@ -656,14 +719,38 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'delHornoPage.ctaEmail': 'Schreib uns',
 		'delHornoPage.ctaCall': 'Ruf uns an',
 
-		'meta.ultimaHora.title': 'Neuigkeiten | Gisela Pastelería Natural',
-		'meta.ultimaHora.description':
-			'Alle Neuigkeiten von Gisela Pastelería Natural: Neueinführungen, Saisonnews und vieles mehr.',
-		'ultimaHoraPage.eyebrow': 'Neuigkeiten',
-		'ultimaHoraPage.title': 'Neuigkeiten',
-		'ultimaHoraPage.subtitle':
-			'Alles Neue bei Gisela Pastelería Natural: Neueinführungen, Saisonnews und die eine oder andere Überraschung.',
-		'ultimaHoraPage.footerNote': 'Schau bald wieder vorbei — wir fügen hier laufend Neuigkeiten hinzu.',
+		'meta.mesasDulces.title': 'Süße Tische für Events | Gisela Pastelería Natural',
+		'meta.mesasDulces.description':
+			'Individuelle süße Tische und Hochzeitstorten für deine Feiern: Hochzeiten, Kommunionen, Geburtstage und Firmenevents.',
+
+		'mesasDulcesPage.eyebrow': 'Für deine Events',
+		'mesasDulcesPage.title': 'Süße Tische, die verzaubern',
+		'mesasDulcesPage.subtitle':
+			'Hochzeiten, Kommunionen, Geburtstage und Firmenfeiern — wir gestalten süße Tische nach Maß, mit dem Stil und den Aromen von Gisela.',
+		'mesasDulcesPage.item1.title': 'Individuelle süße Tische',
+		'mesasDulcesPage.item1.desc':
+			'Wir gestalten die Süßigkeitenauswahl passend zum Motto, den Farben und der Gästeanzahl deines Events.',
+		'mesasDulcesPage.item2.title': 'Hochzeits- und Festtorten',
+		'mesasDulcesPage.item2.desc':
+			'Torten nach Maß für den großen Tag, mit dem Geschmack und Stil, den du dir vorstellst.',
+		'mesasDulcesPage.item3.title': 'Aufmerksamkeiten für deine Gäste',
+		'mesasDulcesPage.item3.desc':
+			'Kleine Boxen und einzelne Süßigkeiten, damit deine Gäste eine köstliche Erinnerung mit nach Hause nehmen.',
+		'mesasDulcesPage.item4.title': 'Beratung und Aufbau',
+		'mesasDulcesPage.item4.desc':
+			'Wir begleiten dich vom ersten Entwurf bis zum Aufbau am Tag deines Events.',
+		'mesasDulcesPage.galleryTitle': 'Ganz nach deinem Geschmack',
+		'mesasDulcesPage.gallerySubtitle':
+			'Komm in die Bäckerei vorbei und lass uns persönlich jedes Detail besprechen.',
+		'mesasDulcesPage.gallery.alt1': 'Süßer Tisch dekoriert mit Macarons, Cupcakes und Blumen',
+		'mesasDulcesPage.gallery.alt2': 'Dekoriertes einzelnes Tortenstück',
+		'mesasDulcesPage.gallery.alt3': 'Handgemachte Apfeltorte von Gisela',
+		'mesasDulcesPage.gallery.alt4': 'Auswahl an Desserts von Gisela Pastelería Natural',
+		'mesasDulcesPage.ctaTitle': 'Hast du ein Event geplant?',
+		'mesasDulcesPage.ctaText':
+			'Erzähl uns das Datum, den Stil und die Anzahl der Gäste, und wir gestalten gemeinsam deinen perfekten süßen Tisch.',
+		'mesasDulcesPage.ctaEmail': 'Schreib uns',
+		'mesasDulcesPage.ctaCall': 'Jetzt anrufen',
 
 		'bcbTeaser.eyebrow': 'Für Pilger auf dem Jakobsweg',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -854,9 +941,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'servicesGrid.tartas.title': 'Gâteaux personnalisés',
 		'servicesGrid.tartas.tagline': 'La taille, la saveur et la décoration, à votre goût',
 		'servicesGrid.tartas.alt': 'Gâteau personnalisé de Gisela Pastelería Natural',
-		'servicesGrid.ultimaHora.title': 'Dernières nouvelles',
-		'servicesGrid.ultimaHora.tagline': 'Toutes les nouveautés de Gisela',
-		'servicesGrid.ultimaHora.alt': 'Sélection de douceurs de Gisela Pastelería Natural',
+		'servicesGrid.mesasDulces.title': 'Tables sucrées pour vos événements',
+		'servicesGrid.mesasDulces.tagline': 'Mariages, communions et fêtes sur mesure',
+		'servicesGrid.mesasDulces.alt': 'Table sucrée décorée de Gisela Pastelería Natural',
 
 		'meta.paraEmpresas.title': 'Gisela pour les entreprises | Gisela Pastelería Natural',
 		'meta.paraEmpresas.description':
@@ -881,6 +968,12 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'Dites-nous ce dont vous avez besoin et préparons-le ensemble — écrivez-nous ou passez à la pâtisserie.',
 		'paraEmpresasPage.ctaEmail': 'Écrivez-nous',
 		'paraEmpresasPage.ctaCall': 'Appelez-nous',
+		'paraEmpresasPage.cateringTitle': 'Traiteur salé',
+		'paraEmpresasPage.cateringText':
+			"Pour vos réunions, pauses café et événements d'entreprise : une sélection variée de bouchées salées, prêtes à partager.",
+		'paraEmpresasPage.cateringAlt1':
+			"Assortiment de toasts à l'avocat, tomate et fromage pour traiteur d'entreprise",
+		'paraEmpresasPage.cateringAlt2': 'Sélection de chaussons, croissants garnis et mini-sandwichs pour traiteur',
 
 		'meta.delHorno.title': 'De notre four à votre maison | Gisela Pastelería Natural',
 		'meta.delHorno.description':
@@ -905,14 +998,38 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'delHornoPage.ctaEmail': 'Écrivez-nous',
 		'delHornoPage.ctaCall': 'Appelez-nous',
 
-		'meta.ultimaHora.title': 'Dernières nouvelles | Gisela Pastelería Natural',
-		'meta.ultimaHora.description':
-			"Toute l'actualité de Gisela Pastelería Natural : lancements, nouveautés saisonnières et bien plus encore.",
-		'ultimaHoraPage.eyebrow': 'Nouveautés',
-		'ultimaHoraPage.title': 'Dernières nouvelles',
-		'ultimaHoraPage.subtitle':
-			"Toutes les nouveautés de Gisela Pastelería Natural : lancements, actualités saisonnières et quelques surprises.",
-		'ultimaHoraPage.footerNote': 'Revenez bientôt — nous ajoutons régulièrement des nouveautés ici.',
+		'meta.mesasDulces.title': 'Tables sucrées pour événements | Gisela Pastelería Natural',
+		'meta.mesasDulces.description':
+			'Tables sucrées personnalisées et gâteaux de mariage pour vos célébrations : mariages, communions, anniversaires et événements d\'entreprise.',
+
+		'mesasDulcesPage.eyebrow': 'Pour vos événements',
+		'mesasDulcesPage.title': 'Des tables sucrées à croquer',
+		'mesasDulcesPage.subtitle':
+			"Mariages, communions, anniversaires et fêtes d'entreprise — nous créons des tables sucrées sur mesure, avec le style et les saveurs de Gisela.",
+		'mesasDulcesPage.item1.title': 'Tables sucrées personnalisées',
+		'mesasDulcesPage.item1.desc':
+			'Nous composons la sélection de douceurs selon le thème, les couleurs et le nombre d\'invités de votre événement.',
+		'mesasDulcesPage.item2.title': 'Gâteaux de mariage et de fête',
+		'mesasDulcesPage.item2.desc':
+			'Des gâteaux sur mesure pour le grand jour, avec la saveur et le style que vous imaginez.',
+		'mesasDulcesPage.item3.title': 'Attentions pour vos invités',
+		'mesasDulcesPage.item3.desc':
+			'Petites boîtes et douceurs individuelles pour que vos invités repartent avec un souvenir délicieux.',
+		'mesasDulcesPage.item4.title': 'Conseil et installation',
+		'mesasDulcesPage.item4.desc':
+			"Nous vous accompagnons du premier croquis jusqu'à l'installation le jour de votre événement.",
+		'mesasDulcesPage.galleryTitle': 'Personnalisez-la à votre goût',
+		'mesasDulcesPage.gallerySubtitle':
+			'Passez à la pâtisserie et discutons en personne de chaque détail.',
+		'mesasDulcesPage.gallery.alt1': 'Table sucrée décorée de macarons, cupcakes et fleurs',
+		'mesasDulcesPage.gallery.alt2': 'Part de gâteau individuelle décorée',
+		'mesasDulcesPage.gallery.alt3': 'Tarte aux pommes artisanale de Gisela',
+		'mesasDulcesPage.gallery.alt4': 'Sélection de desserts de Gisela Pastelería Natural',
+		'mesasDulcesPage.ctaTitle': 'Un événement en tête ?',
+		'mesasDulcesPage.ctaText':
+			'Dites-nous la date, le style et le nombre d\'invités, et créons ensemble votre table sucrée parfaite.',
+		'mesasDulcesPage.ctaEmail': 'Écrivez-nous',
+		'mesasDulcesPage.ctaCall': 'Appelez maintenant',
 
 		'bcbTeaser.eyebrow': 'Pour les pèlerins du Chemin de Saint-Jacques',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -1092,9 +1209,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'servicesGrid.tartas.title': '맞춤 케이크',
 		'servicesGrid.tartas.tagline': '크기, 맛, 장식을 원하는 대로',
 		'servicesGrid.tartas.alt': 'Gisela Pastelería Natural의 맞춤 케이크',
-		'servicesGrid.ultimaHora.title': '최신 소식',
-		'servicesGrid.ultimaHora.tagline': 'Gisela의 모든 새로운 소식',
-		'servicesGrid.ultimaHora.alt': 'Gisela Pastelería Natural의 디저트 모음',
+		'servicesGrid.mesasDulces.title': '이벤트를 위한 디저트 테이블',
+		'servicesGrid.mesasDulces.tagline': '결혼식, 첫영성체, 각종 행사에 맞춘 맞춤 구성',
+		'servicesGrid.mesasDulces.alt': 'Gisela Pastelería Natural의 장식된 디저트 테이블',
 
 		'meta.paraEmpresas.title': '기업을 위한 Gisela | Gisela Pastelería Natural',
 		'meta.paraEmpresas.description': '폰페라다의 Gisela Pastelería Natural이 선사하는 업무용 조식, 행사 케이터링, 기업 선물.',
@@ -1113,6 +1230,11 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaText': '필요하신 것을 알려주시면 함께 준비해 드립니다 — 메시지를 보내주시거나 매장을 방문해 주세요.',
 		'paraEmpresasPage.ctaEmail': '메시지 보내기',
 		'paraEmpresasPage.ctaCall': '전화하기',
+		'paraEmpresasPage.cateringTitle': '세이보리 케이터링',
+		'paraEmpresasPage.cateringText':
+			'회의, 커피 브레이크, 기업 행사를 위한 다양한 짭짤한 핑거푸드 — 나눠 먹기 좋습니다.',
+		'paraEmpresasPage.cateringAlt1': '기업 케이터링용 아보카도, 토마토, 치즈 토스트 모음',
+		'paraEmpresasPage.cateringAlt2': '케이터링용 엠파나디야, 속을 채운 크루아상, 미니 샌드위치 모음',
 
 		'meta.delHorno.title': '오븐에서 집까지 | Gisela Pastelería Natural',
 		'meta.delHorno.description': '갓 구워 집까지 배달되는 Gisela Pastelería Natural의 맞춤 조식과 바구니.',
@@ -1132,12 +1254,33 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'delHornoPage.ctaEmail': '메시지 보내기',
 		'delHornoPage.ctaCall': '전화하기',
 
-		'meta.ultimaHora.title': '최신 소식 | Gisela Pastelería Natural',
-		'meta.ultimaHora.description': 'Gisela Pastelería Natural의 모든 소식: 신규 출시, 시즌 소식 등.',
-		'ultimaHoraPage.eyebrow': '소식',
-		'ultimaHoraPage.title': '최신 소식',
-		'ultimaHoraPage.subtitle': 'Gisela Pastelería Natural의 새로운 소식: 신규 출시, 시즌 소식, 그리고 가끔의 깜짝 소식까지.',
-		'ultimaHoraPage.footerNote': '곧 다시 확인해 주세요 — 계속해서 새로운 소식을 추가하고 있습니다.',
+		'meta.mesasDulces.title': '이벤트를 위한 디저트 테이블 | Gisela Pastelería Natural',
+		'meta.mesasDulces.description':
+			'결혼식, 첫영성체, 생일, 기업 행사를 위한 맞춤 디저트 테이블과 웨딩 케이크.',
+
+		'mesasDulcesPage.eyebrow': '이벤트를 위해',
+		'mesasDulcesPage.title': '반하게 되는 디저트 테이블',
+		'mesasDulcesPage.subtitle':
+			'결혼식, 첫영성체, 생일, 기업 행사까지 — Gisela만의 스타일과 맛을 담은 맞춤 디저트 테이블을 만들어 드립니다.',
+		'mesasDulcesPage.item1.title': '맞춤 디저트 테이블',
+		'mesasDulcesPage.item1.desc': '행사의 테마, 색상, 하객 수에 맞춰 디저트 구성을 디자인합니다.',
+		'mesasDulcesPage.item2.title': '웨딩 케이크 & 이벤트 케이크',
+		'mesasDulcesPage.item2.desc': '원하시는 맛과 스타일로 특별한 날을 위한 맞춤 케이크를 만들어 드립니다.',
+		'mesasDulcesPage.item3.title': '하객을 위한 답례품',
+		'mesasDulcesPage.item3.desc': '하객들이 맛있는 추억을 가져갈 수 있도록 작은 상자와 개별 디저트를 준비합니다.',
+		'mesasDulcesPage.item4.title': '상담 및 세팅',
+		'mesasDulcesPage.item4.desc': '첫 스케치부터 행사 당일 세팅까지 함께합니다.',
+		'mesasDulcesPage.galleryTitle': '당신의 취향대로 맞춤 제작',
+		'mesasDulcesPage.gallerySubtitle': '빵집으로 오셔서 직접 만나 세부 사항을 함께 정해요.',
+		'mesasDulcesPage.gallery.alt1': '마카롱, 컵케이크, 꽃으로 장식된 디저트 테이블',
+		'mesasDulcesPage.gallery.alt2': '장식된 케이크 조각',
+		'mesasDulcesPage.gallery.alt3': 'Gisela의 수제 애플 케이크',
+		'mesasDulcesPage.gallery.alt4': 'Gisela Pastelería Natural의 디저트 모음',
+		'mesasDulcesPage.ctaTitle': '계획 중인 행사가 있으신가요?',
+		'mesasDulcesPage.ctaText':
+			'날짜, 스타일, 하객 수를 알려주시면 함께 완벽한 디저트 테이블을 디자인해 드립니다.',
+		'mesasDulcesPage.ctaEmail': '메시지 보내기',
+		'mesasDulcesPage.ctaCall': '지금 전화하기',
 
 		'bcbTeaser.eyebrow': '산티아고 순례길 순례자를 위해',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -1311,9 +1454,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'servicesGrid.tartas.title': '定制蛋糕',
 		'servicesGrid.tartas.tagline': '尺寸、口味与装饰，随您心意',
 		'servicesGrid.tartas.alt': 'Gisela天然烘焙坊的定制蛋糕',
-		'servicesGrid.ultimaHora.title': '最新动态',
-		'servicesGrid.ultimaHora.tagline': 'Gisela的所有最新消息',
-		'servicesGrid.ultimaHora.alt': 'Gisela天然烘焙坊的甜点精选',
+		'servicesGrid.mesasDulces.title': '为您的活动打造甜品桌',
+		'servicesGrid.mesasDulces.tagline': '婚礼、领圣体礼与各类庆典，尽在您的心意',
+		'servicesGrid.mesasDulces.alt': 'Gisela天然烘焙坊装饰精美的甜品桌',
 
 		'meta.paraEmpresas.title': '企业版Gisela | Gisela Pastelería Natural',
 		'meta.paraEmpresas.description': '蓬费拉达Gisela天然烘焙坊为企业提供的工作早餐、活动餐饮与企业礼品。',
@@ -1332,6 +1475,10 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'paraEmpresasPage.ctaText': '告诉我们您的需求，我们一起准备——请联系我们或亲临店内。',
 		'paraEmpresasPage.ctaEmail': '联系我们',
 		'paraEmpresasPage.ctaCall': '致电我们',
+		'paraEmpresasPage.cateringTitle': '咸味餐饮服务',
+		'paraEmpresasPage.cateringText': '为您的会议、茶歇和企业活动准备的多样咸味小食，方便分享。',
+		'paraEmpresasPage.cateringAlt1': '为企业餐饮准备的牛油果、番茄和奶酪什锦吐司',
+		'paraEmpresasPage.cateringAlt2': '餐饮用什锦小馅饼、夹馅牛角包和迷你三明治精选',
 
 		'meta.delHorno.title': '从烤箱到您家 | Gisela Pastelería Natural',
 		'meta.delHorno.description': 'Gisela天然烘焙坊的定制早餐与礼篮，新鲜出炉，随时送到您家。',
@@ -1351,12 +1498,33 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'delHornoPage.ctaEmail': '联系我们',
 		'delHornoPage.ctaCall': '致电我们',
 
-		'meta.ultimaHora.title': '最新动态 | Gisela Pastelería Natural',
-		'meta.ultimaHora.description': 'Gisela天然烘焙坊的所有最新消息：新品发布、季节动态等。',
-		'ultimaHoraPage.eyebrow': '动态',
-		'ultimaHoraPage.title': '最新动态',
-		'ultimaHoraPage.subtitle': 'Gisela天然烘焙坊的所有新鲜事：新品发布、季节动态，还有不定期的小惊喜。',
-		'ultimaHoraPage.footerNote': '欢迎常来看看——我们会持续更新动态。',
+		'meta.mesasDulces.title': '活动甜品桌 | Gisela Pastelería Natural',
+		'meta.mesasDulces.description':
+			'为您的婚礼、领圣体礼、生日与企业活动打造定制甜品桌与婚礼蛋糕。',
+
+		'mesasDulcesPage.eyebrow': '为您的活动',
+		'mesasDulcesPage.title': '令人心动的甜品桌',
+		'mesasDulcesPage.subtitle':
+			'婚礼、领圣体礼、生日与企业庆典——我们为您打造融入Gisela风格与风味的定制甜品桌。',
+		'mesasDulcesPage.item1.title': '定制甜品桌',
+		'mesasDulcesPage.item1.desc': '根据您活动的主题、色彩与宾客人数，为您设计甜品搭配。',
+		'mesasDulcesPage.item2.title': '婚礼与庆典蛋糕',
+		'mesasDulcesPage.item2.desc': '为您人生的重要时刻定制蛋糕，呈现您心中的风味与风格。',
+		'mesasDulcesPage.item3.title': '宾客小礼',
+		'mesasDulcesPage.item3.desc': '精致小盒与独立甜点，让宾客带走一份美味的回忆。',
+		'mesasDulcesPage.item4.title': '咨询与现场布置',
+		'mesasDulcesPage.item4.desc': '从最初的构思到活动当天的现场布置，我们全程陪伴。',
+		'mesasDulcesPage.galleryTitle': '按你的喜好定制',
+		'mesasDulcesPage.gallerySubtitle': '欢迎到店与我们当面沟通，敲定每一个细节。',
+		'mesasDulcesPage.gallery.alt1': '以马卡龙、纸杯蛋糕与鲜花装饰的甜品桌',
+		'mesasDulcesPage.gallery.alt2': '精心装饰的单人蛋糕块',
+		'mesasDulcesPage.gallery.alt3': 'Gisela手工苹果蛋糕',
+		'mesasDulcesPage.gallery.alt4': 'Gisela天然烘焙坊的甜点精选',
+		'mesasDulcesPage.ctaTitle': '正在筹备活动吗？',
+		'mesasDulcesPage.ctaText':
+			'告诉我们日期、风格与宾客人数，我们一起为您设计完美的甜品桌。',
+		'mesasDulcesPage.ctaEmail': '联系我们',
+		'mesasDulcesPage.ctaCall': '立即致电',
 
 		'bcbTeaser.eyebrow': '为圣地亚哥朝圣者',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -1537,9 +1705,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'servicesGrid.tartas.title': 'Bolos personalizados',
 		'servicesGrid.tartas.tagline': 'O tamanho, o sabor e a decoração, ao seu gosto',
 		'servicesGrid.tartas.alt': 'Bolo personalizado da Gisela Pastelería Natural',
-		'servicesGrid.ultimaHora.title': 'Última hora',
-		'servicesGrid.ultimaHora.tagline': 'Todas as novidades da Gisela',
-		'servicesGrid.ultimaHora.alt': 'Seleção de doces da Gisela Pastelería Natural',
+		'servicesGrid.mesasDulces.title': 'Mesas doces para os seus eventos',
+		'servicesGrid.mesasDulces.tagline': 'Casamentos, comunhões e celebrações à sua medida',
+		'servicesGrid.mesasDulces.alt': 'Mesa doce decorada da Gisela Pastelería Natural',
 
 		'meta.paraEmpresas.title': 'Gisela para empresas | Gisela Pastelería Natural',
 		'meta.paraEmpresas.description':
@@ -1564,6 +1732,11 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'Diga-nos o que precisa e preparamos juntos — escreva-nos ou passe pela pastelaria.',
 		'paraEmpresasPage.ctaEmail': 'Escreva-nos',
 		'paraEmpresasPage.ctaCall': 'Ligue-nos',
+		'paraEmpresasPage.cateringTitle': 'Catering salgado',
+		'paraEmpresasPage.cateringText':
+			'Para as suas reuniões, coffee breaks e eventos de empresa: uma seleção variada de petiscos salgados, prontos a partilhar.',
+		'paraEmpresasPage.cateringAlt1': 'Tostas variadas de abacate, tomate e queijo para catering empresarial',
+		'paraEmpresasPage.cateringAlt2': 'Seleção de empadas, croissants recheados e mini sandes para catering',
 
 		'meta.delHorno.title': 'Do forno para sua casa | Gisela Pastelería Natural',
 		'meta.delHorno.description':
@@ -1587,14 +1760,38 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'delHornoPage.ctaEmail': 'Escreva-nos',
 		'delHornoPage.ctaCall': 'Ligue-nos',
 
-		'meta.ultimaHora.title': 'Última hora | Gisela Pastelería Natural',
-		'meta.ultimaHora.description':
-			'Todas as novidades da Gisela Pastelería Natural: lançamentos, novidades sazonais e muito mais.',
-		'ultimaHoraPage.eyebrow': 'Novidades',
-		'ultimaHoraPage.title': 'Última hora',
-		'ultimaHoraPage.subtitle':
-			'Tudo o que há de novo na Gisela Pastelería Natural: lançamentos, novidades sazonais e alguma que outra surpresa.',
-		'ultimaHoraPage.footerNote': 'Volte em breve — continuamos a adicionar novidades por aqui.',
+		'meta.mesasDulces.title': 'Mesas doces para eventos | Gisela Pastelería Natural',
+		'meta.mesasDulces.description':
+			'Mesas doces personalizadas e bolos de casamento para as suas celebrações: casamentos, comunhões, aniversários e eventos de empresa.',
+
+		'mesasDulcesPage.eyebrow': 'Para os seus eventos',
+		'mesasDulcesPage.title': 'Mesas doces de encantar',
+		'mesasDulcesPage.subtitle':
+			'Casamentos, comunhões, aniversários e celebrações de empresa — criamos mesas doces à medida, com o estilo e os sabores da Gisela.',
+		'mesasDulcesPage.item1.title': 'Mesas doces personalizadas',
+		'mesasDulcesPage.item1.desc':
+			'Desenhamos a seleção de doces de acordo com o tema, as cores e o número de convidados do seu evento.',
+		'mesasDulcesPage.item2.title': 'Bolos de casamento e celebração',
+		'mesasDulcesPage.item2.desc':
+			'Bolos à medida para o grande dia, com o sabor e o estilo que imagina.',
+		'mesasDulcesPage.item3.title': 'Mimos para os convidados',
+		'mesasDulcesPage.item3.desc':
+			'Caixinhas e doces individuais para que os seus convidados levem uma lembrança deliciosa.',
+		'mesasDulcesPage.item4.title': 'Aconselhamento e montagem',
+		'mesasDulcesPage.item4.desc':
+			'Acompanhamo-lo desde o primeiro esboço até à montagem no dia do evento.',
+		'mesasDulcesPage.galleryTitle': 'Personalize ao seu gosto',
+		'mesasDulcesPage.gallerySubtitle':
+			'Venha à pastelaria e conversamos pessoalmente para acertar cada detalhe.',
+		'mesasDulcesPage.gallery.alt1': 'Mesa doce decorada com macarons, cupcakes e flores',
+		'mesasDulcesPage.gallery.alt2': 'Fatia de bolo individual decorada',
+		'mesasDulcesPage.gallery.alt3': 'Tarte de maçã artesanal da Gisela',
+		'mesasDulcesPage.gallery.alt4': 'Seleção de sobremesas da Gisela Pastelería Natural',
+		'mesasDulcesPage.ctaTitle': 'Tem um evento em mente?',
+		'mesasDulcesPage.ctaText':
+			'Diga-nos a data, o estilo e o número de convidados, e desenhamos juntos a sua mesa doce perfeita.',
+		'mesasDulcesPage.ctaEmail': 'Escreva-nos',
+		'mesasDulcesPage.ctaCall': 'Ligar agora',
 
 		'bcbTeaser.eyebrow': 'Para peregrinos do Caminho de Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',
@@ -1778,9 +1975,9 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'servicesGrid.tartas.title': 'Torte personalizzate',
 		'servicesGrid.tartas.tagline': 'La misura, il gusto e la decorazione, come vuoi tu',
 		'servicesGrid.tartas.alt': 'Torta personalizzata di Gisela Pastelería Natural',
-		'servicesGrid.ultimaHora.title': 'Ultima ora',
-		'servicesGrid.ultimaHora.tagline': 'Tutte le novità di Gisela',
-		'servicesGrid.ultimaHora.alt': 'Selezione di dolci di Gisela Pastelería Natural',
+		'servicesGrid.mesasDulces.title': 'Tavoli dolci per i tuoi eventi',
+		'servicesGrid.mesasDulces.tagline': 'Matrimoni, comunioni e feste su misura',
+		'servicesGrid.mesasDulces.alt': 'Tavolo dolce decorato di Gisela Pastelería Natural',
 
 		'meta.paraEmpresas.title': 'Gisela per le aziende | Gisela Pastelería Natural',
 		'meta.paraEmpresas.description':
@@ -1805,6 +2002,11 @@ export const ui: Record<Locale, Record<string, string>> = {
 			'Dicci di cosa hai bisogno e lo prepariamo insieme — scrivici o passa in pasticceria.',
 		'paraEmpresasPage.ctaEmail': 'Scrivici',
 		'paraEmpresasPage.ctaCall': 'Chiamaci',
+		'paraEmpresasPage.cateringTitle': 'Catering salato',
+		'paraEmpresasPage.cateringText':
+			'Per le tue riunioni, coffee break ed eventi aziendali: una selezione variegata di stuzzichini salati, pronti da condividere.',
+		'paraEmpresasPage.cateringAlt1': 'Tost misti con avocado, pomodoro e formaggio per catering aziendale',
+		'paraEmpresasPage.cateringAlt2': 'Selezione di sfogliatine, croissant farciti e mini panini per catering',
 
 		'meta.delHorno.title': 'Dal nostro forno a casa tua | Gisela Pastelería Natural',
 		'meta.delHorno.description':
@@ -1827,14 +2029,38 @@ export const ui: Record<Locale, Record<string, string>> = {
 		'delHornoPage.ctaEmail': 'Scrivici',
 		'delHornoPage.ctaCall': 'Chiamaci',
 
-		'meta.ultimaHora.title': 'Ultima ora | Gisela Pastelería Natural',
-		'meta.ultimaHora.description':
-			'Tutte le novità di Gisela Pastelería Natural: lanci, novità di stagione e molto altro.',
-		'ultimaHoraPage.eyebrow': 'Novità',
-		'ultimaHoraPage.title': 'Ultima ora',
-		'ultimaHoraPage.subtitle':
-			'Tutte le novità di Gisela Pastelería Natural: lanci, novità di stagione e qualche sorpresa ogni tanto.',
-		'ultimaHoraPage.footerNote': 'Torna presto — continuiamo ad aggiungere novità qui.',
+		'meta.mesasDulces.title': 'Tavoli dolci per eventi | Gisela Pastelería Natural',
+		'meta.mesasDulces.description':
+			'Tavoli dolci personalizzati e torte nuziali per le tue celebrazioni: matrimoni, comunioni, compleanni ed eventi aziendali.',
+
+		'mesasDulcesPage.eyebrow': 'Per i tuoi eventi',
+		'mesasDulcesPage.title': 'Tavoli dolci che innamorano',
+		'mesasDulcesPage.subtitle':
+			'Matrimoni, comunioni, compleanni e feste aziendali — creiamo tavoli dolci su misura, con lo stile e i sapori di Gisela.',
+		'mesasDulcesPage.item1.title': 'Tavoli dolci personalizzati',
+		'mesasDulcesPage.item1.desc':
+			'Progettiamo la selezione di dolci in base al tema, ai colori e al numero di invitati del tuo evento.',
+		'mesasDulcesPage.item2.title': 'Torte nuziali e per celebrazioni',
+		'mesasDulcesPage.item2.desc':
+			'Torte su misura per il grande giorno, con il gusto e lo stile che immagini.',
+		'mesasDulcesPage.item3.title': 'Dettagli per gli invitati',
+		'mesasDulcesPage.item3.desc':
+			'Scatoline e dolci individuali perché i tuoi invitati portino a casa un delizioso ricordo.',
+		'mesasDulcesPage.item4.title': 'Consulenza e allestimento',
+		'mesasDulcesPage.item4.desc':
+			'Ti accompagniamo dal primo bozzetto fino all\'allestimento il giorno dell\'evento.',
+		'mesasDulcesPage.galleryTitle': 'Personalizzala a tuo piacere',
+		'mesasDulcesPage.gallerySubtitle':
+			'Vieni in pasticceria e parliamone di persona per definire ogni dettaglio.',
+		'mesasDulcesPage.gallery.alt1': 'Tavolo dolce decorato con macaron, cupcake e fiori',
+		'mesasDulcesPage.gallery.alt2': 'Porzione di torta individuale decorata',
+		'mesasDulcesPage.gallery.alt3': 'Torta di mele artigianale di Gisela',
+		'mesasDulcesPage.gallery.alt4': 'Selezione di dessert di Gisela Pastelería Natural',
+		'mesasDulcesPage.ctaTitle': 'Hai un evento in programma?',
+		'mesasDulcesPage.ctaText':
+			'Raccontaci la data, lo stile e il numero di invitati, e progettiamo insieme il tuo tavolo dolce perfetto.',
+		'mesasDulcesPage.ctaEmail': 'Scrivici',
+		'mesasDulcesPage.ctaCall': 'Chiama ora',
 
 		'bcbTeaser.eyebrow': 'Per i pellegrini del Cammino di Santiago',
 		'bcbTeaser.title': 'BCB · Buen Camino Breakfast',

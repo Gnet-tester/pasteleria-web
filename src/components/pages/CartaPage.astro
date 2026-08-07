@@ -50,9 +50,24 @@ const tr = (text: string) => translateMenuText(text, lang);
 					<section id={group.name.toLowerCase()} class="scroll-mt-32 pb-14 last:pb-0">
 						<h2 class="font-display text-2xl text-sage-900 md:text-3xl">{tr(group.name)}</h2>
 
+						{group.name === 'Desayunos' && (
+							<ul class="mt-4 flex flex-wrap gap-2">
+								{['Bowl', 'Tostas', 'Bocadillos'].map((name) => (
+									<li>
+										<a
+											href={`#${name.toLowerCase()}`}
+											class="block whitespace-nowrap rounded-full bg-sage-50 px-3.5 py-1 text-sm text-sage-600 transition-colors hover:bg-sage-100"
+										>
+											{tr(name)}
+										</a>
+									</li>
+								))}
+							</ul>
+						)}
+
 						<div class="mt-8 grid gap-8 md:grid-cols-2">
 							{group.categories.map((category) => (
-								<div class="rounded-2xl border border-sage-100 bg-white p-6">
+								<div id={category.name.toLowerCase()} class="scroll-mt-32 rounded-2xl border border-sage-100 bg-white p-6">
 									<h3 class="font-display text-lg text-terracotta-500">
 										{tr(category.name)}
 										{category.note && (

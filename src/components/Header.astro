@@ -16,9 +16,15 @@ const canonicalPath = getPathWithoutLocale(Astro.url.pathname);
 const navLinks = [{ href: getLocalizedPath('/encarga-tu-tarta', lang), label: t('nav.encargaTuTarta') }];
 const homeHref = getLocalizedPath('/', lang);
 const cartaHref = getLocalizedPath('/carta', lang);
+const isCarta = canonicalPath === '/carta';
 ---
 
-<header class="header sticky top-0 z-50 border-b border-transparent bg-transparent">
+<header
+	class:list={[
+		'header sticky top-0 z-50',
+		isCarta ? 'border-b border-sage-100 bg-cream-50' : 'border-b border-transparent bg-transparent'
+	]}
+>
 	<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
 		<a href={homeHref} class="flex items-center gap-2">
 			{

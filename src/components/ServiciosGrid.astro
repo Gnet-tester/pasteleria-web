@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import cajaPastas from '../assets/Imágenes de ejemplo/Caja de pastas.jpg';
 import foto33 from '../assets/Imágenes de ejemplo/Foto 33.jpg';
 import tartaManzana from '../assets/Tarta de manzana.jpg';
-import foto348 from '../assets/Imágenes de ejemplo/foto 348.jpg';
+import mesaDulce from '../assets/Imágenes de ejemplo/Mesa dulce.jpg';
 import { useTranslations, getLocalizedPath, defaultLocale, type Locale } from '../i18n/utils';
 
 interface Props {
@@ -39,11 +39,11 @@ const items = [
 		span: 'md:col-span-2'
 	},
 	{
-		image: foto348,
-		alt: t('servicesGrid.ultimaHora.alt'),
-		title: t('servicesGrid.ultimaHora.title'),
-		tagline: t('servicesGrid.ultimaHora.tagline'),
-		href: getLocalizedPath('/ultima-hora', lang),
+		image: mesaDulce,
+		alt: t('servicesGrid.mesasDulces.alt'),
+		title: t('servicesGrid.mesasDulces.title'),
+		tagline: t('servicesGrid.mesasDulces.tagline'),
+		href: getLocalizedPath('/mesas-dulces', lang),
 		span: 'md:col-span-3'
 	}
 ];
