@@ -16,9 +16,16 @@ export interface GoogleReviewsData {
 
 export async function getGoogleReviews(): Promise<GoogleReviewsData | null> {
 	const apiKey = import.meta.env.GOOGLE_PLACES_API_KEY;
-	const placeId = import.meta.env.GOOGLE_PLACE_ID;
+	// El Place ID no es secreto (ya aparece público en los enlaces a Google Maps),
+	// así que usamos el de la pastelería por defecto si no hay variable de entorno.
+	const placeId = import.meta.env.GOOGLE_PLACE_ID || 'ChIJv5M20fK6MA0RAhwG-SX19Qo';
 
-	if (!apiKey || !placeId) return null;
+	if (!apiKey) {
+		console.warn(
+			'[googlePlaces] Falta GOOGLE_PLACES_API_KEY: las reseñas de Google no se cargarán en esta compilación.'
+		);
+		return null;
+	}
 
 	const placeUrl = `https://search.google.com/local/reviews?placeid=${placeId}`;
 
