@@ -32,7 +32,9 @@ const ogLocales: Record<Locale, string> = {
 	it: 'it_IT'
 };
 
-const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+// El ID de medición de GA4 no es secreto (aparece en el código de la página),
+// así que usamos el de la pastelería por defecto si no hay variable de entorno.
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || 'G-EY5DF9K5RP';
 // El ID del contenedor de GTM no es secreto (aparece en el código de la página),
 // así que usamos el de la pastelería por defecto si no hay variable de entorno.
 const gtmId = import.meta.env.PUBLIC_GTM_ID || 'GTM-M56XN9KK';

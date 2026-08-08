@@ -58,7 +58,7 @@ El despliegue es automático: cada `push` a `main` dispara el workflow [`.github
 - `GOOGLE_PLACES_API_KEY`, `GOOGLE_PLACE_ID`
 - `STRIPE_SECRET_KEY`, `PUBLIC_STRIPE_PUBLISHABLE_KEY`
 - `PUBLIC_STRIPE_BCB_LINK_SENCILLO`, `PUBLIC_STRIPE_BCB_LINK_COMPLETO`, `PUBLIC_STRIPE_BCB_LINK_PREMIUM`
-- `PUBLIC_GA_MEASUREMENT_ID` (ID de medición de Google Analytics 4, formato `G-XXXXXXXXXX`)
+- `PUBLIC_GA_MEASUREMENT_ID` (ID de medición de Google Analytics 4, formato `G-XXXXXXXXXX`; opcional, si no se define se usa el ID por defecto del proyecto)
 - `PUBLIC_GTM_ID` (ID del contenedor de Google Tag Manager, formato `GTM-XXXXXXX`; opcional, si no se define se usa el contenedor por defecto del proyecto)
 
 Si el dominio en IONOS no apunta a la raíz del espacio web, ajusta `server-dir` en `deploy.yml`.
