@@ -154,6 +154,9 @@ const businessSchema = {
 		<!-- JSON-LD: Bakery / LocalBusiness -->
 		<script type="application/ld+json" set:html={JSON.stringify(businessSchema)} is:inline />
 
+		<!-- Datos estructurados adicionales por página -->
+		<slot name="head" />
+
 		<!-- Google Analytics 4 -->
 		{
 			gaMeasurementId && (

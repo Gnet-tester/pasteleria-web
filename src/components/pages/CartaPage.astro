@@ -16,9 +16,40 @@ const t = useTranslations(lang);
 const formatPrice = (price: number) =>
 	price.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
 const tr = (text: string) => translateMenuText(text, lang);
+
+// Datos estructurados de la carta para que Google pueda mostrarla enriquecida.
+const menuSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Menu',
+	name: t('carta.title'),
+	inLanguage: lang,
+	provider: {
+		'@type': 'Bakery',
+		name: 'Gisela Pastelería Natural',
+		url: Astro.site?.toString()
+	},
+	hasMenuSection: menu.map((group) => ({
+		'@type': 'MenuSection',
+		name: tr(group.name),
+		hasMenuSection: group.categories.map((category) => ({
+			'@type': 'MenuSection',
+			name: tr(category.name),
+			hasMenuItem: category.items.map((item) => ({
+				'@type': 'MenuItem',
+				name: tr(item.name),
+				offers: {
+					'@type': 'Offer',
+					price: item.price.toFixed(2),
+					priceCurrency: 'EUR'
+				}
+			}))
+		}))
+	}))
+};
 ---
 
 <Layout lang={lang} title={t('meta.carta.title')} description={t('meta.carta.description')}>
+	<script type="application/ld+json" set:html={JSON.stringify(menuSchema)} is:inline slot="head" />
 	<Header lang={lang} />
 
 	<main class="bg-cream-100">
