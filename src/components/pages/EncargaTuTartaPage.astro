@@ -142,6 +142,18 @@ const traditionalFlavors: Flavor[] = [
 					<span class="cake-connector cake-connector--left"></span>
 					<div class="cake-block cake-block--sponge"></div>
 				</div>
+
+				<div class="cake-layer">
+					<div class="cake-block cake-block--mousse"></div>
+					<span class="cake-connector cake-connector--right"></span>
+					<span class="cake-label cake-label--right">{t('encargaTuTartaPage.diagram.mousse')}</span>
+				</div>
+
+				<div class="cake-layer">
+					<span class="cake-label cake-label--left">{t('encargaTuTartaPage.diagram.bizcocho')}</span>
+					<span class="cake-connector cake-connector--left"></span>
+					<div class="cake-block cake-block--sponge"></div>
+				</div>
 			</div>
 		</section>
 
@@ -395,48 +407,62 @@ const traditionalFlavors: Flavor[] = [
 	}
 
 	/* stagger: base layer builds first, top layer last */
-	.cake-layer:nth-child(6) .cake-block {
+	.cake-layer:nth-child(8) .cake-block {
 		transition-delay: 0s;
 	}
-	.cake-layer:nth-child(5) .cake-block {
+	.cake-layer:nth-child(7) .cake-block {
 		transition-delay: 0.12s;
 	}
-	.cake-layer:nth-child(4) .cake-block {
+	.cake-layer:nth-child(6) .cake-block {
 		transition-delay: 0.24s;
 	}
-	.cake-layer:nth-child(3) .cake-block {
+	.cake-layer:nth-child(5) .cake-block {
 		transition-delay: 0.36s;
 	}
-	.cake-layer:nth-child(2) .cake-block {
+	.cake-layer:nth-child(4) .cake-block {
 		transition-delay: 0.48s;
 	}
-	.cake-layer:nth-child(1) .cake-block {
+	.cake-layer:nth-child(3) .cake-block {
 		transition-delay: 0.6s;
 	}
+	.cake-layer:nth-child(2) .cake-block {
+		transition-delay: 0.72s;
+	}
+	.cake-layer:nth-child(1) .cake-block {
+		transition-delay: 0.84s;
+	}
 
+	.cake-layer:nth-child(8) .cake-label,
+	.cake-layer:nth-child(8) .cake-connector {
+		transition-delay: 1.3s;
+	}
+	.cake-layer:nth-child(7) .cake-label,
+	.cake-layer:nth-child(7) .cake-connector {
+		transition-delay: 1.35s;
+	}
 	.cake-layer:nth-child(6) .cake-label,
 	.cake-layer:nth-child(6) .cake-connector {
-		transition-delay: 1.3s;
+		transition-delay: 1.4s;
 	}
 	.cake-layer:nth-child(5) .cake-label,
 	.cake-layer:nth-child(5) .cake-connector {
-		transition-delay: 1.35s;
+		transition-delay: 1.45s;
 	}
 	.cake-layer:nth-child(4) .cake-label,
 	.cake-layer:nth-child(4) .cake-connector {
-		transition-delay: 1.4s;
+		transition-delay: 1.5s;
 	}
 	.cake-layer:nth-child(3) .cake-label,
 	.cake-layer:nth-child(3) .cake-connector {
-		transition-delay: 1.45s;
+		transition-delay: 1.55s;
 	}
 	.cake-layer:nth-child(2) .cake-label,
 	.cake-layer:nth-child(2) .cake-connector {
-		transition-delay: 1.5s;
+		transition-delay: 1.6s;
 	}
 	.cake-layer:nth-child(1) .cake-label,
 	.cake-layer:nth-child(1) .cake-connector {
-		transition-delay: 1.55s;
+		transition-delay: 1.65s;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
