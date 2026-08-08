@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -17,6 +18,25 @@ const formatPrice = (price: number) =>
 	price.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '€';
 const tr = (text: string) => translateMenuText(text, lang);
 
+// Identificadores únicos: "Extras" existe en varios grupos, así que se prefija
+// con el grupo para que los enlaces del índice no choquen entre sí.
+const slug = (text: string) =>
+	text
+		.toLowerCase()
+		.normalize('NFD')
+		.replace(/[̀-ͯ]/g, '')
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/(^-|-$)/g, '');
+// Fotos opcionales de categorías (p. ej. la edición limitada).
+const assetImages = import.meta.glob<{ default: ImageMetadata }>('../../assets/*.{png,jpg,jpeg,webp}', {
+	eager: true
+});
+const imageFor = (fileName?: string) =>
+	fileName ? assetImages[`../../assets/${fileName}`]?.default : undefined;
+
+const groupId = (groupName: string) => slug(groupName);
+const categoryId = (groupName: string, categoryName: string) => slug(`${groupName}-${categoryName}`);
+
 // Datos estructurados de la carta para que Google pueda mostrarla enriquecida.
 const menuSchema = {
 	'@context': 'https://schema.org',
@@ -34,6 +54,7 @@ const menuSchema = {
 			hasMenuItem: category.items.map((item) => ({
 				'@type': 'MenuItem',
 				name: tr(item.name),
+				...(item.note ? { description: tr(item.note).replace(/\n/g, ' ') } : {}),
 				offers: {
 					'@type': 'Offer',
 					price: item.price.toFixed(2),
@@ -61,7 +82,7 @@ const menuSchema = {
 					menu.map((group) => (
 						<li>
 							<a
-								href={`#${group.name.toLowerCase()}`}
+								href={`#${groupId(group.name)}`}
 								class="block whitespace-nowrap rounded-full border border-sage-200 px-4 py-1.5 text-sm font-medium text-sage-700 transition-colors hover:bg-sage-100"
 							>
 								{tr(group.name)}
@@ -72,42 +93,78 @@ const menuSchema = {
 			</ul>
 		</nav>
 
-		<div class="mx-auto max-w-4xl px-4 py-12 md:px-6 md:py-16">
-			{
-				menu.map((group) => (
-					<section id={group.name.toLowerCase()} class="scroll-mt-32 pb-14 last:pb-0">
-						<h2 class="font-display text-2xl text-sage-900 md:text-3xl">{tr(group.name)}</h2>
-
-						{group.name === 'Desayunos' && (
-							<ul class="mt-4 flex flex-wrap gap-2">
-								{['Bowl', 'Tostas', 'Bocadillos'].map((name) => (
+		<div class="mx-auto max-w-4xl px-4 pt-8 md:px-6 md:pt-10">
+			<div class="flex flex-col gap-4 rounded-3xl border border-sage-100 bg-white p-6">
+				{
+					menu.map((group) => (
+						<div class="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:gap-4">
+							<span class="shrink-0 font-display text-sm text-terracotta-500 sm:w-32">
+								{tr(group.name)}
+							</span>
+							<ul class="flex flex-wrap gap-2">
+								{group.categories.map((category) => (
 									<li>
 										<a
-											href={`#${name.toLowerCase()}`}
+											href={`#${categoryId(group.name, category.name)}`}
 											class="block whitespace-nowrap rounded-full bg-sage-50 px-3.5 py-1 text-sm text-sage-600 transition-colors hover:bg-sage-100"
 										>
-											{tr(name)}
+											{tr(category.name)}
 										</a>
 									</li>
 								))}
 							</ul>
-						)}
+						</div>
+					))
+				}
+			</div>
+		</div>
+
+		<div class="mx-auto max-w-4xl px-4 py-12 md:px-6 md:py-16">
+			{
+				menu.map((group) => (
+					<section id={groupId(group.name)} class="scroll-mt-32 pb-14 last:pb-0">
+						<h2 class="font-display text-2xl text-sage-900 md:text-3xl">{tr(group.name)}</h2>
 
 						<div class="mt-8 grid gap-8 md:grid-cols-2">
 							{group.categories.map((category) => (
-								<div id={category.name.toLowerCase()} class="scroll-mt-32 rounded-2xl border border-sage-100 bg-white p-6">
+								<div
+								id={categoryId(group.name, category.name)}
+								class="menu-card scroll-mt-32 rounded-2xl border border-sage-100 bg-white p-6"
+							>
 									<h3 class="font-display text-lg text-terracotta-500">
 										{tr(category.name)}
 										{category.note && (
 											<span class="ml-2 text-sm font-normal text-sage-500">({tr(category.note)})</span>
 										)}
 									</h3>
+
+									{imageFor(category.image) && (
+										<div class="mt-4 overflow-hidden rounded-2xl">
+											<Image
+												src={imageFor(category.image)!}
+												alt={category.imageAlt ?? ''}
+												width={700}
+												widths={[350, 520, 700]}
+												sizes="(min-width: 768px) 22rem, 100vw"
+												quality={70}
+												class="h-48 w-full object-cover sm:h-56"
+											/>
+										</div>
+									)}
+
 									<ul class="mt-4 flex flex-col gap-2.5">
 										{category.items.map((item) => (
-											<li class="flex items-baseline gap-2 text-sm text-sage-700">
-												<span>{tr(item.name)}</span>
-												<span class="flex-1 border-b border-dotted border-sage-300" />
-												<span class="font-medium text-sage-900">{formatPrice(item.price)}</span>
+											<li class="text-sm text-sage-700">
+												<div class="flex items-baseline gap-2">
+													<span>{tr(item.name)}</span>
+													<span class="flex-1 border-b border-dotted border-sage-300" />
+													<span class="font-medium text-sage-900">{formatPrice(item.price)}</span>
+												</div>
+												{item.note && (
+													<p class="item-note mt-1.5 text-sm leading-relaxed text-sage-600">
+														{item.note}
+													</p>
+												)}
 											</li>
 										))}
 									</ul>
@@ -122,3 +179,47 @@ const menuSchema = {
 
 	<Footer lang={lang} />
 </Layout>
+
+<style>
+	/* Las descripciones se escriben con un ingrediente por línea. */
+	.item-note {
+		white-space: pre-line;
+	}
+
+	/* Al llegar desde el índice, la sección de destino se resalta para localizarla de un vistazo. */
+	.menu-card {
+		transition:
+			border-color 0.4s ease,
+			box-shadow 0.4s ease,
+			background-color 0.4s ease;
+	}
+
+	.menu-card:target {
+		border-color: var(--color-terracotta-300);
+		background-color: var(--color-terracotta-50);
+		box-shadow: 0 0 0 3px rgba(212, 169, 136, 0.35);
+		animation: menu-card-pulse 1.6s ease-out;
+	}
+
+	@keyframes menu-card-pulse {
+		0% {
+			box-shadow: 0 0 0 0 rgba(176, 135, 107, 0.55);
+		}
+		60% {
+			box-shadow: 0 0 0 10px rgba(176, 135, 107, 0);
+		}
+		100% {
+			box-shadow: 0 0 0 3px rgba(212, 169, 136, 0.35);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.menu-card {
+			transition: none;
+		}
+
+		.menu-card:target {
+			animation: none;
+		}
+	}
+</style>

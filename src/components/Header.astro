@@ -13,6 +13,7 @@ const { lang = defaultLocale, logoIntro = false } = Astro.props;
 const t = useTranslations(lang);
 const canonicalPath = getPathWithoutLocale(Astro.url.pathname);
 
+// El blog existe en /blog (solo en español) pero de momento no se enlaza desde el menú.
 const navLinks = [{ href: getLocalizedPath('/encarga-tu-tarta', lang), label: t('nav.encargaTuTarta') }];
 const homeHref = getLocalizedPath('/', lang);
 const cartaHref = getLocalizedPath('/carta', lang);

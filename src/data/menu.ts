@@ -7,6 +7,9 @@ export interface MenuItem {
 export interface MenuCategory {
 	name: string;
 	note?: string;
+	/** Nombre del archivo dentro de src/assets/, para categorías con foto. */
+	image?: string;
+	imageAlt?: string;
 	items: MenuItem[];
 }
 
@@ -262,6 +265,35 @@ export const menu: MenuGroup[] = [
 					{ name: 'Leche de avena', price: 0.3 },
 					{ name: 'Para llevar', price: 0.2 },
 					{ name: 'Con hielo', price: 0.2 }
+				]
+			}
+		]
+	},
+	{
+		name: 'Edición limitada',
+		categories: [
+			{
+				name: 'Bocadillo eclipse',
+				image: 'Bocadillo eclipse.png',
+				imageAlt: 'Bocadillo eclipse con pan de pimiento berciano y cecina',
+				items: [
+					{
+						name: 'Bocadillo eclipse',
+						price: 9.5,
+						note: '🔥 Pan de pimiento berciano.\n🥩 Cecina seleccionada en lonchas.\n🥣 Tapenade, crema de queso, mermelada balsámica y cebolla crunchy.'
+					}
+				]
+			},
+			{
+				name: 'Sandwich lunar',
+				image: 'Sandwich lunar.png',
+				imageAlt: 'Sandwich lunar de pan brioche con pollo y bacon',
+				items: [
+					{
+						name: 'Sandwich lunar',
+						price: 8.2,
+						note: '🍞 Nuestro pan brioche artesano, súper tierno y dorado.\n🍗 Pollo jugoso acompañado del toque ahumado e inconfundible del bacon crujiente.\n🧀 Una salsa de locura: queso de cabra, chocolate blanco y maíz. (Sí, has leído bien. Pruébala y nos cuentas).\n🥭 El contraste dulce y tropical perfecto con nuestra mermelada de mango.'
+					}
 				]
 			}
 		]
