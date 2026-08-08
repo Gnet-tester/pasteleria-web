@@ -33,6 +33,9 @@ const ogLocales: Record<Locale, string> = {
 };
 
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+// El ID del contenedor de GTM no es secreto (aparece en el código de la página),
+// así que usamos el de la pastelería por defecto si no hay variable de entorno.
+const gtmId = import.meta.env.PUBLIC_GTM_ID || 'GTM-M56XN9KK';
 
 const canonicalPath = getPathWithoutLocale(Astro.url.pathname);
 const alternateLinks = locales.map((locale) => ({
@@ -78,6 +81,23 @@ const businessSchema = {
 <!doctype html>
 <html lang={lang}>
 	<head>
+		<!-- Google Tag Manager -->
+		{
+			gtmId && (
+				<script is:inline define:vars={{ gtmId }}>
+					(function (w, d, s, l, i) {
+						w[l] = w[l] || [];
+						w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+						var f = d.getElementsByTagName(s)[0],
+							j = d.createElement(s),
+							dl = l != 'dataLayer' ? '&l=' + l : '';
+						j.async = true;
+						j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+						f.parentNode.insertBefore(j, f);
+					})(window, document, 'script', 'dataLayer', gtmId);
+				</script>
+			)
+		}
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
@@ -153,6 +173,20 @@ const businessSchema = {
 		}
 	</head>
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+		{
+			gtmId && (
+				<noscript>
+					<iframe
+						src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+						height="0"
+						width="0"
+						style="display:none;visibility:hidden"
+						title="Google Tag Manager"
+					/>
+				</noscript>
+			)
+		}
 		<slot />
 		<script>
 			document.addEventListener('click', (event) => {
