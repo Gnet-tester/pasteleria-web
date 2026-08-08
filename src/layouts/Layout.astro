@@ -48,6 +48,7 @@ const alternateLinks = locales.map((locale) => ({
 const businessSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'Bakery',
+	'@id': new URL('#business', Astro.site).toString(),
 	name: 'Gisela Pastelería Natural',
 	image: ogImageURL.toString(),
 	url: Astro.site?.toString(),

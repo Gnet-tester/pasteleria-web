@@ -23,11 +23,8 @@ const menuSchema = {
 	'@type': 'Menu',
 	name: t('carta.title'),
 	inLanguage: lang,
-	provider: {
-		'@type': 'Bakery',
-		name: 'Gisela Pastelería Natural',
-		url: Astro.site?.toString()
-	},
+	// Referencia a la ficha de negocio del layout, en vez de repetir la entidad.
+	provider: { '@id': new URL('#business', Astro.site).toString() },
 	hasMenuSection: menu.map((group) => ({
 		'@type': 'MenuSection',
 		name: tr(group.name),
